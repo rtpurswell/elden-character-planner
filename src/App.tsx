@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import H1 from './components/common/H1'
 import Modal from './components/common/Modal'
 import Equipment from './components/Equipment'
 import Stats from './components/Stats'
@@ -13,8 +14,11 @@ function App() {
     setShowModal(true)
   }
   return (
-    <main className="w-full grid grid-cols-2 text-white">
-      <div className=" bg-zinc-700 flex flex-col">
+    <main className="w-full flex flex-col md:grid md:grid-cols-2  text-white gap-10 p-5">
+      <div className="col-span-2">
+        <H1>Elden Ring Character Planner</H1>{' '}
+      </div>
+      <div className=" bg-slate-800 flex flex-col p-5 rounded">
         <Equipment />
         <button className="p-3 bg-green-600" onClick={handleModalOpen}>
           Show it!
@@ -26,7 +30,7 @@ function App() {
         ) : null}
       </div>
 
-      <div className=" bg-zinc-700">
+      <div className=" bg-slate-800 p-5 rounded">
         <Stats />
       </div>
     </main>

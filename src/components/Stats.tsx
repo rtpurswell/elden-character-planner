@@ -1,10 +1,10 @@
 import Stat from './Stat'
-import H1 from './common/H1'
+import H2 from './common/H2'
 interface StatsProps {}
 function Stats({}: StatsProps) {
   return (
-    <div className="p-3">
-      <H1>Stats</H1>
+    <div className="p-3 rounded">
+      <H2>Stats</H2>
       <Stat name="Vigor" defaultValue={0} />
       <Stat name="Mind" defaultValue={0} />
       <Stat name="Endurance" defaultValue={0} />
