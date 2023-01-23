@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { RootState } from './configureStore'
 import Classes from '../data/classes.json'
-const initialState = {
+export const initialState = {
   name: '',
   classType: '17f69874f7bl0i32gmqaffmbfral8f',
   mainHand1: '',
@@ -243,5 +243,16 @@ export const {
   spell12Updated,
   defaultStatsUpdated,
 } = characterSlice.actions
+
+//Selectors
+export const getCharacterLevel = (state: RootState) => {
+  let totalLevel = state.character.defaultStats.level
+  const statArray = Object.values(state.character.stats)
+  statArray.forEach((stat) => {
+    totalLevel += stat
+  })
+
+  return totalLevel
+}
 
 export default characterSlice.reducer
