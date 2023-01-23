@@ -4,7 +4,6 @@ import H1 from './common/H1'
 import Modal from './common/Modal'
 import Equipment from './Equipment'
 import Stats from './Stats'
-import WeaponViewer from './WeaponViewer'
 
 function Layout() {
   const [showModal, setShowModal] = useState(false)
@@ -30,9 +29,7 @@ function Layout() {
           Show it!
         </button>
         {showModal ? (
-          <Modal title="Select Weapon" onClose={handleModalClose}>
-            <WeaponViewer />
-          </Modal>
+          <Modal title="Select Weapon" onClose={handleModalClose}></Modal>
         ) : null}
       </div>
 
