@@ -1,11 +1,12 @@
-import { createSlice } from '@reduxjs/toolkit/dist/createSlice'
-
+import { createSlice } from '@reduxjs/toolkit'
+import { RootState } from './configureStore'
+import Classes from '../data/classes.json'
 const initialState = {
   name: '',
-  class: '',
-  weapon1: '',
-  weapon2: '',
-  weapon3: '',
+  classType: '17f69874f7bl0i32gmqaffmbfral8f',
+  mainHand1: '',
+  mainHand2: '',
+  mainHand3: '',
   offHand1: '',
   offHand2: '',
   offHand3: '',
@@ -22,14 +23,16 @@ const initialState = {
   item3: '',
   item4: '',
   item5: '',
-  vigor: 0,
-  mind: 0,
-  enurance: 0,
-  strength: 0,
-  dexterity: 0,
-  intelligence: 0,
-  faith: 0,
-  arcane: 0,
+  stats: {
+    vigor: 0,
+    mind: 0,
+    endurance: 0,
+    strength: 0,
+    dexterity: 0,
+    intelligence: 0,
+    faith: 0,
+    arcane: 0,
+  },
   spell1: '',
   spell2: '',
   spell3: '',
@@ -42,6 +45,28 @@ const initialState = {
   spell10: '',
   spell11: '',
   spell12: '',
+  defaultStats: {
+    vigor: 0,
+    mind: 0,
+    endurance: 0,
+    strength: 0,
+    dexterity: 0,
+    intelligence: 0,
+    faith: 0,
+    arcane: 0,
+    level: 5,
+  },
+}
+
+export const getStats = (state: RootState) => {
+  const defaultstats = state.character.defaultStats
+  const stats = { ...state.character.stats }
+
+  for (const [key, value] of Object.entries(stats)) {
+    stats[key as keyof typeof stats] =
+      value + Number(defaultstats[key as keyof typeof defaultstats])
+  }
+  return stats
 }
 
 export const characterSlice = createSlice({
@@ -52,16 +77,18 @@ export const characterSlice = createSlice({
       state.name = action.payload
     },
     classUpdated: (state, action) => {
-      state.class = action.payload
+      state.classType = action.payload
+      state.defaultStats = Classes.find((x) => x.id === action.payload)
+        ?.stats as any
     },
-    weapon1Updated: (state, action) => {
-      state.weapon1 = action.payload
+    mainHand1Updated: (state, action) => {
+      state.mainHand1 = action.payload
     },
-    weapon2Updated: (state, action) => {
-      state.weapon2 = action.payload
+    mainHand2Updated: (state, action) => {
+      state.mainHand2 = action.payload
     },
-    weapon3Updated: (state, action) => {
-      state.weapon3 = action.payload
+    mainHand3Updated: (state, action) => {
+      state.mainHand3 = action.payload
     },
     offHand1Updated: (state, action) => {
       state.offHand1 = action.payload
@@ -111,29 +138,28 @@ export const characterSlice = createSlice({
     item5Updated: (state, action) => {
       state.item5 = action.payload
     },
-    vigorUpdated: (state, action) => {
-      state.vigor = action.payload
+    statUpdated: (state, action) => {
+      state.stats[action.payload.stat as keyof typeof state.stats] =
+        action.payload.value
     },
-    mindUpdated: (state, action) => {
-      state.mind = action.payload
+    statIncremented: (state, action) => {
+      if (
+        state.stats[action.payload as keyof typeof state.stats] +
+          1 +
+          Number(
+            state.defaultStats[
+              action.payload as keyof typeof state.defaultStats
+            ],
+          ) <=
+        99
+      ) {
+        state.stats[action.payload as keyof typeof state.stats] += 1
+      }
     },
-    enuranceUpdated: (state, action) => {
-      state.enurance = action.payload
-    },
-    strengthUpdated: (state, action) => {
-      state.strength = action.payload
-    },
-    dexterityUpdated: (state, action) => {
-      state.dexterity = action.payload
-    },
-    intelligenceUpdated: (state, action) => {
-      state.intelligence = action.payload
-    },
-    faithUpdated: (state, action) => {
-      state.faith = action.payload
-    },
-    arcaneUpdated: (state, action) => {
-      state.arcane = action.payload
+    statDecremented: (state, action) => {
+      if (state.stats[action.payload as keyof typeof state.stats] - 1 >= 0) {
+        state.stats[action.payload as keyof typeof state.stats] -= 1
+      }
     },
     spell1Updated: (state, action) => {
       state.spell1 = action.payload
@@ -171,7 +197,51 @@ export const characterSlice = createSlice({
     spell12Updated: (state, action) => {
       state.spell12 = action.payload
     },
+    defaultStatsUpdated: (state, action) => {
+      state.defaultStats = Classes.find((x) => x.id === state.classType)
+        ?.stats as any
+    },
   },
 })
+
+export const {
+  nameUpdated,
+  classUpdated,
+  mainHand1Updated,
+  mainHand2Updated,
+  mainHand3Updated,
+  offHand1Updated,
+  offHand2Updated,
+  offHand3Updated,
+  armorUpdated,
+  helmetUpdated,
+  handsUpdated,
+  legsUpdated,
+  talisman1Updated,
+  talisman2Updated,
+  talisman3Updated,
+  talisman4Updated,
+  item1Updated,
+  item2Updated,
+  item3Updated,
+  item4Updated,
+  item5Updated,
+  statUpdated,
+  statIncremented,
+  statDecremented,
+  spell1Updated,
+  spell2Updated,
+  spell3Updated,
+  spell4Updated,
+  spell5Updated,
+  spell6Updated,
+  spell7Updated,
+  spell8Updated,
+  spell9Updated,
+  spell10Updated,
+  spell11Updated,
+  spell12Updated,
+  defaultStatsUpdated,
+} = characterSlice.actions
 
 export default characterSlice.reducer
