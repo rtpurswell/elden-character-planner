@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import ClassSelector from './ClassSelector'
 import H1 from './common/H1'
-import Modal from './common/Modal'
 import Equipment from './Equipment'
 import Stats from './Stats'
 
@@ -28,9 +27,6 @@ function Layout() {
         <button className="p-3 bg-green-600" onClick={handleModalOpen}>
           Show it!
         </button>
-        {showModal ? (
-          <Modal title="Select Weapon" onClose={handleModalClose}></Modal>
-        ) : null}
       </div>
 
       <div className=" bg-slate-800 p-5 rounded">
