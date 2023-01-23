@@ -12,7 +12,7 @@ export interface IWeapon {
     amount: number
   }[]
   scalesWith: {
-    name: 'Str' | 'Dex' | 'Int' | 'Fai' | 'Arc'
+    name: 'Str' | 'Dex' | 'Int' | 'Fai'
     scaling: 'S' | 'A' | 'B' | 'C' | 'D' | 'E'
   }[]
   requiredAttributes: {
@@ -107,15 +107,15 @@ export interface IClassType {
   image: string
   description: string
   stats: {
-    level: number
-    vigor: number
-    mind: number
-    endurance: number
-    strength: number
-    dexterity: number
-    intelligence: number
-    faith: number
-    arcane: number
+    level: string
+    vigor: string
+    mind: string
+    endurance: string
+    strength: string
+    dexterity: string
+    intelligence: string
+    faith: string
+    arcane: string
   }
 }
 
