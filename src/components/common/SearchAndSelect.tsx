@@ -32,8 +32,8 @@ function SearchAndSelect({ data, onSelect }: SearchAndSelectProps) {
       </div>
       {data.map((d) => {
         return (
-          <div className=" grid grid-cols-5 gap-3" key={d.label}>
-            <h3 className="col-span-5">{d.label}</h3>
+          <div className=" grid grid-cols-1 md:grid-cols-5 gap-3" key={d.label}>
+            <h3 className="md:col-span-5">{d.label}</h3>
             {d.value
               .filter((item) => {
                 if (search === '') {
@@ -47,7 +47,7 @@ function SearchAndSelect({ data, onSelect }: SearchAndSelectProps) {
               .map((item: IArmor | IItem | IShield | IWeapon | ITalisman) => {
                 return (
                   <button
-                    className="flex flex-col border-gray-500 border-2 rounded p-2"
+                    className="flex flex-col border-gray-500 border-2 rounded p-2 items-center"
                     key={item.id}
                     onClick={() => onSelect(item.id)}
                   >
