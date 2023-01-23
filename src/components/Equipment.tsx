@@ -55,7 +55,7 @@ function Equipment() {
   const Items = ItemData as any
 
   return (
-    <div className="w-fit flex flex-col gap-2 p-3 rounded">
+    <div className="w-full flex flex-col gap-2 p-3 rounded">
       <H2>Equipment</H2>
       <EquipContainer>
         <EquipItem

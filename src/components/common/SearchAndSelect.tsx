@@ -6,7 +6,7 @@ import type {
   IItem,
 } from '../../data/dataTypes'
 import { useState } from 'react'
-
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 interface SearchAndSelectProps {
   data: {
     label: string
@@ -53,7 +53,10 @@ function SearchAndSelect({ data, onSelect }: SearchAndSelectProps) {
                   >
                     <h4>{item.name}</h4>
                     <div>
-                      <img src={`/images/${item.image}`} />
+                      <LazyLoadImage
+                        src={`/images/${item.image}`}
+                        className="w-full h-full"
+                      />
                     </div>
                   </button>
                 )
