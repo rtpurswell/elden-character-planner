@@ -13,9 +13,9 @@ function ClassSelector() {
   const selectedClassId = useSelector(
     (state: RootState) => state.character.classType,
   )
-  const selectedClass = Classes.find(
-    (c) => c.id === selectedClassId,
-  ) as IClassType
+  const selectedClass = Classes[
+    selectedClassId as keyof typeof Classes
+  ] as IClassType
   return (
     <div>
       {' '}
@@ -24,15 +24,28 @@ function ClassSelector() {
         value={selectedClassId}
         className="w-full bg-slate-700 p-3 rounded mb-5"
       >
-        {Classes.sort((a: any, b: any) => {
-          if (a.name < b.name) return -1
-          if (a.name > b.name) return 1
-          return 0
-        }).map((c) => (
-          <option value={c.id} key={c.id}>
-            {c.name}
-          </option>
-        ))}
+        {Object.keys(Classes)
+          .sort((a: any, b: any) => {
+            if (
+              Classes[a as keyof typeof Classes].name <
+              Classes[b as keyof typeof Classes].name
+            )
+              return -1
+            if (
+              Classes[a as keyof typeof Classes].name >
+              Classes[b as keyof typeof Classes].name
+            )
+              return 1
+            return 0
+          })
+          .map((c) => (
+            <option
+              value={Classes[c as keyof typeof Classes].id}
+              key={Classes[c as keyof typeof Classes].id}
+            >
+              {Classes[c as keyof typeof Classes].name}
+            </option>
+          ))}
       </select>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
         <div className=" bg-slate-800 rounded p-5 flex flex-col items-center">

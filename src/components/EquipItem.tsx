@@ -25,7 +25,7 @@ interface EquipItemProps {
     | 'hands'
   data: {
     label: string
-    value: IArmor[] | IWeapon[] | IShield[] | ITalisman[] | IItem[]
+    value: { [key: string]: IArmor | IWeapon | IShield | ITalisman | IItem }
   }[]
   storeKey: keyof typeof initialState
   actionCreator: ActionCreatorWithPayload<any, string>
@@ -38,16 +38,12 @@ function EquipItem({ type, data, storeKey, actionCreator }: EquipItemProps) {
   let selectedItem: IArmor | IWeapon | IShield | ITalisman | IItem | null = null
 
   const dispatch = useDispatch()
-  const value = useSelector((state: RootState) => state.character[storeKey])
-  if (value !== '') {
+  const itemId = useSelector((state: RootState) => state.character[storeKey])
+  if (itemId !== '') {
     for (let i = 0; i < data.length; i++) {
-      for (let j = 0; j < data[i].value.length; j++) {
-        if (data[i].value[j].id === value) {
-          selectedItem = data[i].value[j]
-          imageURL = selectedItem.image
-          i = data.length
-          break
-        }
+      if (data[i].value[itemId as any]) {
+        selectedItem = data[i].value[itemId as any]
+        imageURL = data[i].value[itemId as any].image
       }
     }
   }
@@ -99,14 +95,24 @@ function EquipItem({ type, data, storeKey, actionCreator }: EquipItemProps) {
     <div className="flex items-center justify-center">
       {modalOpen ? (
         <Modal onClose={handleModalToggle} title="">
-          <SearchAndSelect data={data} onSelect={handleItemSelect} />
+          <SearchAndSelect
+            data={data.map((dataItem) => {
+              return {
+                label: dataItem.label,
+                value: Object.keys(dataItem.value).map((dataItemKey) => {
+                  return dataItem.value[dataItemKey as any]
+                }),
+              }
+            })}
+            onSelect={handleItemSelect}
+          />
         </Modal>
       ) : null}
       <button
         onClick={handleModalToggle}
         className={`${
-          selectedItem ? `${bgClass} p-4` : null
-        }  bg-no-repeat bg-center rounded `}
+          selectedItem ? `${bgClass} p-2` : null
+        }  bg-no-repeat bg-center rounded bg-cover`}
       >
         <img
           src={`/images/${selectedItem ? imageURL : defaultImage}`}

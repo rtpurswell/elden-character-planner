@@ -30,22 +30,29 @@ import TalismanData from '../data/talismans.json'
 import ItemData from '../data/items.json'
 
 function Equipment() {
-  const Legs = ArmorData.filter(
-    (a: any) => a.category === 'Leg Armor',
-  ) as IArmor[]
-  const Helmets = ArmorData.filter(
-    (a: any) => a.category === 'Helm',
-  ) as IArmor[]
-  const Hands = ArmorData.filter(
-    (a: any) => a.category === 'Gauntlets',
-  ) as IArmor[]
-  const Armors = ArmorData.filter(
-    (a: any) => a.category === 'Chest Armor',
-  ) as IArmor[]
-  const Weapons = WeaponData as IWeapon[]
-  const Shields = ShieldData as IShield[]
-  const Talismans = TalismanData as ITalisman[]
-  const Items = ItemData as IItem[]
+  let Legs: any = {}
+  let Helmets: any = {}
+  let Hands: any = {}
+  let Armors: any = {}
+  Object.keys(ArmorData).forEach((key) => {
+    if (ArmorData[key as keyof typeof ArmorData].category === 'Leg Armor') {
+      Legs[key] = ArmorData[key as keyof typeof ArmorData]
+    }
+    if (ArmorData[key as keyof typeof ArmorData].category === 'Helm') {
+      Helmets[key] = ArmorData[key as keyof typeof ArmorData]
+    }
+    if (ArmorData[key as keyof typeof ArmorData].category === 'Gauntlets') {
+      Hands[key] = ArmorData[key as keyof typeof ArmorData]
+    }
+    if (ArmorData[key as keyof typeof ArmorData].category === 'Chest Armor') {
+      Armors[key] = ArmorData[key as keyof typeof ArmorData]
+    }
+  })
+
+  const Weapons = WeaponData as any
+  const Shields = ShieldData as any
+  const Talismans = TalismanData as any
+  const Items = ItemData as any
 
   return (
     <div className="w-fit flex flex-col gap-2 p-3 rounded">
