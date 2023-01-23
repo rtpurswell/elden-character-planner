@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { RootState } from './configureStore'
 import Classes from '../data/classes.json'
+import { IArmor, IShield, IWeapon } from '../data/dataTypes'
 export const initialState = {
   name: '',
   classType: '17f69874f7bl0i32gmqaffmbfral8f',
@@ -78,8 +79,7 @@ export const characterSlice = createSlice({
     },
     classUpdated: (state, action) => {
       state.classType = action.payload
-      state.defaultStats = Classes.find((x) => x.id === action.payload)
-        ?.stats as any
+      state.defaultStats = Classes[action.payload as keyof typeof Classes].stats
     },
     mainHand1Updated: (state, action) => {
       state.mainHand1 = action.payload
@@ -198,7 +198,7 @@ export const characterSlice = createSlice({
       state.spell12 = action.payload
     },
     defaultStatsUpdated: (state, action) => {
-      state.defaultStats = Classes.find((x) => x.id === state.classType)
+      state.defaultStats = Classes[state.classType as keyof typeof Classes]
         ?.stats as any
     },
   },
@@ -254,5 +254,42 @@ export const getCharacterLevel = (state: RootState) => {
 
   return totalLevel
 }
+// export const getCharacterWeight = (state: RootState) => {
+//   const getItemWeight = (itemId:string,data:Array<IWeapon|IShield|IArmor>)=>{
+//     return item.weight
+//   }
+//   let totalWeight = 0
+//   let weightArray:number[] =[]
+//   if(state.character.mainHand1 !== ""){
+//     weightArray.push(getItemWeight(state.character.mainHand1))
+//   }
+//   if(state.character.mainHand2 !== ""){
+//     weightArray.push(getItemWeight(state.character.mainHand2))
+//   }
+//   if(state.character.mainHand3 !== ""){
+//     weightArray.push(getItemWeight(state.character.mainHand3))
+//   }
+//   if(state.character.offHand1 !== ""){
+//     weightArray.push(getItemWeight(state.character.offHand1))
+//   }
+//   if(state.character.offHand2 !== ""){
+//     weightArray.push(getItemWeight(state.character.offHand2))
+//   }
+//   if(state.character.offHand3 !== ""){
+//     weightArray.push(getItemWeight(state.character.offHand3))
+//   }
+//   if(state.character.armor !== ""){
+//     weightArray.push(getItemWeight(state.character.armor))
+//   }
+//   if(state.character.helmet !== ""){
+//     weightArray.push(getItemWeight(state.character.helmet))
+//   }
+//   if(state.character.hands !== ""){
+//     weightArray.push(getItemWeight(state.character.hands))
+//   }
+//   if(state.character.legs !== ""){
+//     weightArray.push(getItemWeight(state.character.legs))
+//   }
 
+// }
 export default characterSlice.reducer
