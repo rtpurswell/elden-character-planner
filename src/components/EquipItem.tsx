@@ -111,12 +111,12 @@ function EquipItem({ type, data, storeKey, actionCreator }: EquipItemProps) {
       <button
         onClick={handleModalToggle}
         className={`${
-          selectedItem ? `${bgClass} p-2` : null
-        }  bg-no-repeat bg-center rounded bg-cover`}
+          selectedItem ? `${bgClass} p-4` : null
+        }  bg-no-repeat bg-center rounded bg-cover w-full h-full`}
       >
         <img
           src={`/images/${selectedItem ? imageURL : defaultImage}`}
-          className="aspect-square rounded"
+          className="aspect-square rounded w-full h-full"
         />
       </button>
     </div>
