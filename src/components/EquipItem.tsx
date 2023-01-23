@@ -34,7 +34,9 @@ function EquipItem({ type, data, storeKey, actionCreator }: EquipItemProps) {
   const [modalOpen, setModalOpen] = useState(false)
 
   let imageURL = ''
+  let defaultImage = ''
   let selectedItem: IArmor | IWeapon | IShield | ITalisman | IItem | null = null
+
   const dispatch = useDispatch()
   const value = useSelector((state: RootState) => state.character[storeKey])
   if (value !== '') {
@@ -42,53 +44,74 @@ function EquipItem({ type, data, storeKey, actionCreator }: EquipItemProps) {
       for (let j = 0; j < data[i].value.length; j++) {
         if (data[i].value[j].id === value) {
           selectedItem = data[i].value[j]
-          imageURL = `/images/${selectedItem.image}`
+          imageURL = selectedItem.image
           i = data.length
           break
         }
       }
     }
-  } else {
-    switch (type) {
-      case 'mainHand':
-        imageURL = 'default/weapon.png'
-        break
-      case 'armor':
-        imageURL = 'default/armor.png'
-        break
-      case 'offHand':
-        imageURL = 'default/off-hand.png'
-        break
-      case 'talisman':
-        imageURL = 'default/relic.png'
-        break
-      case 'item':
-        imageURL = 'default/item.png'
-        break
-      case 'helmet':
-        imageURL = 'default/helmet.png'
-        break
-      case 'legs':
-        imageURL = 'default/legs.png'
-        break
-      case 'hands':
-        imageURL = 'default/hands.png'
-        break
-    }
+  }
+  let bgClass = ''
+  switch (type) {
+    case 'mainHand':
+      defaultImage = 'default/weapon.png'
+      bgClass = "bg-[url('/images/default/weapon.png')]"
+      break
+    case 'armor':
+      defaultImage = 'default/armor.png'
+      bgClass = "bg-[url('/images/default/armor.png')]"
+      break
+    case 'offHand':
+      defaultImage = 'default/off-hand.png'
+      bgClass = "bg-[url('/images/default/off-hand.png')]"
+      break
+    case 'talisman':
+      defaultImage = 'default/talisman.png'
+      bgClass = "bg-[url('/images/default/talisman.png')]"
+      break
+    case 'item':
+      defaultImage = 'default/item.png'
+      bgClass = "bg-[url('/images/default/itme.png')]"
+      break
+    case 'helmet':
+      defaultImage = 'default/helmet.png'
+      bgClass = "bg-[url('/images/default/helmet.png')]"
+      break
+    case 'legs':
+      defaultImage = 'default/legs.png'
+      bgClass = "bg-[url('/images/default/legs.png')]"
+      break
+    case 'hands':
+      defaultImage = 'default/hands.png'
+      bgClass = "bg-[url('/images/default/hands.png')]"
+
+      break
   }
 
   const handleModalToggle = () => {
     setModalOpen(!modalOpen)
   }
+  const handleItemSelect = (value: string) => {
+    dispatch(actionCreator(value))
+    handleModalToggle()
+  }
   return (
-    <div>
+    <div className="flex items-center justify-center">
       {modalOpen ? (
         <Modal onClose={handleModalToggle} title="">
-          <SearchAndSelect data={data} onSelect={() => {}} />
+          <SearchAndSelect data={data} onSelect={handleItemSelect} />
         </Modal>
       ) : null}
-      <button onClick={handleModalToggle}>
-        <img src={`/images/${imageURL}`} className="aspect-square rounded" />
+      <button
+        onClick={handleModalToggle}
+        className={`${
+          selectedItem ? `${bgClass} p-4` : null
+        }  bg-no-repeat bg-center rounded `}
+      >
+        <img
+          src={`/images/${selectedItem ? imageURL : defaultImage}`}
+          className="aspect-square rounded"
+        />
       </button>
     </div>
   )
