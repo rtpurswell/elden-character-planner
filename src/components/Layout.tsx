@@ -2,7 +2,7 @@ import { useState } from 'react'
 import ClassSelector from './ClassSelector'
 import H1 from './common/H1'
 import Equipment from './Equipment'
-import Stats from './Stats'
+import Stats from './Attributes'
 
 function Layout() {
   return (

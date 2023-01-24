@@ -1,4 +1,4 @@
-import Stat from './Stat'
+import Stat from './Attribute'
 import H2 from './common/H2'
 import { useDispatch } from 'react-redux'
 import { defaultStatsUpdated } from '../store/character'
