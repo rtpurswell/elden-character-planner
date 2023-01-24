@@ -66,17 +66,6 @@ export const initialState = {
   },
 }
 
-export const getStats = (state: RootState) => {
-  const defaultstats = state.character.defaultStats
-  const stats = { ...state.character.stats }
-
-  for (const [key, value] of Object.entries(stats)) {
-    stats[key as keyof typeof stats] =
-      value + Number(defaultstats[key as keyof typeof defaultstats])
-  }
-  return stats
-}
-
 export const characterSlice = createSlice({
   name: 'character',
   initialState,
@@ -279,17 +268,17 @@ export const getCharacterWeight = (state: RootState) => {
   }
   if (state.character.mainHand2 !== '') {
     weightArray.push(
-      getItemWeight(state.character.mainHand1, [Weapons, Shields]),
+      getItemWeight(state.character.mainHand2, [Weapons, Shields]),
     )
   }
   if (state.character.mainHand3 !== '') {
     weightArray.push(
-      getItemWeight(state.character.mainHand1, [Weapons, Shields]),
+      getItemWeight(state.character.mainHand3, [Weapons, Shields]),
     )
   }
   if (state.character.offHand1 !== '') {
     weightArray.push(
-      getItemWeight(state.character.mainHand1, [Weapons, Shields]),
+      getItemWeight(state.character.offHand1, [Weapons, Shields]),
     )
   }
   if (state.character.offHand2 !== '') {
@@ -299,21 +288,115 @@ export const getCharacterWeight = (state: RootState) => {
   }
   if (state.character.offHand3 !== '') {
     weightArray.push(
-      getItemWeight(state.character.mainHand1, [Weapons, Shields]),
+      getItemWeight(state.character.offHand2, [Weapons, Shields]),
     )
   }
   if (state.character.armor !== '') {
     weightArray.push(getItemWeight(state.character.armor, [Armors]))
   }
   if (state.character.helmet !== '') {
-    weightArray.push(getItemWeight(state.character.armor, [Armors]))
+    weightArray.push(getItemWeight(state.character.helmet, [Armors]))
   }
   if (state.character.hands !== '') {
-    weightArray.push(getItemWeight(state.character.armor, [Armors]))
+    weightArray.push(getItemWeight(state.character.hands, [Armors]))
   }
   if (state.character.legs !== '') {
-    weightArray.push(getItemWeight(state.character.armor, [Armors]))
+    weightArray.push(getItemWeight(state.character.legs, [Armors]))
   }
-  return weightArray.reduce((a, b) => a + b, 0)
+
+  return Number(weightArray.reduce((a, b) => a + b, 0).toFixed(1))
 }
+export const getCharacterMaxWeight = (state: RootState) => {
+  const totalendurance =
+    state.character.stats.endurance + state.character.defaultStats.endurance
+  //below is the formula for calculating max equip load in elden ring
+  //   Endurance Level 1 - 25 --> 45 + 27*((Lvl - 8) / 17)
+  // Endurance Level 26 - 60 --> 72 + 48*(((Lvl - 25) / 35)^1.1)
+  // Endurance Level 61 - 99 --> 120 + 40*((Lvl - 60) / 39)
+  //Only the first decimal point is kept.
+  let totalWeight = 0
+  if (totalendurance <= 25) {
+    totalWeight = 45 + 27 * ((totalendurance - 8) / 17)
+  } else if (totalendurance <= 60) {
+    totalWeight = 72 + 48 * ((totalendurance - 25) / 35) ** 1.1
+  } else if (totalendurance <= 99) {
+    totalWeight = 120 + 40 * ((totalendurance - 60) / 39)
+  }
+  return Number(totalWeight.toFixed(1))
+}
+export const getCharacterStats = (state: RootState) => {
+  const totalStats = { ...state.character.defaultStats }
+  Object.keys(state.character.stats).forEach((statKey) => {
+    if (statKey === 'level') return
+    totalStats[statKey as keyof typeof totalStats] +=
+      state.character.stats[statKey as keyof typeof state.character.stats]
+  })
+  return totalStats
+}
+export const getCharacterHP = (state: RootState) => {
+  const totalVigor =
+    state.character.stats.vigor + state.character.defaultStats.vigor
+  /* 
+  Formula for calculating HP in elden ring
+  Vigor Level 1 - 25 --> 300 + 500*(((Lvl - 1) / 24)^1.5)
+Vigor Level 26 - 40 --> 800 + 650*(((Lvl - 25) / 15)^1.1)
+Vigor Level 41 - 60 --> 1450 + 450*(1 - (1 - ((Lvl - 40) / 20))^1.2)
+Vigor Level 61 - 99 --> 1900 + 200*(1 - (1 - ((Lvl - 60) / 39))^1.2)
+  */
+  let totalHP = 0
+  if (totalVigor <= 25) {
+    totalHP = 300 + 500 * ((totalVigor - 1) / 24) ** 1.5
+  } else if (totalVigor <= 40) {
+    totalHP = 800 + 650 * ((totalVigor - 25) / 15) ** 1.1
+  } else if (totalVigor <= 60) {
+    totalHP = 1450 + 450 * (1 - (1 - (totalVigor - 40) / 20) ** 1.2)
+  } else if (totalVigor <= 99) {
+    totalHP = 1900 + 200 * (1 - (1 - (totalVigor - 60) / 39) ** 1.2)
+  }
+  return Math.floor(totalHP)
+}
+export const getCharacterFP = (state: RootState) => {
+  const totalMind =
+    state.character.stats.mind + state.character.defaultStats.mind
+  /*
+  Formula for calculating FP in elden ring
+  Level 1 - 15 --> 50 + 45*((Lvl - 1) / 14)
+Level 16 - 35 --> 95 + 105*((Lvl - 15) / 20)
+Level 36 - 60 --> 200 + 150*(1 - (1 - ((Lvl - 35) / 25))^1.2))
+Level 61 - 99 --> 350 + 100*((Lvl - 60) / 39) */
+  let totalFP = 0
+  if (totalMind <= 15) {
+    totalFP = 50 + 45 * ((totalMind - 1) / 14)
+  } else if (totalMind <= 35) {
+    totalFP = 95 + 105 * ((totalMind - 15) / 20)
+  } else if (totalMind <= 60) {
+    totalFP = 200 + 150 * (1 - (1 - (totalMind - 35) / 25) ** 1.2)
+  } else if (totalMind <= 99) {
+    totalFP = 350 + 100 * ((totalMind - 60) / 39)
+  }
+  return Math.floor(totalFP)
+}
+export const getCharacterStamina = (state: RootState) => {
+  const totalEndurance =
+    state.character.stats.endurance + state.character.defaultStats.endurance
+  /*
+  Formula for calculating stamina in elden ring
+  Level 1 - 15: 80 + 25*((Lvl - 1) / 14)
+Level 16 - 35: 105 + 25*((Lvl - 15) / 15)
+Level 36 - 60: 130 + 25*((Lvl - 30) / 20)
+Level 61 - 99: 155 + 15*((Lvl - 50) / 49)
+*/
+  let totalStamina = 0
+  if (totalEndurance <= 15) {
+    totalStamina = 80 + 25 * ((totalEndurance - 1) / 14)
+  } else if (totalEndurance <= 35) {
+    totalStamina = 105 + 25 * ((totalEndurance - 15) / 15)
+  } else if (totalEndurance <= 60) {
+    totalStamina = 130 + 25 * ((totalEndurance - 30) / 20)
+  } else if (totalEndurance <= 99) {
+    totalStamina = 155 + 15 * ((totalEndurance - 50) / 49)
+  }
+  return Math.floor(totalStamina)
+}
+
 export default characterSlice.reducer
