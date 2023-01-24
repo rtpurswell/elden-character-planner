@@ -6,19 +6,28 @@ import type {
   IItem,
 } from '../../data/dataTypes'
 import { useState } from 'react'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
+import { trackWindowScroll } from 'react-lazy-load-image-component'
+import LazyImage from './LazyImage'
 interface SearchAndSelectProps {
   data: {
     label: string
     value: Array<IArmor | IWeapon | IShield | ITalisman | IItem>
+    placeholder: string
   }[]
   onSelect: (value: string) => void
+  scrollPosition: any
 }
-function SearchAndSelect({ data, onSelect }: SearchAndSelectProps) {
+function SearchAndSelect({
+  data,
+  onSelect,
+  scrollPosition,
+}: SearchAndSelectProps) {
   const [search, setSearch] = useState('')
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(e.target.value)
   }
+
   return (
     <div className="grid grid-cols-1 gap-2">
       <div>
@@ -47,15 +56,17 @@ function SearchAndSelect({ data, onSelect }: SearchAndSelectProps) {
               .map((item: IArmor | IItem | IShield | IWeapon | ITalisman) => {
                 return (
                   <button
-                    className="flex flex-col border-gray-500 border-2 rounded p-2 items-center"
+                    className="flex flex-col border-gray-500 border-2 rounded p-2 items-center aspect-square"
                     key={item.id}
                     onClick={() => onSelect(item.id)}
                   >
                     <h4>{item.name}</h4>
-                    <div>
-                      <LazyLoadImage
+                    <div className="w-full">
+                      <LazyImage
+                        placeholder={d.placeholder}
                         src={`/images/${item.image}`}
-                        className="w-full h-full"
+                        className=""
+                        scrollPosition={scrollPosition}
                       />
                     </div>
                   </button>
@@ -68,4 +79,4 @@ function SearchAndSelect({ data, onSelect }: SearchAndSelectProps) {
   )
 }
 
-export default SearchAndSelect
+export default trackWindowScroll(SearchAndSelect)

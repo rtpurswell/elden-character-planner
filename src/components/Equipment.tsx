@@ -61,8 +61,16 @@ function Equipment() {
         <EquipItem
           type="mainHand"
           data={[
-            { label: 'Weapons', value: Weapons },
-            { label: 'Shields', value: Shields },
+            {
+              label: 'Weapons',
+              value: Weapons,
+              placeholder: '/images/default/weapon.png',
+            },
+            {
+              label: 'Shields',
+              value: Shields,
+              placeholder: '/images/default/off-hand.png',
+            },
           ]}
           actionCreator={mainHand1Updated}
           storeKey="mainHand1"
@@ -70,8 +78,16 @@ function Equipment() {
         <EquipItem
           type="mainHand"
           data={[
-            { label: 'Weapons', value: Weapons },
-            { label: 'Shields', value: Shields },
+            {
+              label: 'Weapons',
+              value: Weapons,
+              placeholder: '/images/default/weapon.png',
+            },
+            {
+              label: 'Shields',
+              value: Shields,
+              placeholder: '/images/default/off-hand.png',
+            },
           ]}
           actionCreator={mainHand2Updated}
           storeKey="mainHand2"
@@ -79,8 +95,16 @@ function Equipment() {
         <EquipItem
           type="mainHand"
           data={[
-            { label: 'Weapons', value: Weapons },
-            { label: 'Shields', value: Shields },
+            {
+              label: 'Weapons',
+              value: Weapons,
+              placeholder: '/images/default/weapon.png',
+            },
+            {
+              label: 'Shields',
+              value: Shields,
+              placeholder: '/images/default/off-hand.png',
+            },
           ]}
           actionCreator={mainHand3Updated}
           storeKey="mainHand3"
@@ -90,8 +114,16 @@ function Equipment() {
         <EquipItem
           type="offHand"
           data={[
-            { label: 'Shields', value: Shields },
-            { label: 'Weapons', value: Weapons },
+            {
+              label: 'Shields',
+              value: Shields,
+              placeholder: '/images/default/off-hand.png',
+            },
+            {
+              label: 'Weapons',
+              value: Weapons,
+              placeholder: '/images/default/weapon.png',
+            },
           ]}
           actionCreator={offHand1Updated}
           storeKey="offHand1"
@@ -99,8 +131,16 @@ function Equipment() {
         <EquipItem
           type="offHand"
           data={[
-            { label: 'Shields', value: Shields },
-            { label: 'Weapons', value: Weapons },
+            {
+              label: 'Shields',
+              value: Shields,
+              placeholder: '/images/default/off-hand.png',
+            },
+            {
+              label: 'Weapons',
+              value: Weapons,
+              placeholder: '/images/default/weapon.png',
+            },
           ]}
           actionCreator={offHand2Updated}
           storeKey="offHand2"
@@ -108,8 +148,16 @@ function Equipment() {
         <EquipItem
           type="offHand"
           data={[
-            { label: 'Shields', value: Shields },
-            { label: 'Weapons', value: Weapons },
+            {
+              label: 'Shields',
+              value: Shields,
+              placeholder: '/images/default/off-hand.png',
+            },
+            {
+              label: 'Weapons',
+              value: Weapons,
+              placeholder: '/images/default/weapon.png',
+            },
           ]}
           actionCreator={offHand3Updated}
           storeKey="offHand3"
@@ -118,25 +166,49 @@ function Equipment() {
       <EquipContainer>
         <EquipItem
           type="helmet"
-          data={[{ label: 'Helms', value: Helmets }]}
+          data={[
+            {
+              label: 'Helms',
+              value: Helmets,
+              placeholder: '/images/default/helmet.png',
+            },
+          ]}
           actionCreator={helmetUpdated}
           storeKey="helmet"
         />
         <EquipItem
           type="armor"
-          data={[{ label: 'Chest Armor', value: Armors }]}
+          data={[
+            {
+              label: 'Chest Armor',
+              value: Armors,
+              placeholder: '/images/default/armor.png',
+            },
+          ]}
           actionCreator={armorUpdated}
           storeKey="armor"
         />
         <EquipItem
           type="hands"
-          data={[{ label: 'Gloves', value: Hands }]}
+          data={[
+            {
+              label: 'Gloves',
+              value: Hands,
+              placeholder: '/images/default/hands.png',
+            },
+          ]}
           actionCreator={handsUpdated}
           storeKey="hands"
         />
         <EquipItem
           type="legs"
-          data={[{ label: 'Leg Armor', value: Legs }]}
+          data={[
+            {
+              label: 'Leg Armor',
+              value: Legs,
+              placeholder: '/images/default/legs.png',
+            },
+          ]}
           actionCreator={legsUpdated}
           storeKey="legs"
         />
@@ -144,25 +216,49 @@ function Equipment() {
       <EquipContainer>
         <EquipItem
           type="talisman"
-          data={[{ label: 'Talismans', value: Talismans }]}
+          data={[
+            {
+              label: 'Talismans',
+              value: Talismans,
+              placeholder: '/images/default/talisman.png',
+            },
+          ]}
           actionCreator={talisman1Updated}
           storeKey="talisman1"
         />
         <EquipItem
           type="talisman"
-          data={[{ label: 'Talismans', value: Talismans }]}
+          data={[
+            {
+              label: 'Talismans',
+              value: Talismans,
+              placeholder: '/images/default/talisman.png',
+            },
+          ]}
           actionCreator={talisman2Updated}
           storeKey="talisman2"
         />
         <EquipItem
           type="talisman"
-          data={[{ label: 'Talismans', value: Talismans }]}
+          data={[
+            {
+              label: 'Talismans',
+              value: Talismans,
+              placeholder: '/images/default/talisman.png',
+            },
+          ]}
           actionCreator={talisman3Updated}
           storeKey="talisman3"
         />
         <EquipItem
           type="talisman"
-          data={[{ label: 'Talismans', value: Talismans }]}
+          data={[
+            {
+              label: 'Talismans',
+              value: Talismans,
+              placeholder: '/images/default/talisman.png',
+            },
+          ]}
           actionCreator={talisman4Updated}
           storeKey="talisman4"
         />
@@ -170,31 +266,61 @@ function Equipment() {
       <EquipContainer>
         <EquipItem
           type="item"
-          data={[{ label: 'Items', value: Items }]}
+          data={[
+            {
+              label: 'Items',
+              value: Items,
+              placeholder: '/images/default/item.png',
+            },
+          ]}
           actionCreator={item1Updated}
           storeKey="item1"
         />
         <EquipItem
           type="item"
-          data={[{ label: 'Items', value: Items }]}
+          data={[
+            {
+              label: 'Items',
+              value: Items,
+              placeholder: '/images/default/item.png',
+            },
+          ]}
           actionCreator={item2Updated}
           storeKey="item2"
         />
         <EquipItem
           type="item"
-          data={[{ label: 'Items', value: Items }]}
+          data={[
+            {
+              label: 'Items',
+              value: Items,
+              placeholder: '/images/default/item.png',
+            },
+          ]}
           actionCreator={item3Updated}
           storeKey="item3"
         />
         <EquipItem
           type="item"
-          data={[{ label: 'Items', value: Items }]}
+          data={[
+            {
+              label: 'Items',
+              value: Items,
+              placeholder: '/images/default/item.png',
+            },
+          ]}
           actionCreator={item4Updated}
           storeKey="item4"
         />
         <EquipItem
           type="item"
-          data={[{ label: 'Items', value: Items }]}
+          data={[
+            {
+              label: 'Items',
+              value: Items,
+              placeholder: '/images/default/item.png',
+            },
+          ]}
           actionCreator={item5Updated}
           storeKey="item5"
         />

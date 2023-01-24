@@ -26,6 +26,7 @@ interface EquipItemProps {
   data: {
     label: string
     value: { [key: string]: IArmor | IWeapon | IShield | ITalisman | IItem }
+    placeholder: string
   }[]
   storeKey: keyof typeof initialState
   actionCreator: ActionCreatorWithPayload<any, string>
@@ -99,6 +100,7 @@ function EquipItem({ type, data, storeKey, actionCreator }: EquipItemProps) {
             data={data.map((dataItem) => {
               return {
                 label: dataItem.label,
+                placeholder: dataItem.placeholder,
                 value: Object.keys(dataItem.value).map((dataItemKey) => {
                   return dataItem.value[dataItemKey as any]
                 }),
