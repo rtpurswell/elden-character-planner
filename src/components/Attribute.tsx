@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import {
-  getStats,
+  getCharacterStats,
   statUpdated,
   statDecremented,
   statIncremented,
@@ -13,7 +13,7 @@ interface StatProps {
   name: string
 }
 function Stat({ name }: StatProps) {
-  const stats = useSelector(getStats)
+  const stats = useSelector(getCharacterStats)
   const defaultStats = useSelector(
     (state: RootState) => state.character.defaultStats,
   )
@@ -55,7 +55,7 @@ function Stat({ name }: StatProps) {
     }
   }
   return (
-    <div className="flex p-1">
+    <>
       {modalOpen ? (
         <Modal title={name} onClose={handleModalToggle}>
           <div className="flex flex-col gap-3">
@@ -81,31 +81,14 @@ function Stat({ name }: StatProps) {
           </div>
         </Modal>
       ) : null}
-      <div>{name}</div>
-      <div className="ml-auto flex gap-2">
-        <div>
-          <button className="rounded p-3 bg-red-600" onClick={handleDecrement}>
-            -
-          </button>
-        </div>
-        <div className="align-middle text-center">
-          <button
-            className="p-3 bg-slate-700 rounded w-12"
-            onClick={handleModalToggle}
-          >
-            {stats[name.toLowerCase() as keyof typeof stats]}
-          </button>
-        </div>
-        <div>
-          <button
-            className="rounded p-3 bg-green-600"
-            onClick={handleIncrement}
-          >
-            +
-          </button>
-        </div>
-      </div>
-    </div>
+      <button
+        className="p-3 rounded bg-slate-700 flex justify-between"
+        onClick={handleModalToggle}
+      >
+        <span className="font-bold">{name}:</span>
+        <span>{stats[name.toLowerCase() as keyof typeof stats]}</span>
+      </button>
+    </>
   )
 }
 
