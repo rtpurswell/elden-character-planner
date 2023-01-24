@@ -1,6 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { RootState } from './configureStore'
 import Classes from '../data/classes.json'
+import Weapon from '../data/weapons.json'
+import Shield from '../data/shields.json'
+import Armor from '../data/armors.json'
+const Weapons = Weapon as { [key: string]: IWeapon }
+const Shields = Shield as { [key: string]: IShield }
+const Armors = Armor as { [key: string]: IArmor }
+
 import { IArmor, IShield, IWeapon } from '../data/dataTypes'
 export const initialState = {
   name: '',
@@ -254,42 +261,59 @@ export const getCharacterLevel = (state: RootState) => {
 
   return totalLevel
 }
-// export const getCharacterWeight = (state: RootState) => {
-//   const getItemWeight = (itemId:string,data:Array<IWeapon|IShield|IArmor>)=>{
-//     return item.weight
-//   }
-//   let totalWeight = 0
-//   let weightArray:number[] =[]
-//   if(state.character.mainHand1 !== ""){
-//     weightArray.push(getItemWeight(state.character.mainHand1))
-//   }
-//   if(state.character.mainHand2 !== ""){
-//     weightArray.push(getItemWeight(state.character.mainHand2))
-//   }
-//   if(state.character.mainHand3 !== ""){
-//     weightArray.push(getItemWeight(state.character.mainHand3))
-//   }
-//   if(state.character.offHand1 !== ""){
-//     weightArray.push(getItemWeight(state.character.offHand1))
-//   }
-//   if(state.character.offHand2 !== ""){
-//     weightArray.push(getItemWeight(state.character.offHand2))
-//   }
-//   if(state.character.offHand3 !== ""){
-//     weightArray.push(getItemWeight(state.character.offHand3))
-//   }
-//   if(state.character.armor !== ""){
-//     weightArray.push(getItemWeight(state.character.armor))
-//   }
-//   if(state.character.helmet !== ""){
-//     weightArray.push(getItemWeight(state.character.helmet))
-//   }
-//   if(state.character.hands !== ""){
-//     weightArray.push(getItemWeight(state.character.hands))
-//   }
-//   if(state.character.legs !== ""){
-//     weightArray.push(getItemWeight(state.character.legs))
-//   }
-
-// }
+export const getCharacterWeight = (state: RootState) => {
+  const getItemWeight = (
+    itemId: string,
+    data: { [key: string]: IArmor | IShield | IWeapon }[],
+  ) => {
+    if (data[0][itemId]) return data[0][itemId as keyof typeof data[0]].weight
+    else if (data[1][itemId])
+      return data[1][itemId as keyof typeof data[1]].weight
+    return 0
+  }
+  let weightArray: number[] = []
+  if (state.character.mainHand1 !== '') {
+    weightArray.push(
+      getItemWeight(state.character.mainHand1, [Weapons, Shields]),
+    )
+  }
+  if (state.character.mainHand2 !== '') {
+    weightArray.push(
+      getItemWeight(state.character.mainHand1, [Weapons, Shields]),
+    )
+  }
+  if (state.character.mainHand3 !== '') {
+    weightArray.push(
+      getItemWeight(state.character.mainHand1, [Weapons, Shields]),
+    )
+  }
+  if (state.character.offHand1 !== '') {
+    weightArray.push(
+      getItemWeight(state.character.mainHand1, [Weapons, Shields]),
+    )
+  }
+  if (state.character.offHand2 !== '') {
+    weightArray.push(
+      getItemWeight(state.character.mainHand1, [Weapons, Shields]),
+    )
+  }
+  if (state.character.offHand3 !== '') {
+    weightArray.push(
+      getItemWeight(state.character.mainHand1, [Weapons, Shields]),
+    )
+  }
+  if (state.character.armor !== '') {
+    weightArray.push(getItemWeight(state.character.armor, [Armors]))
+  }
+  if (state.character.helmet !== '') {
+    weightArray.push(getItemWeight(state.character.armor, [Armors]))
+  }
+  if (state.character.hands !== '') {
+    weightArray.push(getItemWeight(state.character.armor, [Armors]))
+  }
+  if (state.character.legs !== '') {
+    weightArray.push(getItemWeight(state.character.armor, [Armors]))
+  }
+  return weightArray.reduce((a, b) => a + b, 0)
+}
 export default characterSlice.reducer
