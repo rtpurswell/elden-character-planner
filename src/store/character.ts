@@ -65,12 +65,30 @@ export const initialState = {
     level: 5,
   },
   ashesOfWar: {
-    mainHand1: '',
-    mainHand2: '',
-    mainHand3: '',
-    offHand1: '',
-    offHand2: '',
-    offHand3: '',
+    mainHand1: {
+      id: '',
+      affinity: false,
+    },
+    mainHand2: {
+      id: '',
+      affinity: false,
+    },
+    mainHand3: {
+      id: '',
+      affinity: false,
+    },
+    offHand1: {
+      id: '',
+      affinity: false,
+    },
+    offHand2: {
+      id: '',
+      affinity: false,
+    },
+    offHand3: {
+      id: '',
+      affinity: false,
+    },
   },
 }
 
@@ -205,9 +223,11 @@ export const characterSlice = createSlice({
       state.defaultStats = Classes[state.classType as keyof typeof Classes]
         ?.stats as any
     },
-    ashesOfWarUpdated: (state, action) => {
-      state.ashesOfWar[action.payload.key as keyof typeof state.ashesOfWar] =
-        action.payload.value
+    ashOfWarUpdated: (state, action) => {
+      state.ashesOfWar[action.payload.key as keyof typeof state.ashesOfWar] = {
+        id: action.payload.id,
+        affinity: action.payload.affinity,
+      }
     },
   },
 })
@@ -250,7 +270,7 @@ export const {
   spell11Updated,
   spell12Updated,
   defaultStatsUpdated,
-  ashesOfWarUpdated,
+  ashOfWarUpdated,
 } = characterSlice.actions
 
 //Selectors
