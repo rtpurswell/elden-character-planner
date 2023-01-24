@@ -2286,8 +2286,8 @@
         "amount": 63
       },
       {
-        "name": "Mag63",
-        "amount": null
+        "name": "Mag",
+        "amount": 0
       },
       {
         "name": "Fire",
@@ -2881,19 +2881,19 @@
       },
       {
         "name": "Mag",
-        "amount": null
+        "amount": 0
       },
       {
         "name": "Fire",
-        "amount": null
+        "amount": 0
       },
       {
         "name": "Ligt",
-        "amount": null
+        "amount": 0
       },
       {
         "name": "Holy",
-        "amount": null
+        "amount": 0
       },
       {
         "name": "Crit",
@@ -2935,7 +2935,7 @@
     "requiredAttributes": [
       {
         "name": "Strength",
-        "amount": null
+        "amount": 0
       }
     ],
     "category": "Medium Shield",
@@ -4615,7 +4615,7 @@
     "requiredAttributes": [
       {
         "name": "32",
-        "amount": null
+        "amount": 0
       }
     ],
     "category": "Greatshield",

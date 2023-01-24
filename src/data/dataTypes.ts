@@ -12,8 +12,8 @@ export interface IWeapon {
     amount: number
   }[]
   scalesWith: {
-    name: 'Str' | 'Dex' | 'Int' | 'Fai' | 'Arc'
-    scaling: 'S' | 'A' | 'B' | 'C' | 'D' | 'E'
+    name: 'Str' | 'Dex' | 'Int' | 'Fai' | 'Arc' | '-'
+    scaling?: 'S' | 'A' | 'B' | 'C' | 'D' | 'E'
   }[]
   requiredAttributes: {
     name: 'Str' | 'Dex'
@@ -58,23 +58,23 @@ export interface IShield {
   }[]
   scalesWith: {
     name: 'Str' | 'Dex' | 'Int' | 'Fai'
-    scaling: 'S' | 'A' | 'B' | 'C' | 'D' | 'E'
+    scaling?: 'S' | 'A' | 'B' | 'C' | 'D' | 'E' | '-'
   }[]
   requiredAttributes: {
     name: 'Str' | 'Dex'
     amount: number
   }[]
-  category: string
+  category: string | null
   weight: number
 }
 
 export interface IItem {
   id: string
   name: string
-  image: string
+  image: string | null
   description: string
   type: string
-  effect: string
+  effect?: string
 }
 
 export interface IIncantation {
@@ -122,7 +122,7 @@ export interface IClassType {
 export interface IArmor {
   id: string
   name: string
-  image: string
+  image: string | null
   description: string
   category: string
   dmgNegation: {

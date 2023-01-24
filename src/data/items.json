@@ -1984,7 +1984,7 @@
     "id": "17f6995d3d0l0i202bb7hvshtg9usl",
     "name": "Remembrance Of Hoarah Loux",
     "image": "items/17f6995d3d0l0i202bb7hvshtg9usl.png",
-    "description": null,
+    "description": "The power of its namesake can be unlocked by the Finger Reader. Alternatively, it can be used to gain a great bounty of runes",
     "type": "- ",
     "effect": "Take the power of its namesake via Finger Reader"
   },
@@ -2880,7 +2880,7 @@
     "id": "17f69c804ccl0i20izz3axyvu3nii",
     "name": "Note: Demi-human Mobs",
     "image": "items/17f69c804ccl0i20izz3axyvu3nii.png",
-    "description": null,
+    "description": "Note imparting knowledge in brief.",
     "type": "Info Item",
     "effect": "Note imparting knowledge in brief."
   },

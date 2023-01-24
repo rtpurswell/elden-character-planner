@@ -47,14 +47,7 @@ function EquipItem({
 
   const dispatch = useDispatch()
   const itemId = useSelector((state: RootState) => state.character[storeKey])
-  if (itemId !== '') {
-    for (let i = 0; i < data.length; i++) {
-      if (data[i].value[itemId as any]) {
-        selectedItem = data[i].value[itemId as any]
-        imageURL = data[i].value[itemId as any].image
-      }
-    }
-  }
+
   let bgClass = ''
   switch (type) {
     case 'mainHand':
@@ -91,7 +84,14 @@ function EquipItem({
 
       break
   }
-
+  if (itemId !== '') {
+    for (let i = 0; i < data.length; i++) {
+      if (data[i].value[itemId as any]) {
+        selectedItem = data[i].value[itemId as any]
+        imageURL = data[i].value[itemId as any].image || defaultImage
+      }
+    }
+  }
   const handleModalToggle = () => {
     setModalOpen(!modalOpen)
   }

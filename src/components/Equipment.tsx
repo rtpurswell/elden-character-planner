@@ -28,31 +28,31 @@ import ShieldData from '../data/shields.json'
 import ArmorData from '../data/armors.json'
 import TalismanData from '../data/talismans.json'
 import ItemData from '../data/items.json'
-
+const Armors = ArmorData as { [key: string]: IArmor }
 function Equipment() {
-  let Legs: any = {}
-  let Helmets: any = {}
-  let Hands: any = {}
-  let Armors: any = {}
-  Object.keys(ArmorData).forEach((key) => {
-    if (ArmorData[key as keyof typeof ArmorData].category === 'Leg Armor') {
-      Legs[key] = ArmorData[key as keyof typeof ArmorData]
+  let Legs = {} as { [key: string]: IArmor }
+  let Helmets = {} as { [key: string]: IArmor }
+  let Hands = {} as { [key: string]: IArmor }
+  let Armors = {} as { [key: string]: IArmor }
+  Object.keys(Armors).forEach((key) => {
+    if (Armors[key as keyof typeof Armors].category === 'Leg Armor') {
+      Legs[key] = Armors[key as keyof typeof Armors]
     }
-    if (ArmorData[key as keyof typeof ArmorData].category === 'Helm') {
-      Helmets[key] = ArmorData[key as keyof typeof ArmorData]
+    if (Armors[key as keyof typeof Armors].category === 'Helm') {
+      Helmets[key] = Armors[key as keyof typeof Armors]
     }
-    if (ArmorData[key as keyof typeof ArmorData].category === 'Gauntlets') {
-      Hands[key] = ArmorData[key as keyof typeof ArmorData]
+    if (Armors[key as keyof typeof Armors].category === 'Gauntlets') {
+      Hands[key] = Armors[key as keyof typeof Armors]
     }
-    if (ArmorData[key as keyof typeof ArmorData].category === 'Chest Armor') {
-      Armors[key] = ArmorData[key as keyof typeof ArmorData]
+    if (Armors[key as keyof typeof Armors].category === 'Chest Armor') {
+      Armors[key] = Armors[key as keyof typeof Armors]
     }
   })
 
-  const Weapons = WeaponData as any
-  const Shields = ShieldData as any
-  const Talismans = TalismanData as any
-  const Items = ItemData as any
+  const Weapons = WeaponData as { [key: string]: IWeapon }
+  const Shields = ShieldData as { [key: string]: IShield }
+  const Talismans = TalismanData as { [key: string]: ITalisman }
+  const Items = ItemData as { [key: string]: IItem }
 
   return (
     <div className="w-full flex flex-col gap-2 p-3 rounded">
