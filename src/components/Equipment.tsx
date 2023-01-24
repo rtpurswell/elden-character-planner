@@ -33,7 +33,7 @@ function Equipment() {
   let Legs = {} as { [key: string]: IArmor }
   let Helmets = {} as { [key: string]: IArmor }
   let Hands = {} as { [key: string]: IArmor }
-  let Armors = {} as { [key: string]: IArmor }
+  let Chest = {} as { [key: string]: IArmor }
   Object.keys(Armors).forEach((key) => {
     if (Armors[key as keyof typeof Armors].category === 'Leg Armor') {
       Legs[key] = Armors[key as keyof typeof Armors]
@@ -45,7 +45,7 @@ function Equipment() {
       Hands[key] = Armors[key as keyof typeof Armors]
     }
     if (Armors[key as keyof typeof Armors].category === 'Chest Armor') {
-      Armors[key] = Armors[key as keyof typeof Armors]
+      Chest[key] = Armors[key as keyof typeof Armors]
     }
   })
 
