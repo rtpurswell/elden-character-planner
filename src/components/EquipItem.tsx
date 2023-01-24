@@ -104,6 +104,10 @@ function EquipItem({
       {modalOpen ? (
         <Modal onClose={handleModalToggle} title={label}>
           <SearchAndSelect
+            handleClear={() => {
+              dispatch(actionCreator(''))
+              handleModalToggle()
+            }}
             data={data.map((dataItem) => {
               return {
                 label: dataItem.label,
