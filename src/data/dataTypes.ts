@@ -144,3 +144,11 @@ export interface IArmor {
   }[]
   weight: number
 }
+export interface IAshes {
+  id: string
+  name: string
+  image: string
+  description: string
+  affinity: string
+  skill: string
+}
