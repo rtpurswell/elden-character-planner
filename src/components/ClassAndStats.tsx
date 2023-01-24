@@ -15,12 +15,11 @@ import {
   getCharacterFP,
 } from '../store/character'
 import Attribute from './Attribute'
-import { defaultStatsUpdated } from '../store/character'
 
 function ClassSelector() {
   const [modalOpen, setModalOpen] = useState(false)
   const dispatch = useDispatch()
-  dispatch(defaultStatsUpdated({}))
+
   const HP = useSelector(getCharacterHP)
   const level = useSelector(getCharacterLevel)
   const weight = useSelector(getCharacterWeight)
@@ -161,7 +160,7 @@ function ClassSelector() {
             {Object.keys(stats).map((key) => {
               if (key === 'level') return null
               const capitolKey = key.charAt(0).toUpperCase() + key.slice(1)
-              return <Attribute name={capitolKey} />
+              return <Attribute name={capitolKey} key={key} />
             })}
           </div>
         </div>
