@@ -1,8 +1,13 @@
+import AshesOfWar from './AshesOfWar'
 import ClassAndStats from './ClassAndStats'
 import H1 from './common/H1'
 import Equipment from './Equipment'
-
+import IncantationsAndSorceries from './IncantationsAndSorceries'
+import { useDispatch } from 'react-redux'
+import { defaultStatsUpdated } from '../store/character'
 function Layout() {
+  const dispatch = useDispatch()
+  dispatch(defaultStatsUpdated({}))
   return (
     <main className="w-full flex flex-col md:grid md:grid-cols-2  text-white gap-10 p-5">
       <div className="md:col-span-2">
@@ -15,8 +20,12 @@ function Layout() {
         <Equipment />
       </div>
 
-      <div className=" bg-slate-800 p-5 rounded"></div>
-      <div className=" bg-slate-800 p-5 rounded"></div>
+      <div className=" bg-slate-800 p-5 rounded">
+        <AshesOfWar />
+      </div>
+      <div className=" bg-slate-800 p-5 rounded">
+        <IncantationsAndSorceries />
+      </div>
     </main>
   )
 }
