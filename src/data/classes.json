@@ -169,23 +169,7 @@
       "arcane": 8
     }
   },
-  "17f69ee8607l0i32idtlwxck1pcnha": {
-    "id": "17f69ee8607l0i32idtlwxck1pcnha",
-    "name": "Warrior",
-    "image": "classes/17f69ee8607l0i32idtlwxck1pcnha.png",
-    "description": "A twinblade wielding warrior from a nomadic tribe. An origin of exceptional technique",
-    "stats": {
-      "level": 8,
-      "vigor": 11,
-      "mind": 12,
-      "endurance": 11,
-      "strength": 10,
-      "dexterity": 16,
-      "intelligence": 10,
-      "faith": 8,
-      "arcane": 9
-    }
-  },
+  
   "17f699f7b88l0i32igi1s4fq0046de": {
     "id": "17f699f7b88l0i32igi1s4fq0046de",
     "name": "Enchanted Knight",
