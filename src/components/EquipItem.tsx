@@ -28,10 +28,17 @@ interface EquipItemProps {
     value: { [key: string]: IArmor | IWeapon | IShield | ITalisman | IItem }
     placeholder: string
   }[]
+  label: string
   storeKey: keyof typeof initialState
   actionCreator: ActionCreatorWithPayload<any, string>
 }
-function EquipItem({ type, data, storeKey, actionCreator }: EquipItemProps) {
+function EquipItem({
+  type,
+  data,
+  storeKey,
+  actionCreator,
+  label,
+}: EquipItemProps) {
   const [modalOpen, setModalOpen] = useState(false)
 
   let imageURL = ''
@@ -95,7 +102,7 @@ function EquipItem({ type, data, storeKey, actionCreator }: EquipItemProps) {
   return (
     <div className="flex items-center justify-center">
       {modalOpen ? (
-        <Modal onClose={handleModalToggle} title="">
+        <Modal onClose={handleModalToggle} title={label}>
           <SearchAndSelect
             data={data.map((dataItem) => {
               return {

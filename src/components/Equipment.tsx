@@ -60,6 +60,7 @@ function Equipment() {
       <EquipContainer>
         <EquipItem
           type="mainHand"
+          label="Main Hand"
           data={[
             {
               label: 'Weapons',
@@ -77,6 +78,7 @@ function Equipment() {
         />
         <EquipItem
           type="mainHand"
+          label="Main Hand 2"
           data={[
             {
               label: 'Weapons',
@@ -94,6 +96,7 @@ function Equipment() {
         />
         <EquipItem
           type="mainHand"
+          label="Main Hand 3"
           data={[
             {
               label: 'Weapons',
@@ -113,6 +116,7 @@ function Equipment() {
       <EquipContainer>
         <EquipItem
           type="offHand"
+          label="Off Hand"
           data={[
             {
               label: 'Shields',
@@ -130,6 +134,7 @@ function Equipment() {
         />
         <EquipItem
           type="offHand"
+          label="Off Hand 2"
           data={[
             {
               label: 'Shields',
@@ -147,6 +152,7 @@ function Equipment() {
         />
         <EquipItem
           type="offHand"
+          label="Off Hand 3"
           data={[
             {
               label: 'Shields',
@@ -166,6 +172,7 @@ function Equipment() {
       <EquipContainer>
         <EquipItem
           type="helmet"
+          label="Helm"
           data={[
             {
               label: 'Helms',
@@ -178,6 +185,7 @@ function Equipment() {
         />
         <EquipItem
           type="armor"
+          label="Chest Armor"
           data={[
             {
               label: 'Chest Armor',
@@ -190,6 +198,7 @@ function Equipment() {
         />
         <EquipItem
           type="hands"
+          label="Glauntlets"
           data={[
             {
               label: 'Gloves',
@@ -202,6 +211,7 @@ function Equipment() {
         />
         <EquipItem
           type="legs"
+          label="Leg Armor"
           data={[
             {
               label: 'Leg Armor',
@@ -216,6 +226,7 @@ function Equipment() {
       <EquipContainer>
         <EquipItem
           type="talisman"
+          label="Talisman"
           data={[
             {
               label: 'Talismans',
@@ -228,6 +239,7 @@ function Equipment() {
         />
         <EquipItem
           type="talisman"
+          label="Talisman 2"
           data={[
             {
               label: 'Talismans',
@@ -240,6 +252,7 @@ function Equipment() {
         />
         <EquipItem
           type="talisman"
+          label="Talisman 3"
           data={[
             {
               label: 'Talismans',
@@ -252,6 +265,7 @@ function Equipment() {
         />
         <EquipItem
           type="talisman"
+          label="Talisman 4"
           data={[
             {
               label: 'Talismans',
@@ -266,6 +280,7 @@ function Equipment() {
       <EquipContainer>
         <EquipItem
           type="item"
+          label="Item"
           data={[
             {
               label: 'Items',
@@ -278,6 +293,7 @@ function Equipment() {
         />
         <EquipItem
           type="item"
+          label="Item 2"
           data={[
             {
               label: 'Items',
@@ -290,6 +306,7 @@ function Equipment() {
         />
         <EquipItem
           type="item"
+          label="Item 3"
           data={[
             {
               label: 'Items',
@@ -302,6 +319,7 @@ function Equipment() {
         />
         <EquipItem
           type="item"
+          label="Item 4"
           data={[
             {
               label: 'Items',
@@ -314,6 +332,7 @@ function Equipment() {
         />
         <EquipItem
           type="item"
+          label="Item 5"
           data={[
             {
               label: 'Items',
