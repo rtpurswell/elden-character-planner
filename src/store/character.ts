@@ -316,12 +316,12 @@ export const getCharacterWeight = (state: RootState) => {
   }
   if (state.character.offHand2 !== '') {
     weightArray.push(
-      getItemWeight(state.character.mainHand1, [Weapons, Shields]),
+      getItemWeight(state.character.offHand2, [Weapons, Shields]),
     )
   }
   if (state.character.offHand3 !== '') {
     weightArray.push(
-      getItemWeight(state.character.offHand2, [Weapons, Shields]),
+      getItemWeight(state.character.offHand3, [Weapons, Shields]),
     )
   }
   if (state.character.armor !== '') {
