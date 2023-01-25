@@ -57,7 +57,7 @@ function Equipment() {
   return (
     <div className="w-full flex flex-col gap-2 p-3 rounded">
       <H2>Equipment</H2>
-      <EquipContainer>
+      <EquipContainer >
         <EquipItem
           type="mainHand"
           label="Main Hand"
@@ -113,7 +113,7 @@ function Equipment() {
           storeKey="mainHand3"
         />
       </EquipContainer>
-      <EquipContainer>
+      <EquipContainer >
         <EquipItem
           type="offHand"
           label="Off Hand"
@@ -330,19 +330,7 @@ function Equipment() {
           actionCreator={item4Updated}
           storeKey="item4"
         />
-        <EquipItem
-          type="item"
-          label="Item 5"
-          data={[
-            {
-              label: 'Items',
-              value: Items,
-              placeholder: '/images/default/item.png',
-            },
-          ]}
-          actionCreator={item5Updated}
-          storeKey="item5"
-        />
+
       </EquipContainer>
     </div>
   )
