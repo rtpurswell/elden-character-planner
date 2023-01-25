@@ -32,12 +32,12 @@ export const initialState = {
   item4: '',
   item5: '',
   stats: {
-    vigor: 0,
-    mind: 0,
-    endurance: 0,
     strength: 0,
+    vigor: 0,
     dexterity: 0,
+    endurance: 0,
     intelligence: 0,
+    mind: 0,
     faith: 0,
     arcane: 0,
   },
@@ -54,12 +54,12 @@ export const initialState = {
   spell11: '',
   spell12: '',
   defaultStats: {
-    vigor: 0,
-    mind: 0,
-    endurance: 0,
     strength: 0,
+    vigor: 0,
     dexterity: 0,
+    endurance: 0,
     intelligence: 0,
+    mind: 0,
     faith: 0,
     arcane: 0,
     level: 5,
@@ -358,12 +358,14 @@ export const getCharacterMaxWeight = (state: RootState) => {
   return Number(totalWeight.toFixed(1))
 }
 export const getCharacterStats = (state: RootState) => {
-  const totalStats = { ...state.character.defaultStats }
-  Object.keys(state.character.stats).forEach((statKey) => {
-    if (statKey === 'level') return
+  const totalStats = { ...state.character.stats }
+  Object.keys(state.character.defaultStats).forEach((statKey) => {
     totalStats[statKey as keyof typeof totalStats] +=
-      state.character.stats[statKey as keyof typeof state.character.stats]
+      state.character.defaultStats[
+        statKey as keyof typeof state.character.defaultStats
+      ]
   })
+
   return totalStats
 }
 export const getCharacterHP = (state: RootState) => {

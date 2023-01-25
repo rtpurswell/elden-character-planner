@@ -11,10 +11,9 @@ import {
   getCharacterLevel,
   getCharacterWeight,
   getCharacterMaxWeight,
-  getCharacterStats,
   getCharacterFP,
 } from '../store/character'
-import Attribute from './Attribute'
+import Attributes from './Attributes'
 
 function ClassSelector() {
   const [modalOpen, setModalOpen] = useState(false)
@@ -24,7 +23,7 @@ function ClassSelector() {
   const level = useSelector(getCharacterLevel)
   const weight = useSelector(getCharacterWeight)
   const maxWeight = useSelector(getCharacterMaxWeight)
-  const stats = useSelector(getCharacterStats)
+
   const FP = useSelector(getCharacterFP)
   const equipPercent = (weight / maxWeight) * 100
   const equipText =
@@ -154,16 +153,7 @@ function ClassSelector() {
             Equip Load: {weight}/{maxWeight} ({equipText})
           </div>
         </div>
-        <div className="flex flex-col bg-slate-800 rounded p-5">
-          <H2 className=" mb-2">Attributes</H2>
-          <div className="grid grid-cols-2 gap-2">
-            {Object.keys(stats).map((key) => {
-              if (key === 'level') return null
-              const capitolKey = key.charAt(0).toUpperCase() + key.slice(1)
-              return <Attribute name={capitolKey} key={key} />
-            })}
-          </div>
-        </div>
+        <Attributes />
       </div>
     </>
   )
