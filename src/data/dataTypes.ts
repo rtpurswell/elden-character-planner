@@ -126,22 +126,22 @@ export interface IArmor {
   description: string
   category: string
   dmgNegation: {
-    name:
-      | 'Phy'
-      | 'Mag'
-      | 'Fire'
-      | 'Ligt'
-      | 'Holy'
-      | 'Strike'
-      | 'Slash'
-      | 'Pierce'
-
-    amount: number
-  }[]
+    Phy: number
+    Strike: number
+    Slash: number
+    Pierce: number
+    Magic: number
+    Fire: number
+    Ligt: number
+    Holy: number
+  }
   resistance: {
-    name: 'Immunity' | 'Robustness' | 'Focus' | 'Vitality' | 'Poise'
-    amount: number
-  }[]
+    Immunity: number
+    Robustness: number
+    Focus: number
+    Vitality: number
+    Poise: number
+  }
   weight: number
 }
 export interface IAsh {
