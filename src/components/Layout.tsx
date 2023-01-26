@@ -1,4 +1,3 @@
-import AshesOfWar from './AshesOfWar'
 import ClassAndStats from './ClassAndStats'
 import H1 from './common/H1'
 import Equipment from './Equipment'
@@ -20,9 +19,7 @@ function Layout() {
         <Equipment />
       </div>
 
-      <div className=" bg-slate-800 p-5 rounded">
-        <AshesOfWar />
-      </div>
+      <div className=" bg-slate-800 p-5 rounded"></div>
       <div className=" bg-slate-800 p-5 rounded">
         <IncantationsAndSorceries />
       </div>

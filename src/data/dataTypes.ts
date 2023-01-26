@@ -152,3 +152,18 @@ export interface IAsh {
   affinity: string
   skill: string
 }
+
+export type IAffinity =
+  | 'Standard'
+  | 'Heavy'
+  | 'Keen'
+  | 'Quality'
+  | 'Magic'
+  | 'Cold'
+  | 'Fire'
+  | 'Flame Art'
+  | 'Lightning'
+  | 'Sacred'
+  | 'Poison'
+  | 'Blood'
+  | 'Occult'
