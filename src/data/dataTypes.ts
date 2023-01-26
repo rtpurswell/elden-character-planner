@@ -126,13 +126,13 @@ export interface IArmor {
   description: string
   category: string
   dmgNegation: {
-    Phy: number
+    Physical: number
     Strike: number
     Slash: number
     Pierce: number
     Magic: number
     Fire: number
-    Ligt: number
+    Light: number
     Holy: number
   }
   resistance: {
