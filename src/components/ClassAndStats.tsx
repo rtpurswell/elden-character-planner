@@ -1,6 +1,5 @@
 import Classes from '../data/classes.json'
 import { useDispatch, useSelector } from 'react-redux'
-import { classUpdated } from '../store/character'
 import { RootState } from '../store/configureStore'
 import type { IClassType } from '../data/dataTypes'
 import H2 from './common/H2'
@@ -12,10 +11,12 @@ import {
   getCharacterWeight,
   getCharacterMaxWeight,
   getCharacterFP,
+  classUpdated,
 } from '../store/character'
 import Attributes from './Attributes'
+import ClassSelector from './ClassSelector'
 
-function ClassSelector() {
+function ClassAndStats() {
   const [modalOpen, setModalOpen] = useState(false)
   const dispatch = useDispatch()
 
@@ -133,7 +134,7 @@ function ClassSelector() {
       ) : null}
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-        <button
+        {/* <button
           onClick={handleModalToggle}
           className=" bg-slate-800 rounded p-5 flex flex-col items-center"
         >
@@ -143,7 +144,8 @@ function ClassSelector() {
             className="rounded max-h-32"
           />
           <p>{selectedClass?.description}</p>
-        </button>
+        </button> */}
+        <ClassSelector />
         <div className="flex flex-col bg-slate-800 rounded p-5">
           <H2 className=" mb-2">Stats</H2>
           <div>Character Level: {level}</div>
@@ -159,4 +161,4 @@ function ClassSelector() {
   )
 }
 
-export default ClassSelector
+export default ClassAndStats
