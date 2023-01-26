@@ -431,13 +431,13 @@ export const getCharacterDefenses = (state: RootState) => {
     Poise: 0,
   }
   const negation = {
-    Phy: 0,
+    Physical: 0,
     Strike: 0,
     Slash: 0,
     Pierce: 0,
     Magic: 0,
     Fire: 0,
-    Ligt: 0,
+    Light: 0,
     Holy: 0,
   }
   if (state.character.armor !== '') {
