@@ -3,7 +3,9 @@ interface H2Props {
   className?: string
 }
 function H2({ children, className }: H2Props) {
-  return <h2 className={`text-2xl ${className}`}>{children}</h2>
+  return (
+    <h2 className={`text-2xl ${className ? className : ''}`}>{children}</h2>
+  )
 }
 
 export default H2
