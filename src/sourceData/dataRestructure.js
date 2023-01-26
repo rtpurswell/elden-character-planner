@@ -1,4 +1,4 @@
-const Original = require('./ashes.json')
+const Original = require('./armors.json')
 const fs = require('fs')
 const OutputObject = {}
 
@@ -6,9 +6,21 @@ Original.forEach((weapon) => {
   // Object.keys(weapon.stats).forEach((key) => {
   //   weapon.stats[key] = Number(weapon.stats[key])
   // })
-  weapon.name = weapon.name.replace('Ash Of War: ', '')
-  console.log(weapon.name)
+  let resObject = {}
+  let negObject = {}
+  weapon.resistance.forEach((resistance) => {
+    resObject[resistance.name] = resistance.amount
+  })
+  weapon.dmgNegation.forEach((dmgNegation) => {
+    negObject[dmgNegation.name] = dmgNegation.amount
+  })
+
+  weapon.resistance = resObject
+  weapon.dmgNegation = negObject
   OutputObject[weapon.id] = weapon
 })
 
-fs.writeFileSync('./src/data/ashes.json', JSON.stringify(OutputObject, null, 2))
+fs.writeFileSync(
+  './src/data/armors.json',
+  JSON.stringify(OutputObject, null, 2),
+)
