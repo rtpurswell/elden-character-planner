@@ -4,11 +4,12 @@ import Classes from '../data/classes.json'
 import Weapon from '../data/weapons.json'
 import Shield from '../data/shields.json'
 import Armor from '../data/armors.json'
+import { IArmor, IShield, IWeapon } from '../data/dataTypes'
+
 const Weapons = Weapon as { [key: string]: IWeapon }
 const Shields = Shield as { [key: string]: IShield }
 const Armors = Armor as { [key: string]: IArmor }
 
-import { IArmor, IShield, IWeapon } from '../data/dataTypes'
 export const initialState = {
   name: '',
   classType: '17f69874f7bl0i32gmqaffmbfral8f',
@@ -421,5 +422,68 @@ Level 61 - 99: 155 + 15*((Lvl - 50) / 49)
   }
   return Math.floor(totalStamina)
 }
-
+export const getCharacterDefenses = (state: RootState) => {
+  const resistances = {
+    Immunity: 0,
+    Robustness: 0,
+    Focus: 0,
+    Vitality: 0,
+    Poise: 0,
+  }
+  const negation = {
+    Phy: 0,
+    Strike: 0,
+    Slash: 0,
+    Pierce: 0,
+    Magic: 0,
+    Fire: 0,
+    Ligt: 0,
+    Holy: 0,
+  }
+  if (state.character.armor !== '') {
+    const armor = Armors[state.character.armor]
+    Object.keys(resistances).forEach((key) => {
+      resistances[key as keyof typeof resistances] +=
+        armor.resistance[key as keyof typeof armor.resistance]
+    })
+    Object.keys(negation).forEach((key) => {
+      negation[key as keyof typeof negation] +=
+        armor.dmgNegation[key as keyof typeof armor.dmgNegation]
+    })
+  }
+  if (state.character.helmet !== '') {
+    const helmet = Armors[state.character.helmet]
+    Object.keys(resistances).forEach((key) => {
+      resistances[key as keyof typeof resistances] +=
+        helmet.resistance[key as keyof typeof helmet.resistance]
+    })
+    Object.keys(negation).forEach((key) => {
+      negation[key as keyof typeof negation] +=
+        helmet.dmgNegation[key as keyof typeof helmet.dmgNegation]
+    })
+  }
+  if (state.character.hands !== '') {
+    const hands = Armors[state.character.hands]
+    Object.keys(resistances).forEach((key) => {
+      resistances[key as keyof typeof resistances] +=
+        hands.resistance[key as keyof typeof hands.resistance]
+    })
+    Object.keys(negation).forEach((key) => {
+      negation[key as keyof typeof negation] +=
+        hands.dmgNegation[key as keyof typeof hands.dmgNegation]
+    })
+  }
+  if (state.character.legs !== '') {
+    const legs = Armors[state.character.legs]
+    Object.keys(resistances).forEach((key) => {
+      resistances[key as keyof typeof resistances] +=
+        legs.resistance[key as keyof typeof legs.resistance]
+    })
+    Object.keys(negation).forEach((key) => {
+      negation[key as keyof typeof negation] +=
+        legs.dmgNegation[key as keyof typeof legs.dmgNegation]
+    })
+  }
+  return { resistances, negation }
+}
 export default characterSlice.reducer
