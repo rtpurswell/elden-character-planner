@@ -195,6 +195,119 @@ function Equipment() {
       ]}
     />
   )
+  const armorComponent = (
+    <div className="col-span-4 grid grid-cols-4 gap-2">
+      {' '}
+      <EquipItem
+        type="helmet"
+        label="Helm"
+        data={[
+          {
+            label: 'Helms',
+            value: Helmets,
+            placeholder: '/images/default/helmet.png',
+          },
+        ]}
+        actionCreator={helmetUpdated}
+        storeKey="helmet"
+      />
+      <EquipItem
+        type="armor"
+        label="Chest Armor"
+        data={[
+          {
+            label: 'Chest Armor',
+            value: Armors,
+            placeholder: '/images/default/armor.png',
+          },
+        ]}
+        actionCreator={armorUpdated}
+        storeKey="armor"
+      />
+      <EquipItem
+        type="hands"
+        label="Glauntlets"
+        data={[
+          {
+            label: 'Gloves',
+            value: Hands,
+            placeholder: '/images/default/hands.png',
+          },
+        ]}
+        actionCreator={handsUpdated}
+        storeKey="hands"
+      />
+      <EquipItem
+        type="legs"
+        label="Leg Armor"
+        data={[
+          {
+            label: 'Leg Armor',
+            value: Legs,
+            placeholder: '/images/default/legs.png',
+          },
+        ]}
+        actionCreator={legsUpdated}
+        storeKey="legs"
+      />
+    </div>
+  )
+  const talismanComponent = (
+    <div className="col-span-4 grid grid-cols-4 gap-2">
+      <EquipItem
+        type="talisman"
+        label="Talisman"
+        data={[
+          {
+            label: 'Talismans',
+            value: Talismans,
+            placeholder: '/images/default/talisman.png',
+          },
+        ]}
+        actionCreator={talisman1Updated}
+        storeKey="talisman1"
+      />
+      <EquipItem
+        type="talisman"
+        label="Talisman 2"
+        data={[
+          {
+            label: 'Talismans',
+            value: Talismans,
+            placeholder: '/images/default/talisman.png',
+          },
+        ]}
+        actionCreator={talisman2Updated}
+        storeKey="talisman2"
+      />
+      <EquipItem
+        type="talisman"
+        label="Talisman 3"
+        data={[
+          {
+            label: 'Talismans',
+            value: Talismans,
+            placeholder: '/images/default/talisman.png',
+          },
+        ]}
+        actionCreator={talisman3Updated}
+        storeKey="talisman3"
+      />
+      <EquipItem
+        type="talisman"
+        label="Talisman 4"
+        data={[
+          {
+            label: 'Talismans',
+            value: Talismans,
+            placeholder: '/images/default/talisman.png',
+          },
+        ]}
+        actionCreator={talisman4Updated}
+        storeKey="talisman4"
+      />
+    </div>
+  )
   return (
     <div className="w-full flex flex-col gap-2 p-3 rounded">
       <H2>Equipment</H2>
@@ -214,115 +327,16 @@ function Equipment() {
           { title: 'Ashes', component: offHandAshesComponent },
         ]}
       />
+      <EquipContainer
+        options={[{ title: 'Armor', component: armorComponent }]}
+      />
+
+      <EquipContainer
+        options={[{ title: 'Talismans', component: talismanComponent }]}
+      />
       {/* 
-      <EquipContainer>
-        <EquipItem
-          type="helmet"
-          label="Helm"
-          data={[
-            {
-              label: 'Helms',
-              value: Helmets,
-              placeholder: '/images/default/helmet.png',
-            },
-          ]}
-          actionCreator={helmetUpdated}
-          storeKey="helmet"
-        />
-        <EquipItem
-          type="armor"
-          label="Chest Armor"
-          data={[
-            {
-              label: 'Chest Armor',
-              value: Armors,
-              placeholder: '/images/default/armor.png',
-            },
-          ]}
-          actionCreator={armorUpdated}
-          storeKey="armor"
-        />
-        <EquipItem
-          type="hands"
-          label="Glauntlets"
-          data={[
-            {
-              label: 'Gloves',
-              value: Hands,
-              placeholder: '/images/default/hands.png',
-            },
-          ]}
-          actionCreator={handsUpdated}
-          storeKey="hands"
-        />
-        <EquipItem
-          type="legs"
-          label="Leg Armor"
-          data={[
-            {
-              label: 'Leg Armor',
-              value: Legs,
-              placeholder: '/images/default/legs.png',
-            },
-          ]}
-          actionCreator={legsUpdated}
-          storeKey="legs"
-        />
-      </EquipContainer>
-      <EquipContainer>
-        <EquipItem
-          type="talisman"
-          label="Talisman"
-          data={[
-            {
-              label: 'Talismans',
-              value: Talismans,
-              placeholder: '/images/default/talisman.png',
-            },
-          ]}
-          actionCreator={talisman1Updated}
-          storeKey="talisman1"
-        />
-        <EquipItem
-          type="talisman"
-          label="Talisman 2"
-          data={[
-            {
-              label: 'Talismans',
-              value: Talismans,
-              placeholder: '/images/default/talisman.png',
-            },
-          ]}
-          actionCreator={talisman2Updated}
-          storeKey="talisman2"
-        />
-        <EquipItem
-          type="talisman"
-          label="Talisman 3"
-          data={[
-            {
-              label: 'Talismans',
-              value: Talismans,
-              placeholder: '/images/default/talisman.png',
-            },
-          ]}
-          actionCreator={talisman3Updated}
-          storeKey="talisman3"
-        />
-        <EquipItem
-          type="talisman"
-          label="Talisman 4"
-          data={[
-            {
-              label: 'Talismans',
-              value: Talismans,
-              placeholder: '/images/default/talisman.png',
-            },
-          ]}
-          actionCreator={talisman4Updated}
-          storeKey="talisman4"
-        />
-      </EquipContainer>
+      
+   
       <EquipContainer>
         <EquipItem
           type="item"
