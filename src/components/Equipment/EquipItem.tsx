@@ -123,7 +123,7 @@ function EquipItem({
       ) : null}
       <button
         onClick={handleModalToggle}
-        className={`bg-no-repeat bg-center rounded bg-cover w-full h-full border-2 border-indigo-500 md:p-2 bg-slate-700`}
+        className={`bg-no-repeat bg-center rounded bg-cover w-full h-full border-2 border-purple-400 md:p-2 bg-slate-700`}
       >
         <img
           src={`/images/${selectedItem ? imageURL : defaultImage}`}
