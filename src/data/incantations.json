@@ -1112,7 +1112,20 @@
     "cost": 36,
     "slots": 1,
     "effects": "Channels dragon to spew icy breath.",
-    "requires": null
+    "requires": [
+      {
+        "name": "Intelligence",
+        "amount": 0
+      },
+      {
+        "name": "Faith",
+        "amount": 0
+      },
+      {
+        "name": "Arcane",
+        "amount": 0
+      }
+    ]
   },
   "Ax": {
     "id": "Ax",
@@ -1842,7 +1855,7 @@
     "type": "Incantations",
     "cost": 15,
     "slots": 1,
-    "effects": null,
+    "effects": "None",
     "requires": [
       {
         "name": "Intelligence",
@@ -2275,7 +2288,20 @@
     "cost": 27,
     "slots": 1,
     "effects": "Enchants right-hand armament with lightning damage",
-    "requires": null
+    "requires": [
+      {
+        "name": "Intelligence",
+        "amount": 0
+      },
+      {
+        "name": "Faith",
+        "amount": 0
+      },
+      {
+        "name": "Arcane",
+        "amount": 0
+      }
+    ]
   },
   "ar": {
     "id": "ar",

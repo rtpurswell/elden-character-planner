@@ -80,7 +80,7 @@ export interface IItem {
 export interface IIncantation {
   id: string
   name: string
-  image: string
+  image: string | null
   description: string
   type: string
   cost: number
