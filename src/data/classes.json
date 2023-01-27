@@ -1,6 +1,6 @@
 {
-  "17f69d71826l0i32gkm3ndn3kywxqj": {
-    "id": "17f69d71826l0i32gkm3ndn3kywxqj",
+  "AA": {
+    "id": "AA",
     "name": "Hero",
     "image": "classes/17f69d71826l0i32gkm3ndn3kywxqj.png",
     "description": "A stalwart Hero, at home with a battleaxe, descended from a badlands chieftain",
@@ -16,8 +16,8 @@
       "arcane": 11
     }
   },
-  "17f69b2dd76l0i32gljr3f62pkzhjo": {
-    "id": "17f69b2dd76l0i32gljr3f62pkzhjo",
+  "Aa": {
+    "id": "Aa",
     "name": "Warrior",
     "image": "classes/17f69b2dd76l0i32gljr3f62pkzhjo.png",
     "description": "A twinblade wielding warrior from a nomadic tribe. An origin of exceptional technique",
@@ -33,8 +33,8 @@
       "arcane": 9
     }
   },
-  "17f69874f7bl0i32gmqaffmbfral8f": {
-    "id": "17f69874f7bl0i32gmqaffmbfral8f",
+  "AB": {
+    "id": "AB",
     "name": "Astrologer",
     "image": "classes/17f69874f7bl0i32gmqaffmbfral8f.png",
     "description": "A scholar who reads fate in the stars. Heir to the school of glintstone sorcery",
@@ -50,8 +50,8 @@
       "arcane": 9
     }
   },
-  "17f69d43011l0i32gojnjjs9mcg0k": {
-    "id": "17f69d43011l0i32gojnjjs9mcg0k",
+  "Ab": {
+    "id": "Ab",
     "name": "Bandit",
     "image": "classes/17f69d43011l0i32gojnjjs9mcg0k.png",
     "description": "A dangerous bandit who strikes for weak points. Excels at ranged combat with bows",
@@ -67,8 +67,8 @@
       "arcane": 14
     }
   },
-  "17f69d1f5f1l0i32grxfonsq64huhl": {
-    "id": "17f69d1f5f1l0i32grxfonsq64huhl",
+  "AC": {
+    "id": "AC",
     "name": "Prisoner",
     "image": "classes/17f69d1f5f1l0i32grxfonsq64huhl.png",
     "description": "A prisoner bound in an iron mask. Studied in glintstone sorcery, having lived among the elite prior to sentencing.",
@@ -84,8 +84,8 @@
       "arcane": 9
     }
   },
-  "17f69db959fl0i32hhpwdbjko0bj57": {
-    "id": "17f69db959fl0i32hhpwdbjko0bj57",
+  "Ac": {
+    "id": "Ac",
     "name": "Vagabond",
     "image": "classes/17f69db959fl0i32hhpwdbjko0bj57.png",
     "description": "A knight exiled from their homeland to wander. A solid, armor-clad origin.",
@@ -101,8 +101,8 @@
       "arcane": 7
     }
   },
-  "17f69774a83l0i32hjagb1nwcs1hne": {
-    "id": "17f69774a83l0i32hjagb1nwcs1hne",
+  "AD": {
+    "id": "AD",
     "name": "Confessor",
     "image": "classes/17f69774a83l0i32hjagb1nwcs1hne.png",
     "description": "A church spy adept at covert operations. Equally adept with a sword as they are with incantations",
@@ -118,8 +118,8 @@
       "arcane": 9
     }
   },
-  "17f69d4ac46l0i32hju3peo5nijzbj": {
-    "id": "17f69d4ac46l0i32hju3peo5nijzbj",
+  "Ad": {
+    "id": "Ad",
     "name": "Wretch",
     "image": "classes/17f69d4ac46l0i32hju3peo5nijzbj.png",
     "description": "A poor purposeless osd naked as they day they were born. A nice club is all they have",
@@ -135,8 +135,8 @@
       "arcane": 10
     }
   },
-  "17f69932fefl0i32hlnekz682ixnvc": {
-    "id": "17f69932fefl0i32hlnekz682ixnvc",
+  "AE": {
+    "id": "AE",
     "name": "Prophet",
     "image": "classes/17f69932fefl0i32hlnekz682ixnvc.png",
     "description": "A seer ostracized for inauspicious prophecies. Well versed in healing incantations",
@@ -152,8 +152,8 @@
       "arcane": 10
     }
   },
-  "17f699f7f4cl0i32huaj53vkdxeh7b": {
-    "id": "17f699f7f4cl0i32huaj53vkdxeh7b",
+  "Ae": {
+    "id": "Ae",
     "name": "Samurai",
     "image": "classes/17f699f7f4cl0i32huaj53vkdxeh7b.png",
     "description": "A capable fighter from the distant land of reeds. Handy with Katana and Longbows",
@@ -169,9 +169,8 @@
       "arcane": 8
     }
   },
-  
-  "17f699f7b88l0i32igi1s4fq0046de": {
-    "id": "17f699f7b88l0i32igi1s4fq0046de",
+  "AF": {
+    "id": "AF",
     "name": "Enchanted Knight",
     "image": "classes/17f699f7b88l0i32igi1s4fq0046de.png",
     "description": "These Knights have embraced the power of Glintstone, facing enemies in melee combat while simultaneously casting spells. They often seek out and destroy those who use magic for nefarious purposes.",
@@ -187,8 +186,8 @@
       "arcane": 5
     }
   },
-  "17f696a77e2l0i32ijd9jdi2d0lbe6": {
-    "id": "17f696a77e2l0i32ijd9jdi2d0lbe6",
+  "Af": {
+    "id": "Af",
     "name": "Bloody Wolf",
     "image": "classes/17f696a77e2l0i32ijd9jdi2d0lbe6.png",
     "description": "The Wolf is cunning, steadfast and deadly. These warriors have no fear and face down death with unmatched vigor and pride.",
@@ -204,8 +203,8 @@
       "arcane": 6
     }
   },
-  "17f69a15924l0i32ioiaydv6hkjxhj": {
-    "id": "17f69a15924l0i32ioiaydv6hkjxhj",
+  "AG": {
+    "id": "AG",
     "name": "Champion",
     "image": "classes/17f69a15924l0i32ioiaydv6hkjxhj.png",
     "description": "Equipped with a Sacred Seal and an Axe, the Champion can burn foes from a distance or take them head on in melee combat. They are ferocious fighters, who do not fear death.",
