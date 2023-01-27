@@ -33,23 +33,27 @@ function ClassSelector() {
     dispatch(classUpdated(ClassKeys[newIndex]))
   }
   return (
-    <div className="grid grid-cols-8">
-      <button
-        className="p-2 bg-green-500 rounded "
-        onClick={handleClassChange('backward')}
-      >{`<`}</button>
-      <div className=" bg-slate-800 rounded p-5 flex flex-col items-center col-span-6 ">
-        <H2>{selectedClass?.name}</H2>
+    <div className="bg-slate-800 rounded p-5">
+      <div className="grid grid-cols-6">
+        {' '}
+        <button
+          className="p-2 bg-purple-400 rounded font-bold"
+          onClick={handleClassChange('backward')}
+        >{`< <`}</button>
+        <H2 className="col-span-4 text-center">{selectedClass?.name}</H2>
+        <button
+          className="p-2 bg-purple-400 rounded font-bold"
+          onClick={handleClassChange('forward')}
+        >{`> >`}</button>
+      </div>
+
+      <div className=" flex flex-col items-center ">
         <img
           src={`/images/${selectedClass?.image}`}
           className="rounded max-h-32"
         />
         <p>{selectedClass?.description}</p>
       </div>
-      <button
-        className="p-2 bg-green-500 rounded "
-        onClick={handleClassChange('forward')}
-      >{`>`}</button>
     </div>
   )
 }
