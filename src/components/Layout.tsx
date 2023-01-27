@@ -15,7 +15,7 @@ function Layout() {
       <div className="md:col-span-2">
         <ClassAndStats />
       </div>
-      <div className=" bg-slate-800 flex flex-col p-5 rounded md:row-span-2">
+      <div className=" bg-slate-800 rounded md:row-span-2">
         <Equipment />
       </div>
 
