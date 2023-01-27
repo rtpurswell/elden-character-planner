@@ -70,7 +70,7 @@ function Affinity({ storeKey, label }: AffinityProps) {
     <>
       {selectedWeaponId !== '' ? (
         <button
-          className={`bg-slate-700 rounded md:p-2 aspect-square flex items-center justify-center border-2 border-purple-400 font-bold text- ${
+          className={`bg-slate-700 rounded md:p-2 aspect-square flex items-center justify-center border-2 border-purple-400 font-bold text-xs md:text-base ${
             colorMap[selectedAffinity as keyof typeof colorMap]
           }`}
           onClick={handleAffinityUpdate}
