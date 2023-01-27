@@ -12,7 +12,7 @@ const Armors = Armor as { [key: string]: IArmor }
 
 export const initialState = {
   name: '',
-  classType: '17f69874f7bl0i32gmqaffmbfral8f',
+  classType: 'AA',
   mainHand1: '',
   mainHand2: '',
   mainHand3: '',
