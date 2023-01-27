@@ -1,5 +1,5 @@
-const Original = require('./shields.json')
-const Weapons = require('./weapons.json')
+const Original = require('./sorceries.json')
+const Incantations = require('./incantations.json')
 const fs = require('fs')
 const OutputObject = {}
 
@@ -16,7 +16,7 @@ function generateKeys(amountOfKeys) {
     }
   }
 }
-const weaponLength = Object.keys(Weapons).length
+const weaponLength = Object.keys(Incantations).length
 const originalKeys = Object.keys(Original)
 const newKeys = generateKeys(originalKeys.length + weaponLength)
 originalKeys.forEach((key, index) => {
@@ -25,6 +25,6 @@ originalKeys.forEach((key, index) => {
 })
 
 fs.writeFileSync(
-  './src/data/shields2.json',
+  './src/data/sorceries2.json',
   JSON.stringify(OutputObject, null, 2),
 )
