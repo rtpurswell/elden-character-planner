@@ -1,0 +1,55 @@
+{
+    "AA" : {
+        "id": "AA",
+        "name": "Standard"
+    },
+    "AB" : {
+        "id": "AB",
+        "name": "Heavy"
+    },
+    "AC" : {
+        "id": "AC",
+        "name": "Keen"
+    },
+    "AD" : {
+        "id": "AD",
+        "name": "Quality"
+    },
+    "AE" : {
+        "id": "AE",
+        "name": "Magic"
+    },
+    "AF" : {
+        "id": "AF",
+        "name": "Cold"
+    },
+    "AG" : {
+        "id": "AG",
+        "name": "Fire"
+    },
+    "AH" : {
+        "id": "AH",
+        "name": "Flame Art"
+    },
+    "AI" : {
+        "id": "AI",
+        "name": "Lightning"
+    },
+    "AJ" : {
+        "id": "AJ",
+        "name": "Sacred"
+    },
+    "AK" : {
+        "id": "AK",
+        "name": "Poison"
+    },
+    "AL" : {
+        "id": "AL",
+        "name": "Blood"
+    },
+    "AM" : {
+        "id": "AM",
+        "name": "Occult"
+    }
+
+}

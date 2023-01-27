@@ -1,6 +1,6 @@
 {
-  "AA": {
-    "id": "AA",
+  "cB": {
+    "id": "cB",
     "name": "Buckler",
     "image": "shields/17f69c62fe8l0i124u8fi4nc7dbfbf.png",
     "description": "A small metal roundshield. The bump in the center enables parrying techniques. A well-timed parry can break an enemy's stance, allowing a critical hit. Best suited for those prepared to take the risk to reap their reward.",
@@ -79,8 +79,8 @@
     "category": "Small Shield",
     "weight": 1.5
   },
-  "Aa": {
-    "id": "Aa",
+  "cb": {
+    "id": "cb",
     "name": "Perfumer's Shield",
     "image": "shields/17f694b8615l0i124uyj41jnmpvitp.png",
     "description": "Golden shield used by the perfumers of Leyndell during military service. Made to be thin and light of weight, even those lacking strength can employ this immunity-boosting shield.",
@@ -151,8 +151,8 @@
     "category": "Small Shield",
     "weight": 1.5
   },
-  "AB": {
-    "id": "AB",
+  "cC": {
+    "id": "cC",
     "name": "Man-serpent's Shield",
     "image": "shields/17f69b5141al0i124v8pxr1ks1ekij.png",
     "description": "Small copper dome-shaped roundshield carried by the man-serpents of Mt. Gelmir. Said to have been tempered in lava, it boasts great resistance to fire.",
@@ -223,8 +223,8 @@
     "category": "Small Shield",
     "weight": 2
   },
-  "Ab": {
-    "id": "Ab",
+  "cc": {
+    "id": "cc",
     "name": "Pillory Shield",
     "image": "shields/17f69a7085fl0i124y1772hsc2fore.png",
     "description": "Pillory made to punish serious felons, used as a shield. Though made of good, sturdy wood, it is only a makeshift tool and performs as such. Perhaps due to its use as a device with which the guilty were made to endure prolonged suffering, it raises vitality.",
@@ -295,8 +295,8 @@
     "category": "Small Shield",
     "weight": 3.5
   },
-  "AC": {
-    "id": "AC",
+  "cD": {
+    "id": "cD",
     "name": "Rickety Shield",
     "image": "shields/17f6976985el0i124znputjytfizsr.png",
     "description": "A creaky old wooden shield, circular in shape. Roughly reinforced with vines or some such. There are countless other shields available of better make. This piece of scrap isn't worth the effort of equipping.",
@@ -367,8 +367,8 @@
     "category": "Small Shield",
     "weight": 1
   },
-  "Ac": {
-    "id": "Ac",
+  "cd": {
+    "id": "cd",
     "name": "Beastman's Jar-shield",
     "image": "shields/17f693d58ael0i125pgfsn2zo4078i.png",
     "description": "Shield fashioned from a tall broken jar carried by the beastmen of Farum Azula. There is a particular knack to wielding it. The beastmen have always fired earthenware jars for the express purpose of making shields. Such are their ways, strange though they are.",
@@ -439,8 +439,8 @@
     "category": "Small Shield",
     "weight": 5
   },
-  "AD": {
-    "id": "AD",
+  "cE": {
+    "id": "cE",
     "name": "Red Thorn Roundshield",
     "image": "shields/17f69c6b08dl0i125phehezloe6mgp.png",
     "description": "A small, wooden roundshield. It is light and easy to use, but cannot offer the damage negation of a metal shield. Its emblem is an ancient red thorn design. Though it isn't much, it boosts fire damage negation.",
@@ -511,8 +511,8 @@
     "category": "Small Shield",
     "weight": 1.5
   },
-  "Ad": {
-    "id": "Ad",
+  "ce": {
+    "id": "ce",
     "name": "Riveted Wooden Shield",
     "image": "shields/17f6976f39fl0i125rvey7g31uyix.png",
     "description": "Small wooden roundshield that has been reinforced with metal. It is light and easy to handle, but cannot offer the damage negation of a true metal shield. The design riveted to the center represents both sword and tree.",
@@ -583,8 +583,8 @@
     "category": "Small Shield",
     "weight": 2
   },
-  "AE": {
-    "id": "AE",
+  "cF": {
+    "id": "cF",
     "name": "Scripture Wooden Shield",
     "image": "shields/17f69cbb4afl0i125s3vg05tmg3h9.png",
     "description": "A small, wooden roundshield. It is light and easy to handle, but cannot offer the damage negation of a metal shield. An ancient cipher engraving linesd the circumference. Though it isn't much, it boosts holy damage negation.",
@@ -655,8 +655,8 @@
     "category": "Small Shield",
     "weight": 1.5
   },
-  "Ae": {
-    "id": "Ae",
+  "cf": {
+    "id": "cf",
     "name": "Blue-white Wooden Shield",
     "image": "shields/17f69652424l0i125urgh9o09mhavm.png",
     "description": "Small wooden roundshield that has been reinforced with metal. It is light and easy to handle, but cannot offer the damage negation of a true metal shield. The design is said to represent the stars of the night sky, portending fate.",
@@ -727,8 +727,8 @@
     "category": "Small Shield",
     "weight": 2
   },
-  "AF": {
-    "id": "AF",
+  "cG": {
+    "id": "cG",
     "name": "Rift Shield",
     "image": "shields/17f69c01371l0i126fsrmmhmt78m7.png",
     "description": "Small metal roundshiled depicting a sinister rift. An antiquated charm that glares back at an enemy, it boosts focus.",
@@ -799,8 +799,8 @@
     "category": "Small Shield",
     "weight": 2
   },
-  "Af": {
-    "id": "Af",
+  "cg": {
+    "id": "cg",
     "name": "Iron Roundshield",
     "image": "shields/17f69b10c2el0i126k1rlvenfih79r.png",
     "description": "An ordinary small roundshield made of metal. Heavier than a wooden shield, but boasts higher damage negation. Finely balanced, this shield is easy to use.",
@@ -871,8 +871,8 @@
     "category": "Small Shield",
     "weight": 3
   },
-  "AG": {
-    "id": "AG",
+  "cH": {
+    "id": "cH",
     "name": "Smoldering Shield",
     "image": "shields/17f69bd6428l0i126mo49q97n1both.png",
     "description": "Small shield made upon Mt. Gelmir forged from uncooling lava. Resists frost with its heat, and can even be used to deal fire damage if wielded as a weapon.",
@@ -949,8 +949,8 @@
     "category": "Small Shields",
     "weight": 3
   },
-  "Ag": {
-    "id": "Ag",
+  "ch": {
+    "id": "ch",
     "name": "Gilded Iron Shield",
     "image": "shields/17f698a4b7bl0i126nb4s0xsp2lnfw.png",
     "description": "Small metal roundshield. Heavier than a wooden shield, but boasts higher damage negation. Though the gold leaf is peeling and the effect is slight, it still boosts holy damage negation.",
@@ -1021,8 +1021,8 @@
     "category": "Small Shield",
     "weight": 3
   },
-  "AH": {
-    "id": "AH",
+  "cI": {
+    "id": "cI",
     "name": "Ice Crest Shield",
     "image": "shields/17f69b12e1bl0i126nysn2v09nsd3.png",
     "description": "Small metal roundshield. Heavier than a wooden shield, but boasts higher damage negation. The ice crest originates from a Carian princess. Thogh the effect is slight, it boosts magic damage negation and resistance to frost.",
@@ -1093,8 +1093,8 @@
     "category": "Small Shield",
     "weight": 3
   },
-  "Ah": {
-    "id": "Ah",
+  "ci": {
+    "id": "ci",
     "name": "Spiralhorn Shield",
     "image": "shields/17f6942deffl0i1271bdbp91snfovh.png",
     "description": "Small shield of antlers arranged in an eddy-like pattern. If used to attack a foe, the shield's antlers inflict blood loss. Once given to a Tarnished warrior who cultivated close ties to the ancestral followers. Though the effect is only slight, it boosts immunity, robustness, and focus.",
@@ -1171,8 +1171,8 @@
     "category": "Small Shield",
     "weight": 2
   },
-  "AI": {
-    "id": "AI",
+  "cJ": {
+    "id": "cJ",
     "name": "Marred Leather Shield",
     "image": "shields/17f6985902bl0i127b1nqhoj9b4nhl.png",
     "description": "Leather shield of Stormveil soldiers. Miuch like the castle, it is marred by mottling and thorns. Some say it is the curse of grafting which causes such affliction, while others talk of its root being something altogether more sinister hidden deep within the castle.",
@@ -1243,8 +1243,8 @@
     "category": "Medium Shield",
     "weight": 3
   },
-  "Ai": {
-    "id": "Ai",
+  "cj": {
+    "id": "cj",
     "name": "Marred Wooden Shield",
     "image": "shields/17f696cb3bal0i127cn7tiavj7t1u.png",
     "description": "\"Wooden shield of the Stormveil soldiers. Much like the castle, it is marred by mottling and thorns. Some say it is the curse of grafting which causes such affliction, while others talk of its root being something altogether more sinister hidden deep within the castle.\"",
@@ -1315,8 +1315,8 @@
     "category": "Medium Shield",
     "weight": 4
   },
-  "AJ": {
-    "id": "AJ",
+  "cK": {
+    "id": "cK",
     "name": "Coil Shield",
     "image": "shields/17f694927d7l0i127ng35ra4v5k4gn.png",
     "description": "An extremely odd shield adorned with a coiled bronze snake. An excellent choice for attention-seekers. This Shield provides an effective defense against poison - after all, how does one poison a poisonous snake?",
@@ -1395,8 +1395,8 @@
     "category": "Small Shield",
     "weight": 1.5
   },
-  "Aj": {
-    "id": "Aj",
+  "ck": {
+    "id": "ck",
     "name": "Kite Shield",
     "image": "shields/17f6967bb2bl0i127q8x98oklbecj.png",
     "description": "A standard medium-sized metal shield. Metal shields reliably negate physical damage when guarding, a trait which made them highly trusted on the battlefield.",
@@ -1467,8 +1467,8 @@
     "category": "Medium Shield",
     "weight": 4.5
   },
-  "AK": {
-    "id": "AK",
+  "cL": {
+    "id": "cL",
     "name": "Banished Knight's Shield",
     "image": "shields/17f698ac740l0i127wziv2s11fd2c.png",
     "description": "A tall medium-sized metal shield. Given to knights who, whether by misfortune or misdeed, were forced to abandon their homes. Most of these knights were sent to the fringes, where they were forced to start anew with only despair for company.",
@@ -1539,8 +1539,8 @@
     "category": "Medium Shield",
     "weight": 6
   },
-  "Ak": {
-    "id": "Ak",
+  "cl": {
+    "id": "cl",
     "name": "Albinauric Shield",
     "image": "shields/17f69ce5e4cl0i128b0nivmu8x7jg.png",
     "description": "Tall oval shield made of metal carried by young Albinaurics. The ornamentation represents the primordial drop of dew from which they are said to have been created. Boasts exceptional magic damage negation. The Albinaurics' most formidable foes were sorcerers, after all.",
@@ -1611,8 +1611,8 @@
     "category": "Medium Shield",
     "weight": 4.5
   },
-  "AL": {
-    "id": "AL",
+  "cM": {
+    "id": "cM",
     "name": "Sun Realm Shield",
     "image": "shields/17f6987cd26l0i128fmzfvt6grfjsp.png",
     "description": "Shield of honor depicting a city crowned by the sun. It has seen better days. Much like the wear upon the shield, the Seat of the Sun is long faded away.",
@@ -1683,8 +1683,8 @@
     "category": "Medium Shield",
     "weight": 3.5
   },
-  "Al": {
-    "id": "Al",
+  "cm": {
+    "id": "cm",
     "name": "Silver Mirrorshield",
     "image": "shields/17f6970052fl0i128q30d2avtlnbrrf.png",
     "description": "Shield of radiant silver, festooned with amber and carried by Loretta, Knight of the Haligtree. The shape is said to imitate that of a sacred drop of dew, which inspired the absurd rumor that Loretta herself was an Albinauric.",
@@ -1771,8 +1771,8 @@
     "category": "Medium Shield",
     "weight": 3.5
   },
-  "AM": {
-    "id": "AM",
+  "cN": {
+    "id": "cN",
     "name": "Round Shield",
     "image": "shields/17f6988b72dl0i128vmcj5b7a5j1e9.png",
     "description": "A wooden roundshield that has been reinforced with metal. Comparatively light for its size, this shield is easy to handle but lacks a true metal shield's ability to negate damage.",
@@ -1843,8 +1843,8 @@
     "category": "Medium Shield",
     "weight": 4
   },
-  "Am": {
-    "id": "Am",
+  "cn": {
+    "id": "cn",
     "name": "Scorpion Kite Shield",
     "image": "shields/17f6948dfb1l0i1298n92tg7459mbg.png",
     "description": "A standard medium-sized metal shield. Highly reputed for its solid build and reliability. Emblazoned with a yellow scorpion, a warning of surprise attacks and sudden strikes.",
@@ -1915,8 +1915,8 @@
     "category": "Medium Shield",
     "weight": 4.5
   },
-  "AN": {
-    "id": "AN",
+  "cO": {
+    "id": "cO",
     "name": "Twinbird Kite Shield",
     "image": "shields/17f698aad3fl0i129kcpcnkgwlznm.png",
     "description": "Shield featuring a vividly painted twinbird. The twinbird is said to be the envoy of an outer god, and mother of the Deathbirds. At dwindling levels of HP, this shield slightly boosts both attack and defense.",
@@ -1987,8 +1987,8 @@
     "category": "Medium Shield",
     "weight": 4.5
   },
-  "An": {
-    "id": "An",
+  "co": {
+    "id": "co",
     "name": "Blue-gold Kite Shield",
     "image": "shields/17f6966bef4l0i129o1blgktqip69s.png",
     "description": "A standard medium-sized shield. Highly reputed for its solid build and reliability. The design represents the Erdtree foreground against a blue sky.",
@@ -2059,8 +2059,8 @@
     "category": "Medium Shield",
     "weight": 5
   },
-  "AO": {
-    "id": "AO",
+  "cP": {
+    "id": "cP",
     "name": "Brass Shield",
     "image": "shields/17f69beaf5al0i12ae69s49g5aaaea.png",
     "description": "On the larger side for medium-sized shield, the face has been covered in brass. Commonly employed in the Shattering.",
@@ -2131,8 +2131,8 @@
     "category": "Medium Shield",
     "weight": 7
   },
-  "Ao": {
-    "id": "Ao",
+  "cp": {
+    "id": "cp",
     "name": "Shield Of The Guilty",
     "image": "shields/17f6996caf5l0i12afnpkuzhuzo9o.png",
     "description": "Shield made to venerate a maiden whose eyes were crushed by Briars of Sin before being reborn in these lands. Venerating the repose of the soul, this shield boosts focus. The briars can be used to attack foes.",
@@ -2203,8 +2203,8 @@
     "category": "Small Shield",
     "weight": 2
   },
-  "AP": {
-    "id": "AP",
+  "cQ": {
+    "id": "cQ",
     "name": "Great Turtle Shell",
     "image": "shields/17f699d7257l0i12ai52ozxwx6ewwi.png",
     "description": "Shield fashioned from a great turtle shell. The natural curve helps it contend with foes' attacks. The turtle is a symbol of tirelessness, and this shield boosts stamina recovery speed.",
@@ -2275,8 +2275,8 @@
     "category": "Medium Shield",
     "weight": 5.5
   },
-  "Ap": {
-    "id": "Ap",
+  "cq": {
+    "id": "cq",
     "name": "Carian Knight's Shield",
     "image": "shields/17f6942eeabl0i12apjrp14m98cxmg.png",
     "description": "A teardrop-shaped shield embedded with blue glintstones. Carried by knights who served the Carian royal family. Excels when facing magic or holy attacks. Just who were these knights preparing to fight?",
@@ -2365,8 +2365,8 @@
     "category": "Medium Shield",
     "weight": 4.5
   },
-  "AQ": {
-    "id": "AQ",
+  "cR": {
+    "id": "cR",
     "name": "Horse Crest Wooden Shield",
     "image": "shields/17f699a214fl0i12beelfraiymmf7.png",
     "description": "A tall, medium-sized wooden shield. Light for its size, and easy to handle. The circular horsehead design evokes a swift gallop.",
@@ -2437,8 +2437,8 @@
     "category": "Medium Shield",
     "weight": 3.5
   },
-  "Aq": {
-    "id": "Aq",
+  "cr": {
+    "id": "cr",
     "name": "Candletree Wooden Shield",
     "image": "shields/17f69723a6dl0i12bhd8qm1rkekq4w.png",
     "description": "A tall, medium-sized wooden shield. Light for its size, and easy to handle. Thought to represent a surreptitious prophecy of cardinal sin, the lit candle-tree design was forbidden.",
@@ -2509,8 +2509,8 @@
     "category": "Medium Shield",
     "weight": 3.5
   },
-  "AR": {
-    "id": "AR",
+  "cS": {
+    "id": "cS",
     "name": "Large Leather Shield",
     "image": "shields/17f69b8ad9fl0i12bhsus3gi193fg.png",
     "description": "A round shield covered in leather. One of the larger categories of medium-sized shield. Though its damage negation may be lacking compared to a metal shield, it can handle wider range of attack affinities.",
@@ -2581,8 +2581,8 @@
     "category": "Medium Shield",
     "weight": 3
   },
-  "Ar": {
-    "id": "Ar",
+  "cs": {
+    "id": "cs",
     "name": "Flame Crest Wooden Shield",
     "image": "shields/17f698d0e0bl0i12bjdv825l4x33d.png",
     "description": "A tall, medium-sized wooden shield. Light for its size, and easy to handle. Carried by soldiers of the village that is afflicted by frenzy. The yellow flame is the symbol of the affliction, serving as a warning to those who might approach the village.",
@@ -2653,8 +2653,8 @@
     "category": "Medium Shield",
     "weight": 3.5
   },
-  "AS": {
-    "id": "AS",
+  "cT": {
+    "id": "cT",
     "name": "Hawk Crest Wooden Shield",
     "image": "shields/17f694f969el0i12bq44jy1iwmun1y.png",
     "description": "A tall, medium-sized wooden shield. Light for its size, and easy to handle. Adorned with a long-forgotten crest of Stormveil, ancient in design.",
@@ -2725,8 +2725,8 @@
     "category": "Medium Shield",
     "weight": 3.5
   },
-  "As": {
-    "id": "As",
+  "ct": {
+    "id": "ct",
     "name": "Beast Crest Heater Shield",
     "image": "shields/17f69710d06l0i12cez6ml1ut0n7cs.png",
     "description": "A medium-sized metal shield. Easier to handle than a kite shield. Features a beast as its crest, serving to remind warriors not to succumb to the arousal of battle. Fight with passion, but become nor its prisoner.",
@@ -2797,8 +2797,8 @@
     "category": "Medium Shield",
     "weight": 3.5
   },
-  "AT": {
-    "id": "AT",
+  "cU": {
+    "id": "cU",
     "name": "Red Crest Heater Shield",
     "image": "shields/17f69654c0bl0i12chkv2olyhv4kt.png",
     "description": "A medium-sized metal shield. Easier to handle than a kite shield. The crest symbolizes red wings.",
@@ -2869,8 +2869,8 @@
     "category": "Medium Shield",
     "weight": 3.5
   },
-  "At": {
-    "id": "At",
+  "cu": {
+    "id": "cu",
     "name": "Eclipse Crest Heater Shield",
     "image": "shields/17f69c34ab1l0i12cmtzhluyza2vbd.png",
     "description": "A medium-sized metal shield. Easier to handle than a kite shield. The sun in eclipse is said to be the symbol of the Wandering Mausoleum where the soulless demigods slumber.",
@@ -2941,8 +2941,8 @@
     "category": "Medium Shield",
     "weight": 3.5
   },
-  "AU": {
-    "id": "AU",
+  "cV": {
+    "id": "cV",
     "name": "Blue Crest Heater Shield",
     "image": "shields/17f69722576l0i12cnfqtct2uo1lqi.png",
     "description": "A medium-sized metal shield. Easier to handle than a kite shield. The crest represents a forest and river.",
@@ -3013,8 +3013,8 @@
     "category": "Medium Shield",
     "weight": 3.5
   },
-  "Au": {
-    "id": "Au",
+  "cv": {
+    "id": "cv",
     "name": "Inverted Hawk Heater Shield",
     "image": "shields/17f693c5d25l0i12cqwc17w5od5uh.png",
     "description": "A medium-sized metal shield. Easier to handle than a kite shield. The inverted hawk is the emblem of the company of slaves ordered to explore the Eternal City.",
@@ -3085,8 +3085,8 @@
     "category": "Medium Shield",
     "weight": 3.5
   },
-  "AV": {
-    "id": "AV",
+  "cW": {
+    "id": "cW",
     "name": "Heater Shield",
     "image": "shields/17f694b8cc1l0i12d7wmnsvn9wams.png",
     "description": "A medium-sized metal shield, comparatively easy to handle. Metal shields reliably negate physical damage when guarding, a trait which made them highly trusted on the battlefield. ",
@@ -3157,8 +3157,8 @@
     "category": "Medium Shield",
     "weight": 3.5
   },
-  "Av": {
-    "id": "Av",
+  "cw": {
+    "id": "cw",
     "name": "Black Leather Shield",
     "image": "shields/17f698cf256l0i12dbf0mgqicx93p.png",
     "description": "Roundshield covered in black leather. On the larger side for a medium-sized shield. From the north, this shield depicts the polar star in rivets of gold. The inside is lined with fur, protecting the carrier from frost.",
@@ -3229,8 +3229,8 @@
     "category": "Medium Shield",
     "weight": 3
   },
-  "AW": {
-    "id": "AW",
+  "cX": {
+    "id": "cX",
     "name": "Dragon Towershield",
     "image": "shields/17f693c793el0i12deqfa24mgi3ik7.png",
     "description": "Tower shield engraved with a dragon, symbol of protection. Heavy even among greatshields, it possesses exceptional guarding ability The ancient dragons, who ruled in the prehistoric era before the Erdtree, would protect their lord as a wall of living rock.",
@@ -3301,8 +3301,8 @@
     "category": "Greatshield",
     "weight": 17.5
   },
-  "Aw": {
-    "id": "Aw",
+  "cx": {
+    "id": "cx",
     "name": "Crucible Hornshield",
     "image": "shields/17f695a9c70l0i12dg13mf7v9clac.png",
     "description": "Greatshield of red-tinged gold carried by Crucible Knights. Features a great horn. An ancient holiness dwells within. The crucible horn skewers foes when performing shield bashes.",
@@ -3373,8 +3373,8 @@
     "category": "Greatshield",
     "weight": 11.5
   },
-  "AX": {
-    "id": "AX",
+  "cY": {
+    "id": "cY",
     "name": "Distinguished Greatshield",
     "image": "shields/17f6998f8b8l0i12dhelzp1oi1uyv.png",
     "description": "Greatshield featuring sumptuous ornamentation used by the scions of great families. Due to their excessive size, these shields were at times seen as the hallmark of little lordlings who were too timid to earn a few nicks and scratches.",
@@ -3445,8 +3445,8 @@
     "category": "Greatshield",
     "weight": 17
   },
-  "Ax": {
-    "id": "Ax",
+  "cy": {
+    "id": "cy",
     "name": "Dragonclaw Shield",
     "image": "shields/17f69872931l0i12dy19gq5ij75yoe.png",
     "description": "Greatshield said to have been whittled from the claw of a great, ancient dragon, wielded by grotesque Tree Sentinels who yet serve the Edrtree. Imbued with lightning.",
@@ -3525,8 +3525,8 @@
     "category": "Greatshield",
     "weight": 13.5
   },
-  "AY": {
-    "id": "AY",
+  "cZ": {
+    "id": "cZ",
     "name": "Golden Beast Crest Shield",
     "image": "shields/17f6989b386l0i12e4lob57bdw1rqq.png",
     "description": "Shield of dull gold with a beast engraved as its crest. Lighter than most greratshields, and subsequently easier to wield. The beast depicted is Serosh, aged counselor who guides the golden lineage.",
@@ -3597,8 +3597,8 @@
     "category": "Greatshield",
     "weight": 12.5
   },
-  "Ay": {
-    "id": "Ay",
+  "cz": {
+    "id": "cz",
     "name": "Erdtree Greatshield",
     "image": "shields/17f694b1b61l0i12e5nf59cb5qk7vu.png",
     "description": "Weighty greatshield forged of gold carried by the order of Tree Sentinels, heavily equipped knights. Blessed by an old incantation of protection. The living rampart of the Erdtree, the Tree Sentinels are the standard to which all defenders of the Erdtree aspire.",
@@ -3677,8 +3677,8 @@
     "category": "Greatshield",
     "weight": 13.5
   },
-  "AZ": {
-    "id": "AZ",
+  "c1": {
+    "id": "c1",
     "name": "Briar Greatshield",
     "image": "shields/17f69ac13ecl0i12e68qij6rgf53vp.png",
     "description": "Greatshield from a foreign land, used by Elemer of the Briar. Attacks with this armament utilize the iron thorns that have been wound around its frame. Originates from Eochaid, a land of proudly solitary ascetics.",
@@ -3749,8 +3749,8 @@
     "category": "Greatshield",
     "weight": 9.5
   },
-  "Az": {
-    "id": "Az",
+  "c2": {
+    "id": "c2",
     "name": "Jellyfish Shield",
     "image": "shields/17f699569f2l0i12e91gm212p52kz4.png",
     "description": "The head of a spirit jellyfish, commonly found floating above sacred ground throughout the Lands Between, wielded without modification as a shield. The see-through head is extremely light, but its flesh is supple, providing absolutely no protection from piercing attacks",
@@ -3829,8 +3829,8 @@
     "category": "Greatshield",
     "weight": 8
   },
-  "A1": {
-    "id": "A1",
+  "c3": {
+    "id": "c3",
     "name": "Fingerprint Stone Shield",
     "image": "shields/17f69ac7946l0i12emsgkbeuohu93n.png",
     "description": "A great stone shield with an intricately carved fingerprint design. One of the heaviest of all greatshields. Part of the tomb of an ancient god, the Readerless Fingers relayed their message through these imprints, said to be the very seeds from which frenzy first sprouted.",
@@ -3901,8 +3901,8 @@
     "category": "Greatshield",
     "weight": 29
   },
-  "A2": {
-    "id": "A2",
+  "c4": {
+    "id": "c4",
     "name": "Icon Shield",
     "image": "shields/17f693ca65dl0i12eu7yz6cf3nexe.png",
     "description": "Greatshield painted with a divine scene; the recipients of a blessed tear from the Erdtree. An item that looks back fondly on the age of plenty. The divine scene acts in and of itself as a sacred invocation; gradually restoring the carrier's HP.",
@@ -3973,8 +3973,8 @@
     "category": "Greatshield",
     "weight": 11.5
   },
-  "A3": {
-    "id": "A3",
+  "c5": {
+    "id": "c5",
     "name": "Visage Shield",
     "image": "shields/17f69797ac7l0i12ew4eqk33suyj17.png",
     "description": "Tricksome bronze shield depicting the face of a Fire Giant. Several tongues leap from its open mouth. The dreadful visage and burning flames are designed to remind one of the horror of facing a Fire Giant. In other words, this shield has an instructional function.",
@@ -4045,8 +4045,8 @@
     "category": "Greatshield",
     "weight": 24
   },
-  "A4": {
-    "id": "A4",
+  "c6": {
+    "id": "c6",
     "name": "One-eyed Shield",
     "image": "shields/17f69378e1dl0i12exgnluqgflkbi.png",
     "description": "Tricksome shield made from white stone depicting a malformed one-eyed god. The barrel of a firearm pokes through the open mouth. Once worshipped by the giants, this evil deity is believed to have been slain by Queen Marika. ",
@@ -4117,8 +4117,8 @@
     "category": "Greatshield",
     "weight": 20.5
   },
-  "A5": {
-    "id": "A5",
+  "c7": {
+    "id": "c7",
     "name": "Spiked Palisade Shield",
     "image": "shields/17f69c7916el0i12ey2p0l7xj09nis.png",
     "description": "Designed to perform shield bashes, these attacks riddle the enemy with holes, earning it the nickname of \"pard shield\"",
@@ -4189,8 +4189,8 @@
     "category": "Greatshield",
     "weight": 11.5
   },
-  "A6": {
-    "id": "A6",
+  "c8": {
+    "id": "c8",
     "name": "Manor Towershield",
     "image": "shields/17f695ce77cl0i12fbgg8t0smpvg3n.png",
     "description": "An iron greatshield large enough to cover the entire body. Depicts the Roundtable Hold, gathering place of champions. Greatshields boast high damage negation and guard capacity, making enemy attacks easy to repel.",
@@ -4261,8 +4261,8 @@
     "category": "Greatshield",
     "weight": 16
   },
-  "A7": {
-    "id": "A7",
+  "c9": {
+    "id": "c9",
     "name": "Crossed-tree Towershield",
     "image": "shields/17f6981fc6cl0i12fkq4jfcsautbiv.png",
     "description": "An iron greatshield large enough to cover the entire body. Emblazoned with an old, interleaving tree. Greatshields boast high damage negation and guard capacity, making enemy attacks easy to repel",
@@ -4333,8 +4333,8 @@
     "category": "Greatshield",
     "weight": 16
   },
-  "A8": {
-    "id": "A8",
+  "DA": {
+    "id": "DA",
     "name": "Redmane Greatshield",
     "image": "shields/17f69a1afefl0i12fozrc1tnhg20is.png",
     "description": "Greatshield shaped like a fang, featuring the crest of red-maned lion. Carried by the Redmane Knights who fought alongside Radahn.",
@@ -4405,8 +4405,8 @@
     "category": "Greatshield",
     "weight": 14
   },
-  "A9": {
-    "id": "A9",
+  "Da": {
+    "id": "Da",
     "name": "Ant's Skull Plate",
     "image": "shields/17f69b33aafl0i12fqkwzuaznegji.png",
     "description": "Huge head of one of the giant ants which inhabit the two underground rivers, used without modification as a shield. Excels at repeling enemy attacks. Giant ants are venomous creatures, granting a boost to immunity when wielding the shield. ",
@@ -4477,8 +4477,8 @@
     "category": "Greatshield",
     "weight": 13.5
   },
-  "aA": {
-    "id": "aA",
+  "DB": {
+    "id": "DB",
     "name": "Inverted Hawk Towershield",
     "image": "shields/17f69bfaff2l0i12frzztam4cpn7d.png",
     "description": "An iron greatshield large enough to cover the entire body. Features an inverted hawk crest. Greatshields boast high damage negation and guard capacity, making enemy attacks easy to repel.",
@@ -4549,8 +4549,8 @@
     "category": "Greatshield",
     "weight": 16
   },
-  "aa": {
-    "id": "aa",
+  "Db": {
+    "id": "Db",
     "name": "Eclipse Crest Greatshield",
     "image": "shields/17f69ae9ee5l0i12fyuk6a06fvdcq.png",
     "description": "Metal greatshield painted with a sun in eclipse. Carried by the headless mausoleum knights. The eclipsed sun, drained of color, is the protective star of soulless demigods. It aids the mausoleum knights by keeping Destined Death at bay. No skill. This armament has no skill. If the armament in the other hand has a skill, that skill will be used instead.",
@@ -4621,8 +4621,8 @@
     "category": "Greatshield",
     "weight": 15
   },
-  "aB": {
-    "id": "aB",
+  "DC": {
+    "id": "DC",
     "name": "Cuckoo Greatshield",
     "image": "shields/17f69aba9d3l0i12ga56obpyqthd0a.png",
     "description": " Metal Greatshield painted with a peering cuckoo. Carried by the enchanted knights sworn to the academy. Boasting high magic damage negation, this shield is used to hunt down mages. Our Enemys is none other then caria itself",
@@ -4693,8 +4693,8 @@
     "category": null,
     "weight": 15
   },
-  "ab": {
-    "id": "ab",
+  "Dc": {
+    "id": "Dc",
     "name": "Gilded Greatshield",
     "image": "shields/17f695ae9edl0i12glt4xotvobrl0m.png",
     "description": "Metal greatshield coated with gold. Carried by knights loyal to Godrick. The red tinge in the gold coat mirrors the primordial matter that became the Erdtree. The color of homeward yearning.",
@@ -4765,8 +4765,8 @@
     "category": "Greatshield",
     "weight": 17.5
   },
-  "aC": {
-    "id": "aC",
+  "DD": {
+    "id": "DD",
     "name": "Golden Greatshield",
     "image": "shields/17f698cf6d3l0i12gnjnwa5wdqlqj.png",
     "description": "Oval greatshield made of gold, carried by knights who protect the Royal Capital of Leyndell. Knights of Leyndell are reputed for their sturdiness, exemplified by this shield's exceptional guard capacity.",
@@ -4837,8 +4837,8 @@
     "category": "Greatshield",
     "weight": 17
   },
-  "ac": {
-    "id": "ac",
+  "Dd": {
+    "id": "Dd",
     "name": "Haligtree Crest Greatshield",
     "image": "shields/17f698f9c1fl0i12go9pgbh4sdw0zs.png",
     "description": "Metal greatshield depicting the Haligtree with unalloyed gold. Carried by knights who have vowed to serve Miquella's Haligtree. Possesses high holy damage negation. Yet now, with the Haligtree misshapen, this wondrous rendition is a fleeting fantasy.",
@@ -4909,8 +4909,8 @@
     "category": "Greatshield",
     "weight": 18.5
   },
-  "aD": {
-    "id": "aD",
+  "DE": {
+    "id": "DE",
     "name": "Wooden Greatshield",
     "image": "shields/17f699949b2l0i12gqzulu6fgih91o.png",
     "description": "Wooden greatshield reinforced with a metal ornamentation. Greatshields boast high damage negation and guard capacity, making enemy attacks easy to repel.",
@@ -4981,8 +4981,8 @@
     "category": "Greatshield",
     "weight": 8
   },
-  "ad": {
-    "id": "ad",
+  "De": {
+    "id": "De",
     "name": "Lordsworn's Shield",
     "image": "shields/17f69b9df0bl0i12h4ss3ka8zvpcoc.png",
     "description": "Wooden tower shield. Lightweightfor a greatshield and easy to handle. Commonly used in the Shattering. Greatshields boast high damage negation and guard capacity, making enemy attacks easy to repel.",

@@ -1,4 +1,5 @@
-const Original = require('./weapons.json')
+const Original = require('./shields.json')
+const Weapons = require('./weapons.json')
 const fs = require('fs')
 const OutputObject = {}
 
@@ -15,14 +16,15 @@ function generateKeys(amountOfKeys) {
     }
   }
 }
+const weaponLength = Object.keys(Weapons).length
 const originalKeys = Object.keys(Original)
-const newKeys = generateKeys(originalKeys.length)
+const newKeys = generateKeys(originalKeys.length + weaponLength)
 originalKeys.forEach((key, index) => {
-  OutputObject[newKeys[index]] = Original[key]
-  OutputObject[newKeys[index]].id = newKeys[index]
+  OutputObject[newKeys[index + weaponLength]] = Original[key]
+  OutputObject[newKeys[index + weaponLength]].id = newKeys[index + weaponLength]
 })
 
 fs.writeFileSync(
-  './src/data/weapons.json',
+  './src/data/shields2.json',
   JSON.stringify(OutputObject, null, 2),
 )

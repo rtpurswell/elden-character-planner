@@ -152,8 +152,7 @@ export interface IAsh {
   affinity: string
   skill: string
 }
-
-export type IAffinity =
+export type IAffinityName =
   | 'Standard'
   | 'Heavy'
   | 'Keen'
@@ -167,3 +166,8 @@ export type IAffinity =
   | 'Poison'
   | 'Blood'
   | 'Occult'
+
+export interface IAffinity {
+  id: string
+  name: IAffinityName
+}
