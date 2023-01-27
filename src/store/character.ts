@@ -218,6 +218,10 @@ export const characterSlice = createSlice({
       state.ashesOfWar[action.payload.key as keyof typeof state.ashesOfWar] =
         action.payload.value
     },
+    affinityUpdated: (state, action) => {
+      state.affinities[action.payload.key as keyof typeof state.affinities] =
+        action.payload.value
+    },
   },
 })
 
@@ -260,6 +264,7 @@ export const {
   spell12Updated,
   defaultStatsUpdated,
   ashOfWarUpdated,
+  affinityUpdated,
 } = characterSlice.actions
 
 //Selectors

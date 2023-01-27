@@ -35,6 +35,7 @@ import ArmorData from '../../data/armors.json'
 import TalismanData from '../../data/talismans.json'
 import ItemData from '../../data/items.json'
 import Ashes from './Ashes'
+import Affinities from './Affinities'
 const Armors = ArmorData as { [key: string]: IArmor }
 function Equipment() {
   let Legs = {} as { [key: string]: IArmor }
@@ -308,6 +309,24 @@ function Equipment() {
       />
     </div>
   )
+  const mainHandAffinitiesComponent = (
+    <Affinities
+      affinityKeys={[
+        { key: 'mainHand1', label: 'Main Hand 1 Affinity' },
+        { key: 'mainHand2', label: 'Main Hand 2 Affinity' },
+        { key: 'mainHand3', label: 'Main Hand 3 Affinity' },
+      ]}
+    />
+  )
+  const offHandAffinitiesComponent = (
+    <Affinities
+      affinityKeys={[
+        { key: 'offHand1', label: 'Off Hand 1 Affinity' },
+        { key: 'offHand2', label: 'Off Hand 2 Affinity' },
+        { key: 'offHand3', label: 'Off Hand 3 Affinity' },
+      ]}
+    />
+  )
   return (
     <div className="w-full grid grid-cols-1 gap-2 p-3 rounded">
       <H2>Equipment</H2>
@@ -316,8 +335,8 @@ function Equipment() {
           { title: 'Weapons', component: mainHandComponent },
           { title: 'Ashes', component: mainHandAshesComponent },
           {
-            title: 'test2',
-            component: <div className="col-span-4">test2</div>,
+            title: 'Affinities',
+            component: mainHandAffinitiesComponent,
           },
         ]}
       />
@@ -325,6 +344,10 @@ function Equipment() {
         options={[
           { title: 'Off-Hand', component: offHandComponent },
           { title: 'Ashes', component: offHandAshesComponent },
+          {
+            title: 'Affinities',
+            component: offHandAffinitiesComponent,
+          },
         ]}
       />
       <EquipContainer
