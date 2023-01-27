@@ -4,6 +4,8 @@ import type {
   IShield,
   ITalisman,
   IItem,
+  IIncantation,
+  ISorcery,
 } from '../../data/dataTypes'
 import type { ActionCreatorWithPayload } from '@reduxjs/toolkit'
 import { initialState } from '../../store/character'
@@ -23,6 +25,7 @@ interface EquipItemProps {
     | 'helmet'
     | 'legs'
     | 'hands'
+    | 'spell'
   data: {
     label: string
     value: { [key: string]: IArmor | IWeapon | IShield | ITalisman | IItem }
@@ -43,7 +46,15 @@ function EquipItem({
 
   let imageURL = ''
   let defaultImage = ''
-  let selectedItem: IArmor | IWeapon | IShield | ITalisman | IItem | null = null
+  let selectedItem:
+    | IArmor
+    | IWeapon
+    | IShield
+    | ITalisman
+    | IItem
+    | IIncantation
+    | ISorcery
+    | null = null
 
   const dispatch = useDispatch()
   const itemId = useSelector((state: RootState) => state.character[storeKey])
@@ -68,7 +79,7 @@ function EquipItem({
       break
     case 'item':
       defaultImage = 'default/item.png'
-      bgClass = "bg-[url('/images/default/itme.png')]"
+      bgClass = "bg-[url('/images/default/item.png')]"
       break
     case 'helmet':
       defaultImage = 'default/helmet.png'
@@ -82,6 +93,10 @@ function EquipItem({
       defaultImage = 'default/hands.png'
       bgClass = "bg-[url('/images/default/hands.png')]"
 
+      break
+    case 'spell':
+      defaultImage = 'default/item.png'
+      bgClass = "bg-[url('/images/default/item.png')]"
       break
   }
   if (itemId !== '') {

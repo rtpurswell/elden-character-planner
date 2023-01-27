@@ -4,6 +4,7 @@ import Equipment from './Equipment'
 import IncantationsAndSorceries from './IncantationsAndSorceries'
 import { useDispatch } from 'react-redux'
 import { defaultStatsUpdated } from '../store/character'
+import Spells from './Spells'
 function Layout() {
   const dispatch = useDispatch()
   dispatch(defaultStatsUpdated({}))
@@ -19,7 +20,9 @@ function Layout() {
         <Equipment />
       </div>
 
-      <div className=" bg-slate-800 p-5 rounded"></div>
+      <div className=" bg-slate-800 p-5 rounded">
+        <Spells />
+      </div>
       <div className=" bg-slate-800 p-5 rounded">
         <IncantationsAndSorceries />
       </div>
