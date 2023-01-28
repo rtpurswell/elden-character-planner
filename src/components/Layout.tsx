@@ -2,12 +2,9 @@ import ClassAndStats from './ClassAndStats'
 import H1 from './common/H1'
 import Equipment from './Equipment'
 import IncantationsAndSorceries from './IncantationsAndSorceries'
-import { useDispatch } from 'react-redux'
-import { defaultStatsUpdated } from '../store/character'
+
 import Spells from './Spells'
 function Layout() {
-  const dispatch = useDispatch()
-  dispatch(defaultStatsUpdated({}))
   return (
     <main className="w-full flex flex-col md:grid md:grid-cols-2  text-white gap-10 p-5">
       <div className="md:col-span-2">

@@ -24,7 +24,6 @@ import {
   item2Updated,
   item3Updated,
   item4Updated,
-  item5Updated,
 } from '../../store/character'
 import H2 from '.././common/H2'
 import EquipContainer from '.././EquipContainer'
@@ -327,6 +326,63 @@ function Equipment() {
       ]}
     />
   )
+  const itemsComponent = (
+    <div className="col-span-4 grid grid-cols-4 gap-2">
+      {' '}
+      <EquipItem
+        type="item"
+        label="Item"
+        data={[
+          {
+            label: 'Items',
+            value: Items,
+            placeholder: '/images/default/item.png',
+          },
+        ]}
+        actionCreator={item1Updated}
+        storeKey="item1"
+      />
+      <EquipItem
+        type="item"
+        label="Item 2"
+        data={[
+          {
+            label: 'Items',
+            value: Items,
+            placeholder: '/images/default/item.png',
+          },
+        ]}
+        actionCreator={item2Updated}
+        storeKey="item2"
+      />
+      <EquipItem
+        type="item"
+        label="Item 3"
+        data={[
+          {
+            label: 'Items',
+            value: Items,
+            placeholder: '/images/default/item.png',
+          },
+        ]}
+        actionCreator={item3Updated}
+        storeKey="item3"
+      />
+      <EquipItem
+        type="item"
+        label="Item 4"
+        data={[
+          {
+            label: 'Items',
+            value: Items,
+            placeholder: '/images/default/item.png',
+          },
+        ]}
+        actionCreator={item4Updated}
+        storeKey="item4"
+      />
+    </div>
+  )
   return (
     <div className="w-full grid grid-cols-1 gap-2 p-3 rounded">
       <H2>Equipment</H2>
@@ -357,64 +413,9 @@ function Equipment() {
       <EquipContainer
         options={[{ title: 'Talismans', component: talismanComponent }]}
       />
-      {/* 
-      
-   
-      <EquipContainer>
-        <EquipItem
-          type="item"
-          label="Item"
-          data={[
-            {
-              label: 'Items',
-              value: Items,
-              placeholder: '/images/default/item.png',
-            },
-          ]}
-          actionCreator={item1Updated}
-          storeKey="item1"
-        />
-        <EquipItem
-          type="item"
-          label="Item 2"
-          data={[
-            {
-              label: 'Items',
-              value: Items,
-              placeholder: '/images/default/item.png',
-            },
-          ]}
-          actionCreator={item2Updated}
-          storeKey="item2"
-        />
-        <EquipItem
-          type="item"
-          label="Item 3"
-          data={[
-            {
-              label: 'Items',
-              value: Items,
-              placeholder: '/images/default/item.png',
-            },
-          ]}
-          actionCreator={item3Updated}
-          storeKey="item3"
-        />
-        <EquipItem
-          type="item"
-          label="Item 4"
-          data={[
-            {
-              label: 'Items',
-              value: Items,
-              placeholder: '/images/default/item.png',
-            },
-          ]}
-          actionCreator={item4Updated}
-          storeKey="item4"
-        />
-
-      </EquipContainer> */}
+      <EquipContainer
+        options={[{ title: 'Items', component: itemsComponent }]}
+      />
     </div>
   )
 }

@@ -23,8 +23,8 @@ const Incantations = IncantationData as { [id: string]: IIncantation }
 
 function Spells() {
   return (
-    <div className="grid grid-cols-4 gap-2">
-      <H2 className="col-span-4">Spells</H2>
+    <div className="grid grid-cols-6 gap-2">
+      <H2 className="col-span-6">Spells</H2>
       <EquipItem
         storeKey="spell1"
         type="spell"
