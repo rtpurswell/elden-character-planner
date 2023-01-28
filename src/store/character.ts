@@ -30,16 +30,6 @@ export const initialState = {
   item2: '',
   item3: '',
   item4: '',
-  stats: {
-    strength: 0,
-    vigor: 0,
-    dexterity: 0,
-    endurance: 0,
-    intelligence: 0,
-    mind: 0,
-    faith: 0,
-    arcane: 0,
-  },
   spell1: '',
   spell2: '',
   spell3: '',
@@ -61,12 +51,22 @@ export const initialState = {
     offHand3: '',
   },
   affinities: {
-    mainHand1: 'Standard',
-    mainHand2: 'Standard',
-    mainHand3: 'Standard',
-    offHand1: 'Standard',
-    offHand2: 'Standard',
-    offHand3: 'Standard',
+    mainHand1: 'AA',
+    mainHand2: 'AA',
+    mainHand3: 'AA',
+    offHand1: 'AA',
+    offHand2: 'AA',
+    offHand3: 'AA',
+  },
+  stats: {
+    strength: 0,
+    vigor: 0,
+    dexterity: 0,
+    endurance: 0,
+    intelligence: 0,
+    mind: 0,
+    faith: 0,
+    arcane: 0,
   },
 }
 
@@ -449,5 +449,20 @@ export const getCharacterDefenses = (state: RootState) => {
     })
   }
   return { resistances, negation }
+}
+export const serializeCharacter = (state: RootState) => {
+  const character = state.character
+  let serializedString = ''
+  Object.keys(character).forEach((key) => {
+    if (typeof character[key as keyof typeof character] === 'object') {
+      Object.keys(
+        character[key as keyof typeof character],
+      ).forEach((key2) => {})
+    } else {
+      character[key as keyof typeof character] === ''
+        ? (serializedString += '00')
+        : (serializedString += character[key as keyof typeof character])
+    }
+  })
 }
 export default characterSlice.reducer

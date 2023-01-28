@@ -1,6 +1,9 @@
 import { useSelector, useDispatch } from 'react-redux'
 import { RootState } from '../../store/configureStore'
 import { affinityUpdated } from '../../store/character'
+import type { IAffinity } from '../../data/dataTypes'
+import AffinityData from '../../data/affinities.json'
+const Affinities = AffinityData as { [key: string]: IAffinity }
 interface AffinityProps {
   storeKey: string
   label: string
@@ -37,12 +40,13 @@ function Affinity({ storeKey, label }: AffinityProps) {
     Blood: 'text-red-700',
     Occult: 'text-purple-700',
   }
-  const selectedAffinity = useSelector(
+  const selectedAffinityId = useSelector(
     (state: RootState) =>
       state.character.affinities[
         storeKey as keyof typeof state.character.affinities
       ],
   )
+  const selectedAffinity = Affinities[selectedAffinityId].name
   const selectedWeaponId = useSelector(
     (state: RootState) =>
       state.character[storeKey as keyof typeof state.character],
@@ -51,19 +55,27 @@ function Affinity({ storeKey, label }: AffinityProps) {
   const handleAffinityUpdate = () => {
     const nextAffinityIndex = selectedAffinityIndex + 1
     if (nextAffinityIndex >= affinityArray.length) {
-      dispatch(
-        affinityUpdated({
-          value: affinityArray[0],
-          key: storeKey,
-        }),
-      )
+      Object.keys(Affinities).find((key) => {
+        if (Affinities[key].name === affinityArray[0]) {
+          dispatch(
+            affinityUpdated({
+              value: Affinities[key].id,
+              key: storeKey,
+            }),
+          )
+        }
+      })
     } else {
-      dispatch(
-        affinityUpdated({
-          value: affinityArray[nextAffinityIndex],
-          key: storeKey,
-        }),
-      )
+      Object.keys(Affinities).find((key) => {
+        if (Affinities[key].name === affinityArray[nextAffinityIndex]) {
+          dispatch(
+            affinityUpdated({
+              value: Affinities[key].id,
+              key: storeKey,
+            }),
+          )
+        }
+      })
     }
   }
   return (
