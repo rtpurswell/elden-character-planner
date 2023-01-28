@@ -1,18 +1,21 @@
 import H2 from './common/H2'
 import Attribute from './Attribute'
+import ClassData from '../data/classes.json'
 import { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { getCharacterStats, statUpdated } from '../store/character'
 import type { RootState } from '../store/configureStore'
+import { IClassType } from '../data/dataTypes'
+
+const Classes = ClassData as { [key: string]: IClassType }
+
 function Attributes() {
   const [selectedAttribute, setSelectedAttribute] = useState('')
   const [error, setError] = useState<null | string>(null)
   const [value, setValue] = useState(0)
   const dispatch = useDispatch()
   const stats = useSelector(getCharacterStats)
-  const defaults = useSelector(
-    (state: RootState) => state.character.defaultStats,
-  )
+  const classId = useSelector((state: RootState) => state.character.classType)
   const dataMap = {
     Strength: {
       text: 'text-red-500',
@@ -68,6 +71,7 @@ function Attributes() {
     setValue(stats[name.toLowerCase() as keyof typeof stats])
   }
 
+  const defaults = Classes[classId].stats
   const handleUpdate = () => {
     const defaultValue =
       defaults[selectedAttribute.toLowerCase() as keyof typeof defaults]

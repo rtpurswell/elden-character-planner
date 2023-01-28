@@ -11,7 +11,6 @@ const Shields = Shield as { [key: string]: IShield }
 const Armors = Armor as { [key: string]: IArmor }
 
 export const initialState = {
-  name: '',
   classType: 'AA',
   mainHand1: '',
   mainHand2: '',
@@ -31,7 +30,6 @@ export const initialState = {
   item2: '',
   item3: '',
   item4: '',
-  item5: '',
   stats: {
     strength: 0,
     vigor: 0,
@@ -54,17 +52,6 @@ export const initialState = {
   spell10: '',
   spell11: '',
   spell12: '',
-  defaultStats: {
-    strength: 0,
-    vigor: 0,
-    dexterity: 0,
-    endurance: 0,
-    intelligence: 0,
-    mind: 0,
-    faith: 0,
-    arcane: 0,
-    level: 5,
-  },
   ashesOfWar: {
     mainHand1: '',
     mainHand2: '',
@@ -87,12 +74,8 @@ export const characterSlice = createSlice({
   name: 'character',
   initialState,
   reducers: {
-    nameUpdated: (state, action) => {
-      state.name = action.payload
-    },
     classUpdated: (state, action) => {
       state.classType = action.payload
-      state.defaultStats = Classes[action.payload as keyof typeof Classes].stats
     },
     mainHand1Updated: (state, action) => {
       state.mainHand1 = action.payload
@@ -148,31 +131,10 @@ export const characterSlice = createSlice({
     item4Updated: (state, action) => {
       state.item4 = action.payload
     },
-    item5Updated: (state, action) => {
-      state.item5 = action.payload
-    },
+
     statUpdated: (state, action) => {
       state.stats[action.payload.stat as keyof typeof state.stats] =
         action.payload.value
-    },
-    statIncremented: (state, action) => {
-      if (
-        state.stats[action.payload as keyof typeof state.stats] +
-          1 +
-          Number(
-            state.defaultStats[
-              action.payload as keyof typeof state.defaultStats
-            ],
-          ) <=
-        99
-      ) {
-        state.stats[action.payload as keyof typeof state.stats] += 1
-      }
-    },
-    statDecremented: (state, action) => {
-      if (state.stats[action.payload as keyof typeof state.stats] - 1 >= 0) {
-        state.stats[action.payload as keyof typeof state.stats] -= 1
-      }
     },
     spell1Updated: (state, action) => {
       state.spell1 = action.payload
@@ -210,10 +172,6 @@ export const characterSlice = createSlice({
     spell12Updated: (state, action) => {
       state.spell12 = action.payload
     },
-    defaultStatsUpdated: (state, action) => {
-      state.defaultStats = Classes[state.classType as keyof typeof Classes]
-        ?.stats as any
-    },
     ashOfWarUpdated: (state, action) => {
       state.ashesOfWar[action.payload.key as keyof typeof state.ashesOfWar] =
         action.payload.value
@@ -226,7 +184,6 @@ export const characterSlice = createSlice({
 })
 
 export const {
-  nameUpdated,
   classUpdated,
   mainHand1Updated,
   mainHand2Updated,
@@ -246,10 +203,7 @@ export const {
   item2Updated,
   item3Updated,
   item4Updated,
-  item5Updated,
   statUpdated,
-  statIncremented,
-  statDecremented,
   spell1Updated,
   spell2Updated,
   spell3Updated,
@@ -262,14 +216,15 @@ export const {
   spell10Updated,
   spell11Updated,
   spell12Updated,
-  defaultStatsUpdated,
   ashOfWarUpdated,
   affinityUpdated,
 } = characterSlice.actions
 
 //Selectors
 export const getCharacterLevel = (state: RootState) => {
-  let totalLevel = state.character.defaultStats.level
+  const defaults =
+    Classes[state.character.classType as keyof typeof Classes].stats
+  let totalLevel = defaults.level
   const statArray = Object.values(state.character.stats)
   statArray.forEach((stat) => {
     totalLevel += stat
@@ -335,7 +290,8 @@ export const getCharacterWeight = (state: RootState) => {
 }
 export const getCharacterMaxWeight = (state: RootState) => {
   const totalendurance =
-    state.character.stats.endurance + state.character.defaultStats.endurance
+    state.character.stats.endurance +
+    Classes[state.character.classType as keyof typeof Classes].stats.endurance
   //below is the formula for calculating max equip load in elden ring
   //   Endurance Level 1 - 25 --> 45 + 27*((Lvl - 8) / 17)
   // Endurance Level 26 - 60 --> 72 + 48*(((Lvl - 25) / 35)^1.1)
@@ -353,18 +309,19 @@ export const getCharacterMaxWeight = (state: RootState) => {
 }
 export const getCharacterStats = (state: RootState) => {
   const totalStats = { ...state.character.stats }
-  Object.keys(state.character.defaultStats).forEach((statKey) => {
+  const defaultStats =
+    Classes[state.character.classType as keyof typeof Classes].stats
+  Object.keys(defaultStats).forEach((statKey) => {
     totalStats[statKey as keyof typeof totalStats] +=
-      state.character.defaultStats[
-        statKey as keyof typeof state.character.defaultStats
-      ]
+      defaultStats[statKey as keyof typeof defaultStats]
   })
 
   return totalStats
 }
 export const getCharacterHP = (state: RootState) => {
   const totalVigor =
-    state.character.stats.vigor + state.character.defaultStats.vigor
+    state.character.stats.vigor +
+    Classes[state.character.classType as keyof typeof Classes].stats.vigor
   /* 
   Formula for calculating HP in elden ring
   Vigor Level 1 - 25 --> 300 + 500*(((Lvl - 1) / 24)^1.5)
@@ -386,7 +343,8 @@ Vigor Level 61 - 99 --> 1900 + 200*(1 - (1 - ((Lvl - 60) / 39))^1.2)
 }
 export const getCharacterFP = (state: RootState) => {
   const totalMind =
-    state.character.stats.mind + state.character.defaultStats.mind
+    state.character.stats.mind +
+    Classes[state.character.classType as keyof typeof Classes].stats.mind
   /*
   Formula for calculating FP in elden ring
   Level 1 - 15 --> 50 + 45*((Lvl - 1) / 14)
@@ -407,7 +365,8 @@ Level 61 - 99 --> 350 + 100*((Lvl - 60) / 39) */
 }
 export const getCharacterStamina = (state: RootState) => {
   const totalEndurance =
-    state.character.stats.endurance + state.character.defaultStats.endurance
+    state.character.stats.endurance +
+    Classes[state.character.classType as keyof typeof Classes].stats.endurance
   /*
   Formula for calculating stamina in elden ring
   Level 1 - 15: 80 + 25*((Lvl - 1) / 14)
