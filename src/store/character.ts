@@ -180,6 +180,44 @@ export const characterSlice = createSlice({
       state.affinities[action.payload.key as keyof typeof state.affinities] =
         action.payload.value
     },
+    characterLoaded: (state, action) => {
+      const serializedString = action.payload.value
+
+      const stringArray: string[] = []
+      for (let i = 0; i < serializedString.length; i += 2) {
+        stringArray.push(serializedString.substr(i, 2))
+      }
+      console.log(stringArray.length)
+
+      let currentStringIndex = 0
+      Object.keys(state).forEach((key) => {
+        if (typeof state[key as keyof typeof state] === 'object') {
+          const obj = state[key as keyof typeof state]
+          Object.keys(obj).forEach((objKey) => {
+            if (key === 'stats') {
+              state.stats[objKey as keyof typeof state.stats] = Number(
+                stringArray[currentStringIndex],
+              ) as any
+            } else if (key === 'affinities') {
+              state.affinities[
+                objKey as keyof typeof state.affinities
+              ] = stringArray[currentStringIndex] as any
+            } else if (key === 'ashesOfWar') {
+              state.ashesOfWar[
+                objKey as keyof typeof state.ashesOfWar
+              ] = stringArray[currentStringIndex] as any
+            }
+            currentStringIndex++
+          })
+        } else {
+          state[key as keyof typeof state] = stringArray[
+            currentStringIndex
+          ] as any
+          currentStringIndex++
+        }
+      })
+      console.log(currentStringIndex)
+    },
   },
 })
 
@@ -218,6 +256,7 @@ export const {
   spell12Updated,
   ashOfWarUpdated,
   affinityUpdated,
+  characterLoaded,
 } = characterSlice.actions
 
 //Selectors
@@ -450,19 +489,29 @@ export const getCharacterDefenses = (state: RootState) => {
   }
   return { resistances, negation }
 }
-export const serializeCharacter = (state: RootState) => {
+export const getSerializedCharacter = (state: RootState) => {
   const character = state.character
   let serializedString = ''
   Object.keys(character).forEach((key) => {
     if (typeof character[key as keyof typeof character] === 'object') {
-      Object.keys(
-        character[key as keyof typeof character],
-      ).forEach((key2) => {})
+      const obj = character[key as keyof typeof character]
+      Object.keys(obj).forEach((key2) => {
+        if (typeof obj[key2 as keyof typeof obj] === 'number') {
+          obj[key2 as keyof typeof obj] < 10
+            ? (serializedString += '0' + obj[key2 as keyof typeof obj])
+            : (serializedString += obj[key2 as keyof typeof obj])
+        } else {
+          obj[key2 as keyof typeof obj] === ''
+            ? (serializedString += '00')
+            : (serializedString += obj[key2 as keyof typeof obj])
+        }
+      })
     } else {
       character[key as keyof typeof character] === ''
         ? (serializedString += '00')
         : (serializedString += character[key as keyof typeof character])
     }
   })
+  return serializedString
 }
 export default characterSlice.reducer
