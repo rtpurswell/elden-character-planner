@@ -1,0 +1,176 @@
+{
+    "Ab": {
+      "name": "Cerulean Crystal Tear",
+      "effect": "Restores 50% FP",
+      "id": "Ab",
+      "image": "tears/Cerulean-Crystal-Tear.png"
+    },
+    "Aa": {
+      "name": "Crimsonspill Crystal Tear",
+      "effect": "Boosts max HP",
+      "id": "Aa",
+      "image": "tears/Crimsonspill-Crystal-Tear.png"
+    },
+    "Ac": {
+      "name": "Greenburst Crystal Tear",
+      "effect": "Boosts Stamina recovery",
+      "id": "Ac",
+      "image": "tears/Greenburst-Crystal-Tear.png"
+    },
+    "Ae": {
+      "name": "Faith-knot Crystal Tear",
+      "effect": "Boosts Faith",
+      "id": "Ae",
+      "image": "tears/Faith-knot-Crystal-Tear.png"
+    },
+    "AD": {
+      "name": "Strength-knot Crystal Tear",
+      "effect": "Boosts Strength",
+      "id": "AD",
+      "image": "tears/Strength-knot-Crystal-Tear.png"
+    },
+    "AE": {
+      "name": "Intelligence-knot Crystal Tear",
+      "effect": "Boosts Intelligence",
+      "id": "AE",
+      "image": "tears/Intelligence-knot-Crystal-Tear.png"
+    },
+    "AA": {
+      "name": "Crimson Crystal Tear",
+      "effect": "Restores 50% HP",
+      "id": "AA",
+      "image": "tears/Crimson-Crystal-Tear.png"
+    },
+    "AC": {
+      "name": "Greenspill Crystal Tear",
+      "effect": "Boosts max Stamina",
+      "id": "AC",
+      "image": "tears/Greenspill-Crystal-Tear.png"
+    },
+    "Ad": {
+      "name": "Dexterity-knot Crystal Tear",
+      "effect": "Boosts Dexterity",
+      "id": "Ad",
+      "image": "tears/Dexterity-knot-Crystal-Tear.png"
+    },
+    "AB": {
+      "name": "Crimsonburst Crystal Tear",
+      "effect": "Heals HP over time",
+      "id": "AB",
+      "image": "tears/Crimsonburst-Crystal-Tear.png"
+    },
+    "Af": {
+      "name": "Speckled Hardtear",
+      "effect": "Boosts resistances and heals status",
+      "id": "Af",
+      "image": "tears/Speckled-Hardtear.png"
+    },
+    "Ai": {
+      "name": "Stonebarb Cracked Tear",
+      "effect": "Attacks breaks enemy stances more often",
+      "id": "Ai",
+      "image": "tears/Stonebarb-Cracked-Tear.png"
+    },
+    "AI": {
+      "name": "Holy-Shrouding Cracked Tear",
+      "effect": "Boosts Holy attacks",
+      "id": "AI",
+      "image": "tears/Holy-Shrouding-Cracked-Tear.png"
+    },
+    "Aj": {
+      "name": "Thorny Cracked Tear",
+      "effect": "Enhances consecutive attacks",
+      "id": "Aj",
+      "image": "tears/Thorny-Cracked-Tear.png"
+    },
+    "Ag": {
+      "name": "Magic-Shrouding Cracked Tear",
+      "effect": "Boosts Magic attacks",
+      "id": "Ag",
+      "image": "tears/Magic-Shrouding-Cracked-Tear.png"
+    },
+    "Ah": {
+      "name": "Lightning-Shrouding Cracked Tear",
+      "effect": "Boosts Lightning attacks",
+      "id": "Ah",
+      "image": "tears/Lightning-Shrouding-Cracked-Tear.png"
+    },
+    "AG": {
+      "name": "Leaden Hardtear",
+      "effect": "Boosts Poise",
+      "id": "AG",
+      "image": "tears/Leaden-Hardtear.png"
+    },
+    "AK": {
+      "name": "Twiggy Cracked Tear",
+      "effect": "Prevents Rune loss on death",
+      "id": "AK",
+      "image": "tears/Twiggy-Cracked-Tear.png"
+    },
+    "AJ": {
+      "name": "Spiked Cracked Tear",
+      "effect": "Enhances charged attacks",
+      "id": "AJ",
+      "image": "tears/Spiked-Cracked-Tear.png"
+    },
+    "AF": {
+      "name": "Opaline Hardtear",
+      "effect": "Boosts damage negation",
+      "id": "AF",
+      "image": "tears/Opaline-Hardtear.png"
+    },
+    "Am": {
+      "name": "Opaline Bubbletear",
+      "effect": "Significantly negates damage on next hit",
+      "id": "Am",
+      "image": "tears/Opaline-Bubbletear.png"
+    },
+    "An": {
+      "name": "Purifying Crystal Tear",
+      "effect": "Purifies the Lord of Blood's curse",
+      "id": "An",
+      "image": "tears/Purifying-Crystal-Tear.png"
+    },
+    "AL": {
+      "name": "Windy Crystal Tear",
+      "effect": "Enhances dodge rolls",
+      "id": "AL",
+      "image": "tears/Windy-Crystal-Tear.png"
+    },
+    "Al": {
+      "name": "Crimson Bubbletear",
+      "effect": "Restores HP when near death",
+      "id": "Al",
+      "image": "tears/Crimson-Bubbletear.png"
+    },
+    "Ak": {
+      "name": "Winged Crystal Tear",
+      "effect": "Reduces equipment load",
+      "id": "Ak",
+      "image": "tears/Winged-Crystal-Tear.png"
+    },
+    "AM": {
+      "name": "Crimsonwhorl Bubbletear",
+      "effect": "Converts Damage received in HP",
+      "id": "AM",
+      "image": "tears/Crimsonwhorl-Bubbletear.png"
+    },
+    "AN": {
+      "name": "Cerulean Hidden Tear",
+      "effect": "Eliminates all FP consumption",
+      "id": "AN",
+      "image": "tears/Cerulean-Hidden-Tear.png"
+    },
+    "AO": {
+      "name": "Ruptured Crystal Tear",
+      "effect": "Explosion after a short delay",
+      "id": "AO",
+      "image": "tears/Ruptured-Crystal-Tear.png"
+    },
+    "AH": {
+      "name": "Flame-Shrouding Cracked Tear",
+      "effect": "Boosts Fire attacks",
+      "id": "AH",
+      "image": "tears/Flame-Shrouding-Cracked-Tear.png"
+    }
+  }
