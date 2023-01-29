@@ -1,7 +1,6 @@
-const Original = require('./sorceries.json')
-const Incantations = require('./incantations.json')
-const fs = require('fs')
-const OutputObject = {}
+const Original = require('./tears.json')
+// const fs = require('fs')
+// const OutputObject = {}
 
 function generateKeys(amountOfKeys) {
   const keyOptions =
@@ -16,15 +15,21 @@ function generateKeys(amountOfKeys) {
     }
   }
 }
-const weaponLength = Object.keys(Incantations).length
-const originalKeys = Object.keys(Original)
-const newKeys = generateKeys(originalKeys.length + weaponLength)
-originalKeys.forEach((key, index) => {
-  OutputObject[newKeys[index + weaponLength]] = Original[key]
-  OutputObject[newKeys[index + weaponLength]].id = newKeys[index + weaponLength]
-})
+// const weaponLength = Object.keys(Incantations).length
+// const originalKeys = Object.keys(Original)
+// const newKeys = generateKeys(originalKeys.length + weaponLength)
+// originalKeys.forEach((key, index) => {
+//   OutputObject[newKeys[index + weaponLength]] = Original[key]
+//   OutputObject[newKeys[index + weaponLength]].id = newKeys[index + weaponLength]
+// })
 
-fs.writeFileSync(
-  './src/data/sorceries2.json',
-  JSON.stringify(OutputObject, null, 2),
-)
+// const newKeys = generateKeys(Original.length)
+// Original.forEach((item, index) => {
+//   OutputObject[newKeys[index]] = { ...item, id: newKeys[index] }
+// })
+
+// fs.writeFileSync(
+//   './src/data/tears2.json',
+//   JSON.stringify(OutputObject, null, 2),
+// )
+console.log(Object.keys(Original).length)
