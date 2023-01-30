@@ -99,7 +99,6 @@ export interface IIncantation {
     amount: number
   }[]
 }
-// please wirte a typescript interface for this object
 
 export interface IClassType {
   id: string
