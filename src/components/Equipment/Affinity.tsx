@@ -27,12 +27,11 @@ function Affinity({ storeKey, label }: AffinityProps) {
     AL: 'text-red-700',
     AM: 'text-purple-700',
   }
-  const selectedAffinityId = useSelector(
-    (state: RootState) =>
-      state.character.affinities[
-        storeKey as keyof typeof state.character.affinities
-      ],
-  )
+  const selectorFunction = (state: RootState) =>
+    state.character.affinities[
+      storeKey as keyof typeof state.character.affinities
+    ]
+  const selectedAffinityId = useSelector(selectorFunction)
   const selectedWeaponId = useSelector(
     (state: RootState) =>
       state.character[storeKey as keyof typeof state.character],
@@ -45,6 +44,9 @@ function Affinity({ storeKey, label }: AffinityProps) {
     <>
       {selectedWeaponId !== '' ? (
         <GridDropdown
+          heightClass="h-48"
+          widthClass="w-24"
+          selectorFunction={selectorFunction}
           selectedItemId={selectedAffinityId}
           onUpdate={handleAffinityUpdate}
           data={Object.keys(Affinities).map((key) => {
@@ -52,7 +54,7 @@ function Affinity({ storeKey, label }: AffinityProps) {
               id: key,
               component: (
                 <div
-                  className={`text-xs font-bold ${
+                  className={`text-xs font-bold w-full aspect-square flex justify-center items-center ${
                     colorMap[key as keyof typeof colorMap]
                   }`}
                 >

@@ -4,13 +4,12 @@ import type { IClassType } from '../data/dataTypes'
 import { RootState } from '../store/configureStore'
 import H2 from './common/H2'
 import { classUpdated } from '../store/character'
+import GridDropdown from './common/GridDropdown'
 const Classes = ClassData as { [key: string]: IClassType }
 function ClassSelector() {
   const dispatch = useDispatch()
-
-  const selectedClassId = useSelector(
-    (state: RootState) => state.character.classType,
-  )
+  const selectorFunction = (state: RootState) => state.character.classType
+  const selectedClassId = useSelector(selectorFunction)
   const selectedClass = Classes[
     selectedClassId as keyof typeof Classes
   ] as IClassType
@@ -34,13 +33,40 @@ function ClassSelector() {
   }
   return (
     <div className="bg-slate-800 rounded p-5">
-      <div className="grid grid-cols-6">
+      <div className="grid grid-cols-6 gap-2">
         {' '}
         <button
           className="p-2 bg-purple-400 rounded font-bold"
           onClick={handleClassChange('backward')}
         >{`< <`}</button>
-        <H2 className="col-span-4 text-center">{selectedClass?.name}</H2>
+        <div className="col-span-4 text-center">
+          <GridDropdown
+            selectorFunction={selectorFunction}
+            heightClass="h-60"
+            widthClass="w-auto"
+            data={Object.keys(Classes).map((key) => {
+              return {
+                id: key,
+                displayComponent: (
+                  <H2 className="py-1 h-">{Classes[key].name}</H2>
+                ),
+                component: (
+                  <div className="">
+                    <img
+                      src={`/images/${Classes[key].image}`}
+                      className="rounded max-h-32"
+                    />
+                    <div>{Classes[key].name}</div>
+                  </div>
+                ),
+              }
+            })}
+            onUpdate={(id) => {
+              dispatch(classUpdated(id))
+            }}
+            selectedItemId={selectedClassId}
+          />
+        </div>
         <button
           className="p-2 bg-purple-400 rounded font-bold"
           onClick={handleClassChange('forward')}
