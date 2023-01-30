@@ -64,7 +64,6 @@ function ClassSelector() {
             onUpdate={(id) => {
               dispatch(classUpdated(id))
             }}
-            selectedItemId={selectedClassId}
           />
         </div>
         <button

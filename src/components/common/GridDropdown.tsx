@@ -9,7 +9,6 @@ interface GridDropdownProps {
     component: React.ReactNode
     displayComponent?: React.ReactNode
   }[]
-  selectedItemId: string
   onUpdate: (id: string) => void
   widthClass: string
   heightClass: string

@@ -47,7 +47,6 @@ function Affinity({ storeKey, label }: AffinityProps) {
           heightClass="h-48 md:h-60"
           widthClass="w-24 xl:w-auto"
           selectorFunction={selectorFunction}
-          selectedItemId={selectedAffinityId}
           onUpdate={handleAffinityUpdate}
           data={Object.keys(Affinities).map((key) => {
             return {
