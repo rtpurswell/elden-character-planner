@@ -171,3 +171,16 @@ export interface IAffinity {
   id: string
   name: IAffinityName
 }
+export interface IGreatRune {
+  id: string
+  name: string
+  description: string
+  effect: string
+  image: string
+}
+export interface ITear {
+  id: string
+  name: string
+  effect: string
+  image: string
+}
