@@ -53,7 +53,7 @@ function Affinity({ storeKey, label }: AffinityProps) {
               id: key,
               component: (
                 <div
-                  className={`text-xs lg:text-sm xl:text-base font-bold w-full aspect-square flex justify-center items-center ${
+                  className={`text-xs lg:text-sm xl:text-base font-bold w-full h-full aspect-square flex justify-center items-center ${
                     colorMap[key as keyof typeof colorMap]
                   }`}
                 >

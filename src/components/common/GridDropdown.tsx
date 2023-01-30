@@ -32,7 +32,7 @@ function GridDropdown({
   const selectedComponent = data[selectedIndex].component
   const displayComponent = data[selectedIndex].displayComponent
   return (
-    <div>
+    <div className="">
       <button
         className="w-full bg-slate-700 rounded border-2 border-purple-400"
         onClick={() => {

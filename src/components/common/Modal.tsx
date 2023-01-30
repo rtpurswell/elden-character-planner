@@ -5,7 +5,7 @@ interface ModalProps {
 }
 function Modal({ children, title, onClose }: ModalProps) {
   return (
-    <div className="fixed top-0 left-0 w-screen h-screen bg-gray-900 bg-opacity-50 flex items-center justify-center ">
+    <div className="fixed top-0 left-0 w-screen h-screen bg-gray-900 bg-opacity-50 flex items-center justify-center z-10">
       <div className="w-3/4 bg-slate-800 rounded p-5  h-4/5 flex flex-col">
         <div className="flex flex-shrink">
           <div className="text-3xl p-2">{title}</div>

@@ -27,24 +27,24 @@ function Potions() {
       <H2>Potions</H2>
       <div className="grid grid-cols-2 gap-2 p-2">
         <button
-          className="w-full aspect-square bg-slate-700 rounded p-3 relative"
+          className="w-full aspect-square bg-slate-700 rounded p-3 relative border-2 border-purple-400"
           onClick={handleCrimsonIncrease}
         >
           <img
             src="\images\default\flask_of_crimson_tears.png"
             alt="FLASK OF CRIMSON TEARS"
           />
-          <div className="absolute bottom-0  font-bold">{crimsonFlask}</div>
+          <div className="absolute bottom-0 z-0 font-bold">{crimsonFlask}</div>
         </button>
         <button
-          className="w-full aspect-square bg-slate-700 rounded p-3 relative"
+          className="w-full aspect-square bg-slate-700 rounded p-3 relative border-2 border-purple-400"
           onClick={handleManaIncrease}
         >
           <img
             src="\images\default\flask_of_cerulean_tears.png"
             alt="FLASK OF CERULEAN TEARS"
           />
-          <div className="absolute bottom-0  font-bold">{ceruleanFlask}</div>
+          <div className="absolute bottom-0 z-0 font-bold">{ceruleanFlask}</div>
         </button>
       </div>
     </div>

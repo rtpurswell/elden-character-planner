@@ -26,7 +26,7 @@ function GreatRune() {
             id: key,
 
             component: (
-              <div className="w-full aspect-square p-3">
+              <div className="w-full aspect-square p-3 flex items-center justify-center flex-col">
                 <img
                   src={`/images/${
                     GreatRuneData[key as keyof typeof GreatRuneData].image

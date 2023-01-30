@@ -384,7 +384,7 @@ function Equipment() {
     </div>
   )
   return (
-    <div className="w-full grid grid-cols-1 gap-2 p-3 rounded">
+    <div className="w-full grid grid-cols-1 gap-2 p-3 rounded auto-rows-fr">
       <H2>Equipment</H2>
       <EquipContainer
         options={[
