@@ -1,7 +1,9 @@
 import ClassAndStats from './ClassAndStats'
 import H1 from './common/H1'
 import Equipment from './Equipment'
+import Flask from './Flask'
 import GreatRune from './GreatRune'
+import Potions from './Potions'
 
 import Spells from './Spells'
 function Layout() {
@@ -19,7 +21,13 @@ function Layout() {
 
       <div className=" bg-slate-800 p-5 rounded">
         <Spells />
-        <GreatRune />
+        <div className="grid grid-cols-2">
+          <GreatRune />
+          <div>
+            <Potions />
+            <Flask />
+          </div>
+        </div>
       </div>
     </main>
   )

@@ -11,8 +11,8 @@ function GreatRune() {
   const selectedId = useSelector(selectorFunction)
 
   return (
-    <div className="grid grid-cols-2 xl:grid-cols-4">
-      <H2 className=" col-span-2 xl:col-span-4">Great Rune</H2>
+    <div className="">
+      <H2 className=" ">Great Rune</H2>
 
       <GridDropdown
         heightClass="h-60"
