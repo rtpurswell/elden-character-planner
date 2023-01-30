@@ -384,39 +384,41 @@ function Equipment() {
     </div>
   )
   return (
-    <div className="w-full grid grid-cols-1 gap-2 p-3 rounded auto-rows-fr">
-      <H2>Equipment</H2>
-      <EquipContainer
-        options={[
-          { title: 'Weapons', component: mainHandComponent },
-          { title: 'Ashes', component: mainHandAshesComponent },
-          {
-            title: 'Affinities',
-            component: mainHandAffinitiesComponent,
-          },
-        ]}
-      />
-      <EquipContainer
-        options={[
-          { title: 'Off-Hand', component: offHandComponent },
-          { title: 'Ashes', component: offHandAshesComponent },
-          {
-            title: 'Affinities',
-            component: offHandAffinitiesComponent,
-          },
-        ]}
-      />
-      <EquipContainer
-        options={[{ title: 'Armor', component: armorComponent }]}
-      />
+    <>
+      <H2 className="pl-3 pt-3">Equipment</H2>
+      <div className="w-full grid grid-cols-1 gap-2 p-3 rounded auto-rows-fr">
+        <EquipContainer
+          options={[
+            { title: 'Weapons', component: mainHandComponent },
+            { title: 'Ashes', component: mainHandAshesComponent },
+            {
+              title: 'Affinities',
+              component: mainHandAffinitiesComponent,
+            },
+          ]}
+        />
+        <EquipContainer
+          options={[
+            { title: 'Off-Hand', component: offHandComponent },
+            { title: 'Ashes', component: offHandAshesComponent },
+            {
+              title: 'Affinities',
+              component: offHandAffinitiesComponent,
+            },
+          ]}
+        />
+        <EquipContainer
+          options={[{ title: 'Armor', component: armorComponent }]}
+        />
 
-      <EquipContainer
-        options={[{ title: 'Talismans', component: talismanComponent }]}
-      />
-      <EquipContainer
-        options={[{ title: 'Items', component: itemsComponent }]}
-      />
-    </div>
+        <EquipContainer
+          options={[{ title: 'Talismans', component: talismanComponent }]}
+        />
+        <EquipContainer
+          options={[{ title: 'Items', component: itemsComponent }]}
+        />
+      </div>
+    </>
   )
 }
 
