@@ -1,4 +1,5 @@
 import H1 from './common/H1'
+import DesktopMenu from './DesktopMenu'
 import MobileMenu from './MobileMenu'
 
 function Header() {
@@ -8,7 +9,9 @@ function Header() {
       <div className="md:hidden">
         <MobileMenu />
       </div>
-      <div className="hidden md:flex">Desktop Menu</div>
+      <div className="hidden md:flex md:w-1/2 justify-end">
+        <DesktopMenu />
+      </div>
     </div>
   )
 }

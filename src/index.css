@@ -38,3 +38,27 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+/*Animations*/
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideOutToRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+  .mobile-menu-enter-active {
+    animation: slideInFromRight 0.5s;
+  }
+  .mobile-menu-leave-active {
+    animation: slideOutToRight 0.5s;
+  }
