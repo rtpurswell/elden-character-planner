@@ -42,6 +42,9 @@ export const initialState = {
   spell10: '',
   spell11: '',
   spell12: '',
+  greatRune: 'AA',
+  physique1: 'AA',
+  physique2: 'AB',
   ashesOfWar: {
     mainHand1: '',
     mainHand2: '',
@@ -180,6 +183,15 @@ export const characterSlice = createSlice({
       state.affinities[action.payload.key as keyof typeof state.affinities] =
         action.payload.value
     },
+    greatRuneUpdated: (state, action) => {
+      state.greatRune = action.payload
+    },
+    physique1Updated: (state, action) => {
+      state.physique1 = action.payload
+    },
+    physique2Updated: (state, action) => {
+      state.physique2 = action.payload
+    },
     characterLoaded: (state, action) => {
       const serializedString = action.payload.value
 
@@ -257,6 +269,9 @@ export const {
   ashOfWarUpdated,
   affinityUpdated,
   characterLoaded,
+  greatRuneUpdated,
+  physique1Updated,
+  physique2Updated,
 } = characterSlice.actions
 
 //Selectors
