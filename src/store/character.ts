@@ -45,6 +45,8 @@ export const initialState = {
   greatRune: 'AA',
   physique1: 'AA',
   physique2: 'AB',
+  crimsonFlask: 7,
+  manaFlask: 7,
   ashesOfWar: {
     mainHand1: '',
     mainHand2: '',
@@ -192,6 +194,12 @@ export const characterSlice = createSlice({
     physique2Updated: (state, action) => {
       state.physique2 = action.payload
     },
+    crimsonFlaskUpdated: (state, action) => {
+      state.crimsonFlask = action.payload
+    },
+    manaFlaskUpdated: (state, action) => {
+      state.manaFlask = action.payload
+    },
     characterLoaded: (state, action) => {
       const serializedString = action.payload.value
 
@@ -272,6 +280,8 @@ export const {
   greatRuneUpdated,
   physique1Updated,
   physique2Updated,
+  crimsonFlaskUpdated,
+  manaFlaskUpdated,
 } = characterSlice.actions
 
 //Selectors
