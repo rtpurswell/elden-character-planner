@@ -200,14 +200,13 @@ export const characterSlice = createSlice({
     manaFlaskUpdated: (state, action) => {
       state.manaFlask = action.payload
     },
-    characterLoaded: (state, action) => {
-      const serializedString = action.payload.value
+    characterLoaded: (state: any, action) => {
+      const serializedString = action.payload
 
       const stringArray: string[] = []
       for (let i = 0; i < serializedString.length; i += 2) {
         stringArray.push(serializedString.substr(i, 2))
       }
-      console.log(stringArray.length)
 
       let currentStringIndex = 0
       Object.keys(state).forEach((key) => {
@@ -229,14 +228,20 @@ export const characterSlice = createSlice({
             }
             currentStringIndex++
           })
-        } else {
-          state[key as keyof typeof state] = stringArray[
-            currentStringIndex
-          ] as any
+        } else if (typeof state[key as keyof typeof state] === 'number') {
+          state[key as keyof typeof state] = Number(
+            stringArray[currentStringIndex],
+          )
+          currentStringIndex++
+        } else if (typeof state[key as keyof typeof state] === 'string') {
+          const currentVal =
+            stringArray[currentStringIndex] === '00'
+              ? ''
+              : stringArray[currentStringIndex]
+          state[key as keyof typeof state] = currentVal as any
           currentStringIndex++
         }
       })
-      console.log(currentStringIndex)
     },
   },
 })
@@ -531,6 +536,10 @@ export const getSerializedCharacter = (state: RootState) => {
             : (serializedString += obj[key2 as keyof typeof obj])
         }
       })
+    } else if (typeof character[key as keyof typeof character] === 'number') {
+      character[key as keyof typeof character] < 10
+        ? (serializedString += '0' + character[key as keyof typeof character])
+        : (serializedString += character[key as keyof typeof character])
     } else {
       character[key as keyof typeof character] === ''
         ? (serializedString += '00')
