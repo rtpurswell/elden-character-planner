@@ -1,37 +1,52 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import { IAffinity, IGreatRune, ITear } from '../../data/dataTypes'
 import { RootState } from '../../store/configureStore'
 
 interface GridDropdownProps {
-  data: { id: string; component: React.ReactNode }[]
+  data: {
+    id: string
+    component: React.ReactNode
+    displayComponent?: React.ReactNode
+  }[]
   selectedItemId: string
   onUpdate: (id: string) => void
+  widthClass: string
+  heightClass: string
+  selectorFunction: (state: RootState) => any
 }
-function GridDropdown({ data, onUpdate, selectedItemId }: GridDropdownProps) {
-  const [selectedId, setSelectedId] = useState(selectedItemId)
+function GridDropdown({
+  data,
+  onUpdate,
+  heightClass,
+  widthClass,
+  selectorFunction,
+}: GridDropdownProps) {
+  const selectedId = useSelector(selectorFunction)
   const [isOpen, setIsOpen] = useState(false)
 
   const handleSelect = (id: string) => () => {
-    setSelectedId(id)
     onUpdate(id)
     setIsOpen(false)
   }
-  const selectedComponent = data.find((item) => item.id === selectedId)
-    ?.component
+  const selectedIndex = data.findIndex((item) => item.id === selectedId)
+  const selectedComponent = data[selectedIndex].component
+  const displayComponent = data[selectedIndex].displayComponent
   return (
     <div>
       <button
-        className="flex items-center justify-center aspect-square w-full bg-slate-700 rounded border-2 border-purple-400"
+        className="w-full bg-slate-700 rounded border-2 border-purple-400"
         onClick={() => {
           setIsOpen(!isOpen)
         }}
       >
-        {selectedComponent}
+        {displayComponent ? displayComponent : selectedComponent}
       </button>
       <div className="relative h-0">
         {isOpen ? (
-          <div className="w-24 overflow-x-scroll h-52 bg-slate-700 border-2 rounded grid grid-cols-1 gap-2 p-2">
+          <div
+            className={`overflow-y-scroll  bg-slate-700 border-2 rounded grid grid-cols-1 gap-2 p-2 ${widthClass} ${heightClass}`}
+          >
             {data.map((item) => {
               return (
                 <button
