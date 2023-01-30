@@ -5,6 +5,7 @@ import type {
   ITalisman,
   IItem,
   IAsh,
+  ITear,
 } from '../../data/dataTypes'
 import { useState } from 'react'
 import { trackWindowScroll } from 'react-lazy-load-image-component'
@@ -12,7 +13,7 @@ import LazyImage from './LazyImage'
 interface SearchAndSelectProps {
   data: {
     label: string
-    value: Array<IArmor | IWeapon | IShield | ITalisman | IItem | IAsh>
+    value: Array<IArmor | IWeapon | IShield | ITalisman | IItem | IAsh | ITear>
     placeholder: string
   }[]
   onSelect: (value: string) => void
@@ -69,7 +70,14 @@ function SearchAndSelect({
               })
               .map(
                 (
-                  item: IArmor | IItem | IShield | IWeapon | ITalisman | IAsh,
+                  item:
+                    | IArmor
+                    | IItem
+                    | IShield
+                    | IWeapon
+                    | ITalisman
+                    | IAsh
+                    | ITear,
                 ) => {
                   return (
                     <button

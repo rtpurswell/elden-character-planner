@@ -23,9 +23,9 @@ function Potions() {
     }
   }
   return (
-    <div>
+    <div className="px-2">
       <H2>Potions</H2>
-      <div className="grid grid-cols-2 gap-2 p-2">
+      <div className="grid grid-cols-2 gap-2">
         <button
           className="w-full aspect-square bg-slate-700 rounded p-3 relative border-2 border-purple-400"
           onClick={handleCrimsonIncrease}
