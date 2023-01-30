@@ -44,8 +44,8 @@ function Affinity({ storeKey, label }: AffinityProps) {
     <>
       {selectedWeaponId !== '' ? (
         <GridDropdown
-          heightClass="h-48"
-          widthClass="w-24"
+          heightClass="h-48 md:h-60"
+          widthClass="w-24 xl:w-auto"
           selectorFunction={selectorFunction}
           selectedItemId={selectedAffinityId}
           onUpdate={handleAffinityUpdate}
@@ -54,7 +54,7 @@ function Affinity({ storeKey, label }: AffinityProps) {
               id: key,
               component: (
                 <div
-                  className={`text-xs font-bold w-full aspect-square flex justify-center items-center ${
+                  className={`text-xs lg:text-sm xl:text-base font-bold w-full aspect-square flex justify-center items-center ${
                     colorMap[key as keyof typeof colorMap]
                   }`}
                 >

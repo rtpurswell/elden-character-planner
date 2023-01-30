@@ -36,7 +36,7 @@ function ClassSelector() {
       <div className="grid grid-cols-6 gap-2">
         {' '}
         <button
-          className="p-2 bg-purple-400 rounded font-bold"
+          className="p-2 bg-purple-400 rounded font-bold text-sm"
           onClick={handleClassChange('backward')}
         >{`< <`}</button>
         <div className="col-span-4 text-center">
@@ -68,7 +68,7 @@ function ClassSelector() {
           />
         </div>
         <button
-          className="p-2 bg-purple-400 rounded font-bold"
+          className="p-2 bg-purple-400 rounded font-bold text-sm"
           onClick={handleClassChange('forward')}
         >{`> >`}</button>
       </div>

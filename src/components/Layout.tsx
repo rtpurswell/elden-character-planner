@@ -1,7 +1,6 @@
 import ClassAndStats from './ClassAndStats'
 import H1 from './common/H1'
 import Equipment from './Equipment'
-import IncantationsAndSorceries from './IncantationsAndSorceries'
 
 import Spells from './Spells'
 function Layout() {
@@ -13,15 +12,12 @@ function Layout() {
       <div className="md:col-span-2">
         <ClassAndStats />
       </div>
-      <div className=" bg-slate-800 rounded md:row-span-2">
+      <div className=" bg-slate-800 rounded ">
         <Equipment />
       </div>
 
       <div className=" bg-slate-800 p-5 rounded">
         <Spells />
-      </div>
-      <div className=" bg-slate-800 p-5 rounded">
-        <IncantationsAndSorceries />
       </div>
     </main>
   )

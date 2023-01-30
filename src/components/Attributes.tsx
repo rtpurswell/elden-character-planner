@@ -98,9 +98,13 @@ function Attributes() {
   const handleValueDecrement = () => {
     setValue(value - 1)
   }
-
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      handleUpdate()
+    }
+  }
   return (
-    <div className="flex flex-col bg-slate-800 rounded p-5 gap-3">
+    <div className="flex flex-col bg-slate-800 rounded p-5 gap-3 md:col-span-2 lg:col-span-1">
       <div className="flex justify-between items-center">
         <H2 className=" mb-2 mr-2">Attributes</H2>
         {selectedAttribute !== '' ? (
@@ -149,6 +153,7 @@ function Attributes() {
               {'<'}
             </button>
             <input
+              autoFocus={true}
               type="number"
               value={value}
               onChange={handleValueChange}
@@ -157,6 +162,7 @@ function Attributes() {
               } ${dataMap[selectedAttribute as keyof typeof dataMap].text}`}
               size={2}
               width={2}
+              onKeyDown={handleKeyDown}
             />
             <button
               className={`p-2 rounded ${
