@@ -4,7 +4,7 @@ import MobileMenu from './MobileMenu'
 
 function Header() {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between bg-slate-800 p-3 rounded">
       <H1>Elden Ring Character Planner</H1>
       <div className="md:hidden">
         <MobileMenu />

@@ -42,7 +42,7 @@ function Tear({ actionCreator, selectorFunction }: TearProps) {
         </Modal>
       ) : null}
       <button
-        className="p-2 flex items-center justify-center bg-slate-700 rounded aspect-square border-2 border-purple-400"
+        className="p-2 flex items-center justify-center bg-slate-700 rounded aspect-square"
         onClick={handleModalToggle}
       >
         <img

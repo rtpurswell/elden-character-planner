@@ -104,13 +104,52 @@ function Attributes() {
     }
   }
   return (
-    <div className="flex flex-col bg-slate-800 rounded p-5 gap-3 md:col-span-2 lg:col-span-1">
+    <div className="flex flex-col bg-slate-800 rounded p-5 gap-3 ">
       <div className="flex justify-between items-center">
         <H2 className=" mb-2 mr-2">Attributes</H2>
         {selectedAttribute !== '' ? (
           error ? (
-            <span className="text-sm text-red-500">{error}</span>
-          ) : null
+            <span className="text-sm text-red-500">
+              {error}{' '}
+              <span className="text-sm text-slate-500 flex gap-5">
+                Press enter or
+                <button
+                  className="flex gap-2 text-green-500"
+                  onClick={handleUpdate}
+                >
+                  Accept
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    className="fill-green-600"
+                  >
+                    <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" />
+                  </svg>
+                </button>
+              </span>
+            </span>
+          ) : (
+            <span className="text-sm text-slate-500 flex gap-5">
+              Press enter or
+              <button
+                className="flex gap-2 text-green-500"
+                onClick={handleUpdate}
+              >
+                Accept
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  className="fill-green-600"
+                >
+                  <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" />
+                </svg>
+              </button>
+            </span>
+          )
         ) : (
           <span className="text-sm text-slate-500">
             Click an attribute to edit
@@ -118,7 +157,7 @@ function Attributes() {
         )}
       </div>
 
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-2 text-sm md:text-base">
         {Object.keys(stats).map((key) => {
           if (key === 'level') return null
           const capitolKey = key.charAt(0).toUpperCase() + key.slice(1)
@@ -133,62 +172,62 @@ function Attributes() {
             />
           )
         })}
-      </div>
-      {selectedAttribute !== '' ? (
-        <div className="grid grid-cols-5 gap-2">
-          <div
-            className={`font-bold p-2 ${
-              dataMap[selectedAttribute as keyof typeof dataMap].text
-            }`}
-          >
-            {dataMap[selectedAttribute as keyof typeof dataMap].shorthand}:
-          </div>
-          <div className="grid grid-cols-6 gap-2 col-span-4">
-            <button
-              className={`p-2 rounded ${
-                dataMap[selectedAttribute as keyof typeof dataMap].border
-              } ${dataMap[selectedAttribute as keyof typeof dataMap].bg}`}
-              onClick={handleValueDecrement}
-            >
-              {'<'}
-            </button>
-            <input
-              autoFocus={true}
-              type="number"
-              value={value}
-              onChange={handleValueChange}
-              className={`bg-transparent border-b-2 rounded col-span-3 text-center font-bold outline-none ${
-                dataMap[selectedAttribute as keyof typeof dataMap].border
-              } ${dataMap[selectedAttribute as keyof typeof dataMap].text}`}
-              size={2}
-              width={2}
-              onKeyDown={handleKeyDown}
-            />
-            <button
-              className={`p-2 rounded ${
-                dataMap[selectedAttribute as keyof typeof dataMap].border
-              } ${dataMap[selectedAttribute as keyof typeof dataMap].bg}`}
-              onClick={handleValueIncrement}
-            >
-              {'>'}
-            </button>
-            <button
-              className="p-2 bg-green-600 rounded flex items-center justify-center"
-              onClick={handleUpdate}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="fill-white"
+        {selectedAttribute !== '' ? (
+          <div className="grid grid-cols-5 gap-2 col-span-2 md:col-span-3 lg:col-span-1">
+            <div className={` text-slate-400 flex items-center`}>
+              {dataMap[selectedAttribute as keyof typeof dataMap].shorthand}:
+            </div>
+            <div className="flex justify-end gap-2 col-span-4">
+              <button
+                className={`flex justify-end px-2`}
+                onClick={handleValueDecrement}
               >
-                <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" />
-              </svg>
-            </button>
+                <svg
+                  className="w-6 h-10"
+                  viewBox="0 0 17 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.91663 24.7917L7.08329 17.5L9.91663 10.2083"
+                    stroke="#FFF"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+              <input
+                autoFocus={true}
+                type="number"
+                value={value}
+                onChange={handleValueChange}
+                className={`bg-transparent border-b-2   text-center font-bold outline-none w-16 h-10${
+                  dataMap[selectedAttribute as keyof typeof dataMap].border
+                } ${dataMap[selectedAttribute as keyof typeof dataMap].text}`}
+                size={2}
+                onKeyDown={handleKeyDown}
+              />
+              <button className={`px-2`} onClick={handleValueIncrement}>
+                <svg
+                  className="w-6 h-10"
+                  viewBox="0 0 17 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.08337 10.2083L9.91671 17.5L7.08337 24.7917"
+                    stroke="#FFF"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
-        </div>
-      ) : null}
+        ) : null}
+      </div>
     </div>
   )
 }

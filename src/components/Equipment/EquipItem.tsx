@@ -32,13 +32,13 @@ interface EquipItemProps {
     placeholder: string
   }[]
   label: string
-  storeKey: keyof typeof initialState
+  selectorFunction: (state: RootState) => string
   actionCreator: ActionCreatorWithPayload<any, string>
 }
 function EquipItem({
   type,
   data,
-  storeKey,
+  selectorFunction,
   actionCreator,
   label,
 }: EquipItemProps) {
@@ -57,46 +57,44 @@ function EquipItem({
     | null = null
 
   const dispatch = useDispatch()
-  const itemId = useSelector((state: RootState) => state.character[storeKey])
+  const itemId = useSelector(selectorFunction)
 
-  let bgClass = ''
   switch (type) {
     case 'mainHand':
       defaultImage = 'default/weapon.png'
-      bgClass = "bg-[url('/images/default/weapon.png')]"
+
       break
     case 'armor':
       defaultImage = 'default/armor.png'
-      bgClass = "bg-[url('/images/default/armor.png')]"
+
       break
     case 'offHand':
       defaultImage = 'default/off-hand.png'
-      bgClass = "bg-[url('/images/default/off-hand.png')]"
+
       break
     case 'talisman':
       defaultImage = 'default/talisman.png'
-      bgClass = "bg-[url('/images/default/talisman.png')]"
+
       break
     case 'item':
       defaultImage = 'default/item.png'
-      bgClass = "bg-[url('/images/default/item.png')]"
+
       break
     case 'helmet':
       defaultImage = 'default/helmet.png'
-      bgClass = "bg-[url('/images/default/helmet.png')]"
+
       break
     case 'legs':
       defaultImage = 'default/legs.png'
-      bgClass = "bg-[url('/images/default/legs.png')]"
+
       break
     case 'hands':
       defaultImage = 'default/hands.png'
-      bgClass = "bg-[url('/images/default/hands.png')]"
 
       break
     case 'spell':
-      defaultImage = 'default/item.png'
-      bgClass = "bg-[url('/images/default/item.png')]"
+      defaultImage = 'default/spell.png'
+
       break
   }
   if (itemId !== '') {
@@ -138,7 +136,7 @@ function EquipItem({
       ) : null}
       <button
         onClick={handleModalToggle}
-        className={`bg-no-repeat bg-center rounded bg-cover w-full h-full border-2 border-purple-400 md:p-2 bg-slate-700`}
+        className={`bg-no-repeat bg-center rounded bg-cover w-full h-full  md:p-2 bg-slate-700`}
       >
         <img
           src={`/images/${selectedItem ? imageURL : defaultImage}`}

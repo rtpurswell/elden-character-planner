@@ -23,11 +23,11 @@ function Potions() {
     }
   }
   return (
-    <div className="px-2">
+    <div className="p-5 rounded bg-slate-800">
       <H2>Potions</H2>
       <div className="grid grid-cols-2 gap-2">
         <button
-          className="w-full aspect-square bg-slate-700 rounded p-3 relative border-2 border-purple-400"
+          className="w-full aspect-square bg-slate-700 rounded p-3 relative"
           onClick={handleCrimsonIncrease}
         >
           <img
@@ -37,7 +37,7 @@ function Potions() {
           <div className="absolute bottom-0 z-0 font-bold">{crimsonFlask}</div>
         </button>
         <button
-          className="w-full aspect-square bg-slate-700 rounded p-3 relative border-2 border-purple-400"
+          className="w-full aspect-square bg-slate-700 rounded p-3 relative"
           onClick={handleManaIncrease}
         >
           <img

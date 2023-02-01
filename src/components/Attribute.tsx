@@ -11,12 +11,12 @@ function Stat({ name, className, onSelect }: StatProps) {
 
   return (
     <button
-      className={`p-3 rounded bg-slate-700 flex justify-between border-2 ${className}`}
+      className={`px-3 py-1 rounded flex justify-between border-2 border-slate-700 text-slate-400`}
       onClick={() => {
         onSelect(name)
       }}
     >
-      <span className="font-bold">{name}:</span>
+      <span>{name}:</span>
       <span>{value}</span>
     </button>
   )
