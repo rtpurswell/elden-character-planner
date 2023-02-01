@@ -11,35 +11,39 @@ function GreatRune() {
   const selectedId = useSelector(selectorFunction)
 
   return (
-    <div className="">
+    <div className="p-5 bg-slate-800 rounded">
       <H2 className=" ">Great Rune</H2>
+      <div className="grid grid-cols-2">
+        <div className="p-2 grid grid-cols-1 auto-rows-fr text-slate-400">
+          <p>{GreatRuneData[selectedId as keyof typeof GreatRuneData].name}</p>
+          <p>
+            {GreatRuneData[selectedId as keyof typeof GreatRuneData].effect}
+          </p>
+        </div>
+        <GridDropdown
+          heightClass="h-60"
+          selectorFunction={selectorFunction}
+          widthClass="w-auto"
+          onUpdate={(id) => {
+            dispatch(greatRuneUpdated(id))
+          }}
+          data={Object.keys(GreatRuneData).map((key) => {
+            return {
+              id: key,
 
-      <GridDropdown
-        heightClass="h-60"
-        selectorFunction={selectorFunction}
-        widthClass="w-auto"
-        onUpdate={(id) => {
-          dispatch(greatRuneUpdated(id))
-        }}
-        data={Object.keys(GreatRuneData).map((key) => {
-          return {
-            id: key,
-
-            component: (
-              <div className="w-full aspect-square p-3 flex items-center justify-center flex-col">
-                <img
-                  src={`/images/${
-                    GreatRuneData[key as keyof typeof GreatRuneData].image
-                  }`}
-                />{' '}
-                <div>
-                  {GreatRuneData[key as keyof typeof GreatRuneData].name}
+              component: (
+                <div className="w-full p-3 flex items-center justify-center flex-col">
+                  <img
+                    src={`/images/${
+                      GreatRuneData[key as keyof typeof GreatRuneData].image
+                    }`}
+                  />{' '}
                 </div>
-              </div>
-            ),
-          }
-        })}
-      />
+              ),
+            }
+          })}
+        />
+      </div>
     </div>
   )
 }

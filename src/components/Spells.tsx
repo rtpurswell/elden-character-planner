@@ -20,114 +20,113 @@ import H2 from './common/H2'
 
 const Sorceries = SorceryData as { [id: string]: ISorcery }
 const Incantations = IncantationData as { [id: string]: IIncantation }
-
+const placeholderImage = '/images/default/spell.png'
 function Spells() {
   return (
-    <div className="grid grid-cols-6 gap-2">
-      <H2 className="col-span-6">Spells</H2>
+    <div className="grid grid-cols-4  gap-2">
       <EquipItem
-        storeKey="spell1"
+        selectorFunction={(state) => state.character.spell1}
         type="spell"
         label="Spell 1"
         data={[
           {
             label: 'Sorceries',
-            placeholder: '/images/default/item.png',
+            placeholder: placeholderImage,
             value: Sorceries,
           },
           {
             label: 'Incantations',
-            placeholder: '/images/default/item.png',
+            placeholder: placeholderImage,
             value: Incantations,
           },
         ]}
         actionCreator={spell1Updated}
       />
       <EquipItem
-        storeKey="spell2"
+        selectorFunction={(state) => state.character.spell2}
         type="spell"
         label="Spell 2"
         data={[
           {
             label: 'Sorceries',
-            placeholder: '/images/default/item.png',
+            placeholder: placeholderImage,
             value: Sorceries,
           },
           {
             label: 'Incantations',
-            placeholder: '/images/default/item.png',
+            placeholder: placeholderImage,
             value: Incantations,
           },
         ]}
         actionCreator={spell2Updated}
       />
       <EquipItem
-        storeKey="spell3"
+        selectorFunction={(state) => state.character.spell3}
         type="spell"
         label="Spell 3"
         data={[
           {
             label: 'Sorceries',
-            placeholder: '/images/default/item.png',
+            placeholder: placeholderImage,
             value: Sorceries,
           },
           {
             label: 'Incantations',
-            placeholder: '/images/default/item.png',
+            placeholder: placeholderImage,
             value: Incantations,
           },
         ]}
         actionCreator={spell3Updated}
       />
       <EquipItem
-        storeKey="spell4"
+        selectorFunction={(state) => state.character.spell4}
         type="spell"
         label="Spell 4"
         data={[
           {
             label: 'Sorceries',
-            placeholder: '/images/default/item.png',
+            placeholder: placeholderImage,
             value: Sorceries,
           },
           {
             label: 'Incantations',
-            placeholder: '/images/default/item.png',
+            placeholder: placeholderImage,
             value: Incantations,
           },
         ]}
         actionCreator={spell4Updated}
       />
       <EquipItem
-        storeKey="spell5"
+        selectorFunction={(state) => state.character.spell5}
         type="spell"
         label="Spell 5"
         data={[
           {
             label: 'Sorceries',
-            placeholder: '/images/default/item.png',
+            placeholder: placeholderImage,
             value: Sorceries,
           },
           {
             label: 'Incantations',
-            placeholder: '/images/default/item.png',
+            placeholder: placeholderImage,
             value: Incantations,
           },
         ]}
         actionCreator={spell5Updated}
       />
       <EquipItem
-        storeKey="spell6"
+        selectorFunction={(state) => state.character.spell6}
         type="spell"
         label="Spell 6"
         data={[
           {
             label: 'Sorceries',
-            placeholder: '/images/default/item.png',
+            placeholder: placeholderImage,
             value: Sorceries,
           },
           {
             label: 'Incantations',
-            placeholder: '/images/default/item.png',
+            placeholder: placeholderImage,
             value: Incantations,
           },
         ]}
@@ -135,108 +134,108 @@ function Spells() {
       />
 
       <EquipItem
-        storeKey="spell7"
+        selectorFunction={(state) => state.character.spell7}
         type="spell"
         label="Spell 7"
         data={[
           {
             label: 'Sorceries',
-            placeholder: '/images/default/item.png',
+            placeholder: placeholderImage,
             value: Sorceries,
           },
           {
             label: 'Incantations',
-            placeholder: '/images/default/item.png',
+            placeholder: placeholderImage,
             value: Incantations,
           },
         ]}
         actionCreator={spell7Updated}
       />
       <EquipItem
-        storeKey="spell8"
+        selectorFunction={(state) => state.character.spell8}
         type="spell"
         label="Spell 8"
         data={[
           {
             label: 'Sorceries',
-            placeholder: '/images/default/item.png',
+            placeholder: placeholderImage,
             value: Sorceries,
           },
           {
             label: 'Incantations',
-            placeholder: '/images/default/item.png',
+            placeholder: placeholderImage,
             value: Incantations,
           },
         ]}
         actionCreator={spell8Updated}
       />
       <EquipItem
-        storeKey="spell9"
+        selectorFunction={(state) => state.character.spell9}
         type="spell"
         label="Spell 9"
         data={[
           {
             label: 'Sorceries',
-            placeholder: '/images/default/item.png',
+            placeholder: placeholderImage,
             value: Sorceries,
           },
           {
             label: 'Incantations',
-            placeholder: '/images/default/item.png',
+            placeholder: placeholderImage,
             value: Incantations,
           },
         ]}
         actionCreator={spell9Updated}
       />
       <EquipItem
-        storeKey="spell10"
+        selectorFunction={(state) => state.character.spell10}
         type="spell"
         label="Spell 10"
         data={[
           {
             label: 'Sorceries',
-            placeholder: '/images/default/item.png',
+            placeholder: placeholderImage,
             value: Sorceries,
           },
           {
             label: 'Incantations',
-            placeholder: '/images/default/item.png',
+            placeholder: placeholderImage,
             value: Incantations,
           },
         ]}
         actionCreator={spell10Updated}
       />
       <EquipItem
-        storeKey="spell11"
+        selectorFunction={(state) => state.character.spell11}
         type="spell"
         label="Spell 11"
         data={[
           {
             label: 'Sorceries',
-            placeholder: '/images/default/item.png',
+            placeholder: placeholderImage,
             value: Sorceries,
           },
           {
             label: 'Incantations',
-            placeholder: '/images/default/item.png',
+            placeholder: placeholderImage,
             value: Incantations,
           },
         ]}
         actionCreator={spell11Updated}
       />
       <EquipItem
-        storeKey="spell12"
+        selectorFunction={(state) => state.character.spell12}
         type="spell"
         label="Spell 12"
         data={[
           {
             label: 'Sorceries',
-            placeholder: '/images/default/item.png',
+            placeholder: placeholderImage,
             value: Sorceries,
           },
           {
             label: 'Incantations',
-            placeholder: '/images/default/item.png',
+            placeholder: placeholderImage,
             value: Incantations,
           },
         ]}

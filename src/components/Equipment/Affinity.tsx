@@ -7,9 +7,8 @@ import GridDropdown from '../common/GridDropdown'
 const Affinities = AffinityData as { [key: string]: IAffinity }
 interface AffinityProps {
   storeKey: string
-  label: string
 }
-function Affinity({ storeKey, label }: AffinityProps) {
+function Affinity({ storeKey }: AffinityProps) {
   const dispatch = useDispatch()
 
   const colorMap = {

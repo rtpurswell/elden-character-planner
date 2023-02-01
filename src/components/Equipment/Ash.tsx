@@ -14,9 +14,8 @@ const Ashes = AshesData as { [key: string]: IAsh }
 
 interface AshProps {
   storeKey: string
-  label: string
 }
-function Ash({ storeKey, label }: AshProps) {
+function Ash({ storeKey }: AshProps) {
   const [modalOpen, setModalOpen] = useState(false)
   const dispatch = useDispatch()
   const selectedAshOfWar = useSelector(
@@ -78,7 +77,7 @@ function Ash({ storeKey, label }: AshProps) {
       ) : null}
       {selectedWeapon ? (
         <button
-          className=" rounded md:p-2 flex items-center justify-center bg-slate-700 border-2 border-purple-400"
+          className=" rounded md:p-2 flex items-center justify-center bg-slate-700 "
           onClick={handleModalToggle}
         >
           {selectedAsh ? (

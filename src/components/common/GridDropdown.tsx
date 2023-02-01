@@ -34,7 +34,7 @@ function GridDropdown({
   return (
     <div className="">
       <button
-        className="w-full bg-slate-700 rounded border-2 border-purple-400"
+        className="w-full bg-slate-700 rounded"
         onClick={() => {
           setIsOpen(!isOpen)
         }}
