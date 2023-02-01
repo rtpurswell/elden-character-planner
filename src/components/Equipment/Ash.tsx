@@ -56,7 +56,7 @@ function Ash({ storeKey }: AshProps) {
         >
           <SearchAndSelect
             handleClear={() => {
-              dispatch(ashOfWarUpdated({ id: '', key: storeKey }))
+              dispatch(ashOfWarUpdated({ value: '', key: storeKey }))
               handleModalToggle()
             }}
             data={[
