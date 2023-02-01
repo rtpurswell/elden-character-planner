@@ -222,9 +222,10 @@ export const characterSlice = createSlice({
                 objKey as keyof typeof state.affinities
               ] = stringArray[currentStringIndex] as any
             } else if (key === 'ashesOfWar') {
-              state.ashesOfWar[
-                objKey as keyof typeof state.ashesOfWar
-              ] = stringArray[currentStringIndex] as any
+              state.ashesOfWar[objKey as keyof typeof state.ashesOfWar] =
+                stringArray[currentStringIndex] === '00'
+                  ? ''
+                  : (stringArray[currentStringIndex] as any)
             }
             currentStringIndex++
           })
@@ -234,11 +235,10 @@ export const characterSlice = createSlice({
           )
           currentStringIndex++
         } else if (typeof state[key as keyof typeof state] === 'string') {
-          const currentVal =
+          state[key as keyof typeof state] =
             stringArray[currentStringIndex] === '00'
               ? ''
-              : stringArray[currentStringIndex]
-          state[key as keyof typeof state] = currentVal as any
+              : (stringArray[currentStringIndex] as any)
           currentStringIndex++
         }
       })
