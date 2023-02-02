@@ -607,5 +607,33 @@
     "image": "talismans/17f696c4991l0i2szwm52zrw4bgso4.png",
     "description": "Mysterious circular object that's oddly warped. Changes the demeanour of the wearer's actions.",
     "effect": "Changes demeanour of wearer's actions"
+  },
+  "an": {
+    "id": "an",
+    "name": "Prosthesis-Wearer Heirloom",
+    "image": "talismans/prosthesis-wearer_heriloom.png",
+    "description": "A talisman engraved with a scene from a heroic tale. Though born into the accursed rot, when the young girl encountered her mentor and his flowing blade, she gained wings of unparalleled strength.",
+    "effect": "Raises Dexterity by 5."
+  },
+  "aN": {
+    "id": "aN",
+    "name": "Roar Medallion",
+    "image": "talismans/roar_medallion_talisman.png",
+    "description": "A bronze medallion depicting a roaring giant. In ancient times, the giants were mortal enemies of the Erdtree. Their bellowing roars desolated nature, triggered avalanches, and whipped up storms of flame.",
+    "effect": "Enhances roars and breath attacks."
+  },
+  "ao": {
+    "id": "ao",
+    "name": "Rotten Winged Sword Insignia",
+    "image": "talismans/rotten_winged_sword_insignia.png",
+    "description": "A talisman depicting a raised prosthetic blade. An honor bestowed upon the valkyries who serve the goddess of rot. The Four sister were born in the swamp of Aeonia, and came to the Haligtree under the aegis of Gowry. And yet, those buds were doomed to never blossom.",
+    "effect": "Greatly raises attack power with successive attacks"
+  },
+  "aO": {
+    "id": "aO",
+    "name": "Silver Scarab",
+    "image": "talismans/silver_scarab.png",
+    "description": "A talisman facsimile of a scarab, the carrier of treasures and precious things.",
+    "effect": "This silver scarab enhances item discovery."
   }
 }
