@@ -21,6 +21,7 @@ export interface IWeapon {
   }[]
   category: string
   weight: number
+  unique?: boolean
 }
 
 export interface ITalisman {
