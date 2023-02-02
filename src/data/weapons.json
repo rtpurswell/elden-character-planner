@@ -77,7 +77,8 @@
       }
     ],
     "category": "Axe",
-    "weight": 3.5
+    "weight": 3.5,
+    "unique": false
   },
   "Aa": {
     "id": "Aa",
@@ -157,7 +158,8 @@
       }
     ],
     "category": "Axe",
-    "weight": 5.5
+    "weight": 5.5,
+    "unique": false
   },
   "AB": {
     "id": "AB",
@@ -237,7 +239,8 @@
       }
     ],
     "category": "Axe",
-    "weight": 2.5
+    "weight": 2.5,
+    "unique": false
   },
   "Ab": {
     "id": "Ab",
@@ -317,7 +320,8 @@
       }
     ],
     "category": "Axe",
-    "weight": 6
+    "weight": 6,
+    "unique": false
   },
   "AC": {
     "id": "AC",
@@ -397,7 +401,8 @@
       }
     ],
     "category": "Axe",
-    "weight": 4.5
+    "weight": 4.5,
+    "unique": false
   },
   "Ac": {
     "id": "Ac",
@@ -477,12 +482,13 @@
       }
     ],
     "category": "Axe",
-    "weight": 4.5
+    "weight": 4.5,
+    "unique": false
   },
   "AD": {
     "id": "AD",
     "name": "Icerind Hatchet",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f699235c3l0i1ohvv1u6vgzp6gxv.png",
     "description": "A hatchet with a frost-coated blade. One of several gifts given by Castle Sol in the distant north. Known as \"freezing fog,\" the blade is thought to be a dragon's scale. Inflicts a powerful frost effect.",
     "attack": [
@@ -638,7 +644,8 @@
       }
     ],
     "category": "Axe",
-    "weight": 5.5
+    "weight": 5.5,
+    "unique": false
   },
   "AE": {
     "id": "AE",
@@ -718,7 +725,8 @@
       }
     ],
     "category": "Axe",
-    "weight": 4.5
+    "weight": 4.5,
+    "unique": false
   },
   "Ae": {
     "id": "Ae",
@@ -807,7 +815,11 @@
       }
     ],
     "category": "Axe",
-    "weight": 5.5
+    "weight": 5.5,
+    "uniqueSkill": {
+      "name": "Rosus's Summons",
+      "description": "Raise the axe aloft to summon those lost in death.\nThree skeletons will appear at a distance and attack in tandem before vanishing."
+    }
   },
   "AF": {
     "id": "AF",
@@ -887,7 +899,8 @@
       }
     ],
     "category": "Axe",
-    "weight": 4.5
+    "weight": 4.5,
+    "unique": false
   },
   "Af": {
     "id": "Af",
@@ -963,7 +976,8 @@
       }
     ],
     "category": "Axe",
-    "weight": 7.5
+    "weight": 7.5,
+    "unique": false
   },
   "AG": {
     "id": "AG",
@@ -1044,12 +1058,16 @@
       }
     ],
     "category": "Axe",
-    "weight": 5.5
+    "weight": 5.5,
+    "uniqueSkill": {
+      "name": "Thunderstorm",
+      "description": "Imbue the armament's wing-blade with lightning and swing it around to create a tempestuous lightning storm. Follow up with an additional input to perform up to two spinning attacks. The lightning will stay on the blade for a while."
+    }
   },
   "Ag": {
     "id": "Ag",
     "name": "Gargoyle's Black Axe",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f699ef109l0i1oj1cqtn6euxicod.png",
     "description": "Bronze greataxe wielded by Valiant Gargoyle, mended with blackened corpse wax. Deals holy damage. Such is the mark of those who serve Maliketh, the Black Blade.",
     "attack": [
@@ -1212,12 +1230,13 @@
       }
     ],
     "category": "Ballista",
-    "weight": 10
+    "weight": 10,
+    "unique": false
   },
   "Ah": {
     "id": "Ah",
     "name": "Jar Cannon",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69dd8093l0i1oj6x6qo6tg76q8.png",
     "description": "Jar cannon which uses explosives to fire greatbolts. Deals great damage but is slow to reload.  Experimental firearm brought to the assault on Volcano Manor, where it was discovered that no one knew how to use it.",
     "attack": [
@@ -1376,7 +1395,8 @@
       }
     ],
     "category": "Bow",
-    "weight": 4
+    "weight": 4,
+    "unique": false
   },
   "Ai": {
     "id": "Ai",
@@ -1460,12 +1480,13 @@
       }
     ],
     "category": "Bow",
-    "weight": 4.5
+    "weight": 4.5,
+    "unique": false
   },
   "AJ": {
     "id": "AJ",
     "name": "Erdtree Bow",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f6968148cl0i1ojrunt1o8v6y34f.png",
     "description": "Longbow featuring Erdtree styling. In times of old, when faith and battle went hand in hand, this weapon was created in tandem with the Golden Arrow. Scales all arrow damage with faith, revealing its true worth when used with holy-infused arrows.",
     "attack": [
@@ -1641,12 +1662,13 @@
       }
     ],
     "category": "Bow",
-    "weight": 4.5
+    "weight": 4.5,
+    "unique": false
   },
   "AK": {
     "id": "AK",
     "name": "Serpent Bow",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f694c87afl0i1ojvhpi9w9ttf21.png",
     "description": "Malformed bow in the shape of a pair of poisonous snakes. Imbues arrows with poison through pagan magic, revealing its true worth when used with poison-infused arrows. Used by assassins known as the Formless Serpents.",
     "attack": [
@@ -1739,7 +1761,7 @@
   "Ak": {
     "id": "Ak",
     "name": "Pulley Bow",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f694cf960l0i1ojybdeac0ffxf5.png",
     "description": "Longbow which utilizes a series of pulleys and strings. The complex mechanism, which required advanced mathematical and mechanical understanding to craft, was likely made by a certain genius who learned Golden Order Fundamentalism.  Enhances precision while shooting, enabling arrows to fly much further distances. ",
     "attack": [
@@ -1824,7 +1846,7 @@
   "AL": {
     "id": "AL",
     "name": "Black Bow",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f694bf0a0l0i1okt1ao6xjlqrmq9.png",
     "description": "Longbow carved from black wood to resemble a blade. One of the most difficult bows to master. The blade-like body of the bow is light and cuts through the air. Though a longbow, it can be wielded similarly to a shortbow.",
     "attack": [
@@ -1984,7 +2006,8 @@
       }
     ],
     "category": "Claw",
-    "weight": 3
+    "weight": 3,
+    "unique": false
   },
   "AM": {
     "id": "AM",
@@ -2064,7 +2087,8 @@
       }
     ],
     "category": "Claw",
-    "weight": 2.5
+    "weight": 2.5,
+    "unique": false
   },
   "Am": {
     "id": "Am",
@@ -2144,7 +2168,8 @@
       }
     ],
     "category": "Claw",
-    "weight": 2
+    "weight": 2,
+    "unique": false
   },
   "AN": {
     "id": "AN",
@@ -2224,7 +2249,8 @@
       }
     ],
     "category": "Claw",
-    "weight": 1.5
+    "weight": 1.5,
+    "unique": false
   },
   "An": {
     "id": "An",
@@ -2304,7 +2330,8 @@
       }
     ],
     "category": "Colossal Sword",
-    "weight": 22
+    "weight": 22,
+    "unique": false
   },
   "AO": {
     "id": "AO",
@@ -2384,7 +2411,8 @@
       }
     ],
     "category": "Colossal Sword",
-    "weight": 23
+    "weight": 23,
+    "unique": false
   },
   "Ao": {
     "id": "Ao",
@@ -2464,7 +2492,8 @@
       }
     ],
     "category": "Colossal Sword",
-    "weight": 19
+    "weight": 19,
+    "unique": false
   },
   "AP": {
     "id": "AP",
@@ -2553,7 +2582,11 @@
       }
     ],
     "category": "Colossal Sword",
-    "weight": 22
+    "weight": 22,
+    "uniqueSkill": {
+      "name": "Destined Death",
+      "description": "Set free the remnants of Destined Death, plunging the greatsword into the ground to summon a myriad of blades. In addition to dealing immediate damage, this attack reduces the enemy's maximum HP and continues to wear down HP for a short time."
+    }
   },
   "Ap": {
     "id": "Ap",
@@ -2633,7 +2666,8 @@
       }
     ],
     "category": "Colossal Sword",
-    "weight": 15.5
+    "weight": 15.5,
+    "unique": false
   },
   "AQ": {
     "id": "AQ",
@@ -2722,7 +2756,11 @@
       }
     ],
     "category": "Colossal Sword",
-    "weight": 20
+    "weight": 20,
+    "uniqueSkill": {
+      "name": "Wolf's Assault",
+      "description": "Infuse the greatsword with frost, then perform a forward somersault to plunge it into the ground. Then, pull it out to release a cold blast."
+    }
   },
   "Aq": {
     "id": "Aq",
@@ -2811,7 +2849,11 @@
       }
     ],
     "category": "Colossal Sword",
-    "weight": 17.5
+    "weight": 17.5,
+    "uniqueSkill": {
+      "name": "The Queen's Black Flame",
+      "description": "Set the blade ablaze with the god-slaying black flame before delivering a sweeping slash. Additional input allows for a follow-up attack. The black flames will continue to wear down HP for a while."
+    }
   },
   "AR": {
     "id": "AR",
@@ -2892,7 +2934,11 @@
       }
     ],
     "category": "Colossal Sword",
-    "weight": 21
+    "weight": 21,
+    "uniqueSkill": {
+      "name": "Oath of Vengeance",
+      "description": "Swear an oath upon the greatsword to avenge the clan, temporarily raising all attributes for a certain duration. While the oath's effects are active, poise will also be increased."
+    }
   },
   "Ar": {
     "id": "Ar",
@@ -2973,7 +3019,11 @@
       }
     ],
     "category": "Colossal Sword",
-    "weight": 23
+    "weight": 23,
+    "uniqueSkill": {
+      "name": "Wave of Destruction",
+      "description": "Raise the sword up high, then strike it against the ground to fire off a wave of gravitational force."
+    }
   },
   "AS": {
     "id": "AS",
@@ -3062,12 +3112,16 @@
       }
     ],
     "category": "Colossal Sword",
-    "weight": 20
+    "weight": 20,
+    "uniqueSkill": {
+      "name": "Starcaller Cry",
+      "description": "Bring the two swords together and roar into the skies, pulling in enemies with a gravitational wave. Follow up with an additional input to slam down with gravity-infused swords."
+    }
   },
   "As": {
     "id": "As",
     "name": "Troll Knight's Sword",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f694bf77bl0i1on5kwkodf1d6fkp.png",
     "description": "Greatsword embedded with a blue glintstone. Weapon of the trolls in service to the royal family of Caria. Called into service when the Queen invoked an oath they swore, the trolls are treated as true knights of Caria, and fight arm in arm with their human comrades.",
     "attack": [
@@ -3232,7 +3286,11 @@
       }
     ],
     "category": "Colossal Weapon",
-    "weight": 19
+    "weight": 19,
+    "uniqueSkill": {
+      "name": "Sorcery of the Crozier",
+      "description": "Channel magic into the glintstone to activate an ancient sorcery, producing floating magic projectiles that chase enemies automatically."
+    }
   },
   "At": {
     "id": "At",
@@ -3305,7 +3363,11 @@
       }
     ],
     "category": "Colossal Weapon",
-    "weight": 19.5
+    "weight": 19.5,
+    "uniqueSkill": {
+      "name": "Great Oracular Bubble Skill",
+      "description": "Blow on the horn to release a massive magic bubble. The bubble floats gently through the air towards its target."
+    }
   },
   "AU": {
     "id": "AU",
@@ -3377,7 +3439,8 @@
       }
     ],
     "category": "Colossal Weapon",
-    "weight": 17
+    "weight": 17,
+    "unique": false
   },
   "Au": {
     "id": "Au",
@@ -3457,7 +3520,8 @@
       }
     ],
     "category": "Colossal Weapon",
-    "weight": 23.5
+    "weight": 23.5,
+    "unique": false
   },
   "AV": {
     "id": "AV",
@@ -3537,7 +3601,8 @@
       }
     ],
     "category": "Colossal Weapon",
-    "weight": 20
+    "weight": 20,
+    "unique": false
   },
   "Av": {
     "id": "Av",
@@ -3618,12 +3683,16 @@
       }
     ],
     "category": "Colossal Weapon",
-    "weight": 18
+    "weight": 18,
+    "uniqueSkill": {
+      "name": "Regal Roar",
+      "description": "Let loose a mighty war cry, raising attack power, while sending out a shockwave that cannot be guarded against by stomping the ground. While active, strong attack becomes a lunging slash."
+    }
   },
   "AW": {
     "id": "AW",
     "name": "Dragon Greatclaw",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69469b4bl0i1oo41w96vla79ii.png",
     "description": "Weapon said to have been whittled from the claw of a great, ancient dragon, wielded by grotesque Tree Sentinels who yet serve the Erdtree. The claw is enwreathed with lightning,and tears through the dragons' feeble descendants with ease.",
     "attack": [
@@ -3788,7 +3857,11 @@
       }
     ],
     "category": "Colossal Weapon",
-    "weight": 21.5
+    "weight": 21.5,
+    "uniqueSkill": {
+      "name": "Gravity Bolt",
+      "description": "Imbue the jaw of fallingstar beast with gravitational lightning, sending a bolt crashing down a short distance away. Can be fired in rapid succession."
+    }
   },
   "AX": {
     "id": "AX",
@@ -3861,7 +3934,11 @@
       }
     ],
     "category": "Colossal Weapon",
-    "weight": 20
+    "weight": 20,
+    "uniqueSkill": {
+      "name": "Erdtree Slam",
+      "description": "Jump high up into the air and crash down on the ground ahead. The resulting pratfall sends golden shockwaves in all directions. This is the most powerful of all the Ground Slam skills."
+    }
   },
   "Ax": {
     "id": "Ax",
@@ -3942,7 +4019,11 @@
       }
     ],
     "category": "Colossal Weapon",
-    "weight": 19
+    "weight": 19,
+    "uniqueSkill": {
+      "name": "Spinning Wheel",
+      "description": "Strike the wheel against the ground to set it spinning at top speed. Hold to keep the wheel spinning. Can be used while walking to push the armament into enemies."
+    }
   },
   "AY": {
     "id": "AY",
@@ -4014,7 +4095,8 @@
       }
     ],
     "category": "Colossal Weapon",
-    "weight": 26.5
+    "weight": 26.5,
+    "unique": false
   },
   "Ay": {
     "id": "Ay",
@@ -4094,7 +4176,8 @@
       }
     ],
     "category": "Colossal Weapon",
-    "weight": 21.5
+    "weight": 21.5,
+    "unique": false
   },
   "AZ": {
     "id": "AZ",
@@ -4182,7 +4265,8 @@
       }
     ],
     "category": "Colossal Weapon",
-    "weight": 16
+    "weight": 16,
+    "unique": false
   },
   "Az": {
     "id": "Az",
@@ -4263,7 +4347,11 @@
       }
     ],
     "category": "Colossal Weapon",
-    "weight": 18
+    "weight": 18,
+    "uniqueSkill": {
+      "name": "Erdtree Slam",
+      "description": "Jump high up into the air and crash down on the ground ahead. The resulting pratfall sends golden shockwaves in all directions. This is the most powerful of all the Ground Slam skills."
+    }
   },
   "A1": {
     "id": "A1",
@@ -4343,7 +4431,8 @@
       }
     ],
     "category": "Colossal Weapon",
-    "weight": 20
+    "weight": 20,
+    "unique": false
   },
   "A2": {
     "id": "A2",
@@ -4422,7 +4511,8 @@
       }
     ],
     "category": "Crossbow",
-    "weight": 3.5
+    "weight": 3.5,
+    "unique": false
   },
   "A3": {
     "id": "A3",
@@ -4501,7 +4591,8 @@
       }
     ],
     "category": "Crossbow",
-    "weight": 4
+    "weight": 4,
+    "unique": false
   },
   "A4": {
     "id": "A4",
@@ -4580,12 +4671,13 @@
       }
     ],
     "category": "Crossbow",
-    "weight": 5.5
+    "weight": 5.5,
+    "unique": false
   },
   "A5": {
     "id": "A5",
     "name": "Pulley Crossbow",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69744d27l0i1opnrem0400k2gsd.png",
     "description": "Crossbow made with pulleys and power springs. The complex mechanism, which required advanced mathematical and mechanical understanding to craft, was likely made by a certain genius who learned Golden Order fundamentalism.   One touch fires a volley of bolts. Be warned; large stores of bolts can be quickly spent.",
     "attack": [
@@ -4665,7 +4757,7 @@
   "A6": {
     "id": "A6",
     "name": "Full Moon Crossbow",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69ac9f84l0i1opqor2ybht92g9q.png",
     "description": "One-of-a-kind enchanted crossbow of exquisitely detailed craftsmanship. Made to celebrate the matrimonial union, and reconciliation, between the houses of the Erdtree and the Full Moon, Leyndell and Raya Lucaria. The two rings dance when reloading the weapon. Reveals true worth when used with holy- infused bolts.",
     "attack": [
@@ -4833,12 +4925,16 @@
       }
     ],
     "category": "Curved Greatsword",
-    "weight": 11.5
+    "weight": 11.5,
+    "uniqueSkill": {
+      "name": "Onyx Lord's Repulsion",
+      "description": "Thrust the armament into the ground to create a gravity well. In addition to dealing damage, this attack sends enemies flying away."
+    }
   },
   "A8": {
     "id": "A8",
     "name": "Crepus's Black-key Crossbow",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f697ea1a4l0i1oq4te6lr8su01zs.png",
     "description": "Black crossbow featuring a long stock. Used for sniping, it has a very long range. Weapon of Crepus, who served the Two Fingers from the shadows of the Roundtable as the head confessor.",
     "attack": [
@@ -4993,7 +5089,8 @@
       }
     ],
     "category": "Crossbow",
-    "weight": 6
+    "weight": 6,
+    "unique": false
   },
   "aA": {
     "id": "aA",
@@ -5074,7 +5171,11 @@
       }
     ],
     "category": "Curved Greatsword",
-    "weight": 11.5
+    "weight": 11.5,
+    "uniqueSkill": {
+      "name": "Bloodhound's Finesse",
+      "description": "Slash upwards with the Bloodhound's Fang, using the momentum of the strike to perform a backwards somersault and gain some distance from foes. Follow up with a strong attack to perform the Bloodhound's Step attack."
+    }
   },
   "aa": {
     "id": "aa",
@@ -5154,7 +5255,8 @@
       }
     ],
     "category": "Curved Greatsword",
-    "weight": 10
+    "weight": 10,
+    "unique": false
   },
   "aB": {
     "id": "aB",
@@ -5243,7 +5345,11 @@
       }
     ],
     "category": "Curved Greatsword",
-    "weight": 15
+    "weight": 15,
+    "uniqueSkill": {
+      "name": "Magma Guillotine",
+      "description": "Grab the scalesword with both hands, as a wyrm would hold it in its mouth, and leap forwards, smashing it into the ground and triggering a blast of magma. Follow up with an additional input to perform a chopping attack."
+    }
   },
   "ab": {
     "id": "ab",
@@ -5323,7 +5429,8 @@
       }
     ],
     "category": "Curved Greatsword",
-    "weight": 11.5
+    "weight": 11.5,
+    "unique": false
   },
   "aC": {
     "id": "aC",
@@ -5404,7 +5511,11 @@
     ],
     "category": "Curved Greatsword",
     "weight": 9,
-    "unique": true
+    "unique": true,
+    "uniqueSkill": {
+      "name": "Zamor Ice Storm",
+      "description": "Plunge the curved sword into the ground, building power before unleashing a freezing storm that batters the surroundings."
+    }
   },
   "ac": {
     "id": "ac",
@@ -5484,7 +5595,8 @@
       }
     ],
     "category": "Curved Greatsword",
-    "weight": 9
+    "weight": 9,
+    "unique": false
   },
   "aD": {
     "id": "aD",
@@ -5564,7 +5676,8 @@
       }
     ],
     "category": "Curved Greatsword",
-    "weight": 16.5
+    "weight": 16.5,
+    "unique": false
   },
   "ad": {
     "id": "ad",
@@ -5653,7 +5766,11 @@
       }
     ],
     "category": "Curved Greatsword",
-    "weight": 7.5
+    "weight": 7.5,
+    "uniqueSkill": {
+      "name": "Cursed-Blood Slice",
+      "description": "Brace, then charge forward to deliver a downward diagonal slice. The bloody trail of the late is followed by a burst of flame. Additional input allows for a follow-up attack."
+    }
   },
   "aE": {
     "id": "aE",
@@ -5733,7 +5850,8 @@
       }
     ],
     "category": "Curved Sword",
-    "weight": 3.5
+    "weight": 3.5,
+    "unique": false
   },
   "ae": {
     "id": "ae",
@@ -5813,7 +5931,8 @@
       }
     ],
     "category": "Curved Sword",
-    "weight": 3.5
+    "weight": 3.5,
+    "unique": false
   },
   "aF": {
     "id": "aF",
@@ -5893,7 +6012,8 @@
       }
     ],
     "category": "Curved Sword",
-    "weight": 4
+    "weight": 4,
+    "unique": false
   },
   "af": {
     "id": "af",
@@ -5973,7 +6093,8 @@
       }
     ],
     "category": "Curved Sword",
-    "weight": 2
+    "weight": 2,
+    "unique": false
   },
   "aG": {
     "id": "aG",
@@ -6062,7 +6183,11 @@
       }
     ],
     "category": "Curved Sword",
-    "weight": 4
+    "weight": 4,
+    "uniqueSkill": {
+      "name": "Magma Shower",
+      "description": "Slash at foes in a twirling motion while scattering magma all around.\nAdditional input allows for a follow-up attack."
+    }
   },
   "ag": {
     "id": "ag",
@@ -6142,7 +6267,8 @@
       }
     ],
     "category": "Curved Sword",
-    "weight": 3.5
+    "weight": 3.5,
+    "unique": false
   },
   "aH": {
     "id": "aH",
@@ -6231,7 +6357,11 @@
       }
     ],
     "category": "Curved Sword",
-    "weight": 2.5
+    "weight": 2.5,
+    "uniqueSkill": {
+      "name": "Nebula",
+      "description": "Imbue the Naturalborn's stars with magic to perform a sweeping strike.\nThis attack leaves a dark cloud of stars in its wake that lingers briefly before exploding."
+    }
   },
   "ah": {
     "id": "ah",
@@ -6320,7 +6450,11 @@
       }
     ],
     "category": "Curved Sword",
-    "weight": 3
+    "weight": 3,
+    "uniqueSkill": {
+      "name": "Death Flare",
+      "description": "Set the lusterless sun ablaze with the Prince of Death's flames, inflicting the death ailment upon foes.\nFollow up with an additional input to bring down the armament, triggering an explosion."
+    }
   },
   "aI": {
     "id": "aI",
@@ -6400,7 +6534,8 @@
       }
     ],
     "category": "Curved Sword",
-    "weight": 4
+    "weight": 4,
+    "unique": false
   },
   "ai": {
     "id": "ai",
@@ -6480,7 +6615,8 @@
       }
     ],
     "category": "Curved Sword",
-    "weight": 3.5
+    "weight": 3.5,
+    "unique": false
   },
   "aJ": {
     "id": "aJ",
@@ -6560,7 +6696,8 @@
       }
     ],
     "category": "Curved Sword",
-    "weight": 4
+    "weight": 4,
+    "unique": false
   },
   "aj": {
     "id": "aj",
@@ -6640,7 +6777,8 @@
       }
     ],
     "category": "Curved Sword",
-    "weight": 3
+    "weight": 3,
+    "unique": false
   },
   "aK": {
     "id": "aK",
@@ -6721,7 +6859,11 @@
       }
     ],
     "category": "Curved Sword",
-    "weight": 3.5
+    "weight": 3.5,
+    "uniqueSkill": {
+      "name": "Flowing Form",
+      "description": "Temporarily transforms armament into its liquid form.\nSwing the armament like a whip to perform a sweeping slice over a wide area."
+    }
   },
   "ak": {
     "id": "ak",
@@ -6801,7 +6943,8 @@
       }
     ],
     "category": "Dagger",
-    "weight": 1.5
+    "weight": 1.5,
+    "unique": false
   },
   "aL": {
     "id": "aL",
@@ -6881,7 +7024,8 @@
       }
     ],
     "category": "Curved Sword",
-    "weight": 4.5
+    "weight": 4.5,
+    "unique": false
   },
   "al": {
     "id": "al",
@@ -6970,7 +7114,11 @@
       }
     ],
     "category": "Dagger",
-    "weight": 2
+    "weight": 2,
+    "uniqueSkill": {
+      "name": "Blade of Death",
+      "description": "Unleash the power of the Rune of Death to fire off a blade-like projectile.\nIn addition to dealing immediate damage, the blade reduces the enemy's maximum HP and continues to wear down HP for a while."
+    }
   },
   "aM": {
     "id": "aM",
@@ -7050,7 +7198,8 @@
       }
     ],
     "category": "Dagger",
-    "weight": 1.5
+    "weight": 1.5,
+    "unique": false
   },
   "am": {
     "id": "am",
@@ -7130,7 +7279,8 @@
       }
     ],
     "category": "Dagger",
-    "weight": 2
+    "weight": 2,
+    "unique": false
   },
   "aN": {
     "id": "aN",
@@ -7219,7 +7369,11 @@
       }
     ],
     "category": "Dagger",
-    "weight": 2.5
+    "weight": 2.5,
+    "uniqueSkill": {
+      "name": "Reduvia Blood Blade",
+      "description": "Slash with the wicked dagger, transforming its never-drying bloostains into airborne blood blades that cause hemorrhaging. \nCan be fired in rapid succession."
+    }
   },
   "an": {
     "id": "an",
@@ -7307,7 +7461,8 @@
       }
     ],
     "category": "Dagger",
-    "weight": 2
+    "weight": 2,
+    "unique": false
   },
   "aO": {
     "id": "aO",
@@ -7387,7 +7542,8 @@
       }
     ],
     "category": "Dagger",
-    "weight": 1.5
+    "weight": 1.5,
+    "unique": false
   },
   "ao": {
     "id": "ao",
@@ -7476,12 +7632,16 @@
       }
     ],
     "category": "Dagger",
-    "weight": 1.5
+    "weight": 1.5,
+    "uniqueSkill": {
+      "name": "Glintstone Dart",
+      "description": "Skill that builds from the Glintstone Pebble sorcery. Charge the skill to upgrade it to Glintstone Dart. Follow up with a strong attack to chain this skill into a lunging thrust."
+    }
   },
   "aP": {
     "id": "aP",
     "name": "Scorpion's Stinger",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69d58e08l0i1ovazqw2hxmxgdc.png",
     "description": "Dagger fashioned from a great scorpion's tail, glistening with scarlet rot. A ceremonial tool used by heretics, crafted from the relic of a sealed outer god.",
     "attack": [
@@ -7637,7 +7797,8 @@
       }
     ],
     "category": "Dagger",
-    "weight": 1.5
+    "weight": 1.5,
+    "unique": false
   },
   "aQ": {
     "id": "aQ",
@@ -7717,12 +7878,13 @@
       }
     ],
     "category": "Dagger",
-    "weight": 3
+    "weight": 3,
+    "unique": false
   },
   "aq": {
     "id": "aq",
     "name": "Cinquedea",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f6986cfc4l0i1ovvz1l7bcfxqjc9.png",
     "description": "Short sword given to high ranking clergymen of Farum Azula. Raises potency of bestial incantations. The design celebrates a beast's five fingers, symbolic of the intelligence once granted upon their kind.",
     "attack": [
@@ -7886,7 +8048,8 @@
       }
     ],
     "category": "Dagger",
-    "weight": 2
+    "weight": 2,
+    "unique": false
   },
   "ar": {
     "id": "ar",
@@ -7974,7 +8137,8 @@
       }
     ],
     "category": "Dagger",
-    "weight": 2
+    "weight": 2,
+    "unique": false
   },
   "aS": {
     "id": "aS",
@@ -8063,7 +8227,11 @@
       }
     ],
     "category": "Dagger",
-    "weight": 1.5
+    "weight": 1.5,
+    "uniqueSkill": {
+      "name": "Blade of Gold",
+      "description": "Leap into the air, charging the armament with golden flames that are then shot at the enemy as a single, blade-like projectile. Inflicts holy damage."
+    }
   },
   "as": {
     "id": "as",
@@ -8143,7 +8311,8 @@
       }
     ],
     "category": "Dagger",
-    "weight": 2
+    "weight": 2,
+    "unique": false
   },
   "aT": {
     "id": "aT",
@@ -8223,7 +8392,8 @@
       }
     ],
     "category": "Fist",
-    "weight": 2
+    "weight": 2,
+    "unique": false
   },
   "at": {
     "id": "at",
@@ -8303,7 +8473,8 @@
       }
     ],
     "category": "Fist",
-    "weight": 1.5
+    "weight": 1.5,
+    "unique": false
   },
   "aU": {
     "id": "aU",
@@ -8392,7 +8563,11 @@
       }
     ],
     "category": "Fist",
-    "weight": 2.5
+    "weight": 2.5,
+    "uniqueSkill": {
+      "name": "Bear Witness!",
+      "description": "Grant the small dragon a fleeting glimpse of life and thrust it skyward, spewing flames over a wide frontward area."
+    }
   },
   "au": {
     "id": "au",
@@ -8472,7 +8647,8 @@
       }
     ],
     "category": "Fist",
-    "weight": 2.5
+    "weight": 2.5,
+    "unique": false
   },
   "aV": {
     "id": "aV",
@@ -8552,7 +8728,8 @@
       }
     ],
     "category": "Fist",
-    "weight": 3
+    "weight": 3,
+    "unique": false
   },
   "av": {
     "id": "av",
@@ -8632,12 +8809,13 @@
       }
     ],
     "category": "Fist",
-    "weight": 2.5
+    "weight": 2.5,
+    "unique": false
   },
   "aW": {
     "id": "aW",
     "name": "Clinging Bone",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f695cc915l0i1oxrft0i2enqepoe.png",
     "description": "Horrific weapon made of a hardened skeletal arm. Wielded by Ensha of the Royal Remains. Fitted by placing one's hands into the fists' grips until they dig in. \"\"O clinging creature. A king relinquishes not the hand.\"\"",
     "attack": [
@@ -8794,7 +8972,11 @@
       }
     ],
     "category": "Fist",
-    "weight": 0
+    "weight": 0,
+    "uniqueSkill": {
+      "name": "Unblockable Blade",
+      "description": "Imbue the cipher blade with light, extending its length, then strike with a sudden sweeping attack.\nThis attack cannot be blocked."
+    }
   },
   "aX": {
     "id": "aX",
@@ -8875,7 +9057,11 @@
       }
     ],
     "category": "Fist",
-    "weight": 4
+    "weight": 4,
+    "uniqueSkill": {
+      "name": "Storm Kick",
+      "description": "Thrust the prosthetic leg blade into the ground, creating a storm.\nFollow up with a strong attack to perform a lightning-infused jumping attack."
+    }
   },
   "ax": {
     "id": "ax",
@@ -8955,7 +9141,8 @@
       }
     ],
     "category": "Flail",
-    "weight": 6
+    "weight": 6,
+    "unique": false
   },
   "aY": {
     "id": "aY",
@@ -9035,7 +9222,8 @@
       }
     ],
     "category": "Flail",
-    "weight": 5
+    "weight": 5,
+    "unique": false
   },
   "ay": {
     "id": "ay",
@@ -9124,7 +9312,11 @@
       }
     ],
     "category": "Flail",
-    "weight": 5.5
+    "weight": 5.5,
+    "uniqueSkill": {
+      "name": "Familial Rancor",
+      "description": "Gently rattle the copper heads to summon vengeful spirits that chase down foes.\nThe anguish of a spouse and children invites accursed wrath."
+    }
   },
   "aZ": {
     "id": "aZ",
@@ -9213,7 +9405,11 @@
       }
     ],
     "category": "Flail",
-    "weight": 5.5
+    "weight": 5.5,
+    "uniqueSkill": {
+      "name": "Nebula",
+      "description": "Imbue the Naturalborn's stars with magic to perform a sweeping strike.\nThis attack leaves a dark cloud of stars in its wake that lingers briefly before exploding."
+    }
   },
   "az": {
     "id": "az",
@@ -9297,12 +9493,13 @@
       }
     ],
     "category": "Glintstone Staff",
-    "weight": 3
+    "weight": 3,
+    "unique": false
   },
   "a1": {
     "id": "a1",
     "name": "Crystal Staff",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f699946f4l0i1oz2nopkhsi7qz5p.png",
     "description": "Staff fashioned from pure crystal; a deed impossible for a human. Enhances Crystalian sorceris. The Crystalian's faint cognition is know as the \"wisdom of stone.\" This staff can only be weilded by those of intellect high enough to grasp such wisdom. ",
     "attack": [
@@ -9462,7 +9659,8 @@
       }
     ],
     "category": "Flail",
-    "weight": 8
+    "weight": 8,
+    "unique": false
   },
   "a3": {
     "id": "a3",
@@ -9554,7 +9752,8 @@
       }
     ],
     "category": "Glintstone Staff",
-    "weight": 2.5
+    "weight": 2.5,
+    "unique": false
   },
   "a4": {
     "id": "a4",
@@ -9638,12 +9837,13 @@
       }
     ],
     "category": "Glintstone Staff",
-    "weight": 3
+    "weight": 3,
+    "unique": false
   },
   "a5": {
     "id": "a5",
     "name": "Carian Regal Scepter",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f6953c900l0i1ozjupz92p99yzi.png",
     "description": "Magic scepter of Rennala, Queen of the Full Moon. The glintstone is known as a Carian Blue, enhancing full moon sorceries. Only those of the highest intelligence may wield this, the finest of all glintstone staves.",
     "attack": [
@@ -9815,7 +10015,8 @@
       }
     ],
     "category": "Glintstone Staff",
-    "weight": 3
+    "weight": 3,
+    "unique": false
   },
   "a7": {
     "id": "a7",
@@ -9899,7 +10100,8 @@
       }
     ],
     "category": "Glintstone Staff",
-    "weight": 4.5
+    "weight": 4.5,
+    "unique": false
   },
   "a8": {
     "id": "a8",
@@ -9987,7 +10189,8 @@
       }
     ],
     "category": "Glintstone Staff",
-    "weight": 3
+    "weight": 3,
+    "unique": false
   },
   "a9": {
     "id": "a9",
@@ -10075,7 +10278,8 @@
       }
     ],
     "category": "Glintstone Staff",
-    "weight": 2.5
+    "weight": 2.5,
+    "unique": false
   },
   "BA": {
     "id": "BA",
@@ -10163,7 +10367,8 @@
       }
     ],
     "category": "Glintstone Staff",
-    "weight": 2.5
+    "weight": 2.5,
+    "unique": false
   },
   "Ba": {
     "id": "Ba",
@@ -10247,7 +10452,8 @@
       }
     ],
     "category": "Glintstone Staff",
-    "weight": 3
+    "weight": 3,
+    "unique": false
   },
   "BB": {
     "id": "BB",
@@ -10335,12 +10541,13 @@
       }
     ],
     "category": "Glintstone Staff",
-    "weight": 3
+    "weight": 3,
+    "unique": false
   },
   "Bb": {
     "id": "Bb",
     "name": "Azur's Glintstone Staff",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f695d9e5dl0i1p0otrlfxvt1g9n9.png",
     "description": "Staff of the primeval glintstone sorcerer Azur. Only those who have glimpsed what lies beyond the wisdom of stone may wield it. Reduces casting time of all sorceries, but consumes additional FP.",
     "attack": [
@@ -10425,7 +10632,7 @@
   "BC": {
     "id": "BC",
     "name": "Lusat's Glintstone Staff",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f695a0063l0i1p0qdogpnbjb7xnf.png",
     "description": "Staff of the primeval glintstone sorcerer Lusat. Only those who have glimpsed what lies beyond the wisdom ofstone may wield it. Enhances power ofall sorceries, but consumes additional FP.",
     "attack": [
@@ -10589,7 +10796,8 @@
       }
     ],
     "category": "Glintstone Staff",
-    "weight": 4.5
+    "weight": 4.5,
+    "unique": false
   },
   "BD": {
     "id": "BD",
@@ -10673,12 +10881,13 @@
       }
     ],
     "category": "Glintstone Staff",
-    "weight": 4.5
+    "weight": 4.5,
+    "unique": false
   },
   "Bd": {
     "id": "Bd",
     "name": "Rotten Crystal Staff",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69594fd1l0i1p1ad5rxu1z3y9xt.png",
     "description": "Staff fashioned from pure crystal; a deed impossible for a human. It festers with scarlet rot. Enhances Crystalian sorceries.",
     "attack": [
@@ -10838,7 +11047,8 @@
       }
     ],
     "category": "Greataxe",
-    "weight": 13
+    "weight": 13,
+    "unique": false
   },
   "Be": {
     "id": "Be",
@@ -10918,7 +11128,8 @@
       }
     ],
     "category": "Greataxe",
-    "weight": 11
+    "weight": 11,
+    "unique": false
   },
   "BF": {
     "id": "BF",
@@ -11010,7 +11221,8 @@
       }
     ],
     "category": "Glintstone Staff",
-    "weight": 2.5
+    "weight": 2.5,
+    "unique": false
   },
   "Bf": {
     "id": "Bf",
@@ -11090,7 +11302,8 @@
       }
     ],
     "category": "Greataxe",
-    "weight": 12.5
+    "weight": 12.5,
+    "unique": false
   },
   "BG": {
     "id": "BG",
@@ -11171,7 +11384,11 @@
       }
     ],
     "category": "Greataxe",
-    "weight": 11
+    "weight": 11,
+    "uniqueSkill": {
+      "name": "I Command Thee, Kneel!",
+      "description": "Repeatedly smash the Axe of Godrick into the ground, unleashing two earth-shaking shockwaves.\nFollow up with an additional input to produce a third shockwave"
+    }
   },
   "Bg": {
     "id": "Bg",
@@ -11251,7 +11468,8 @@
       }
     ],
     "category": "Greataxe",
-    "weight": 12.5
+    "weight": 12.5,
+    "unique": false
   },
   "BH": {
     "id": "BH",
@@ -11331,7 +11549,8 @@
       }
     ],
     "category": "Greataxe",
-    "weight": 15
+    "weight": 15,
+    "unique": false
   },
   "Bh": {
     "id": "Bh",
@@ -11411,7 +11630,8 @@
       }
     ],
     "category": "Greataxe",
-    "weight": 12.5
+    "weight": 12.5,
+    "unique": false
   },
   "BI": {
     "id": "BI",
@@ -11492,7 +11712,11 @@
       }
     ],
     "category": "Greataxe",
-    "weight": 11
+    "weight": 11,
+    "uniqueSkill": {
+      "name": "Soul Stifler",
+      "description": "Raise the greathorn's wings to summon a soul-sapping miasma. Enemies in the affected area will temporarily suffer from reduced defense."
+    }
   },
   "Bi": {
     "id": "Bi",
@@ -11572,12 +11796,13 @@
       }
     ],
     "category": "Greataxe",
-    "weight": 8.5
+    "weight": 8.5,
+    "unique": false
   },
   "BJ": {
     "id": "BJ",
     "name": "Gargoyle's Great Axe",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69aff1efl0i1p2xlel2i8mhvc2o.png",
     "description": "Description  \"Bronze greataxe wielded by Valiant Gargoyle. Just like the wielder, the missing part have been mended with corpse wax; a patchwork of champions.\"  ",
     "attack": [
@@ -11738,12 +11963,16 @@
       }
     ],
     "category": "Greatbow",
-    "weight": 9.5
+    "weight": 9.5,
+    "uniqueSkill": {
+      "name": "Radahn's Rain",
+      "description": "Archery skill performed from a low stance. Ready the bow and fire a sudden flurry of arrows up into the sky. The arrows will pour on foes like rain."
+    }
   },
   "BK": {
     "id": "BK",
     "name": "Erdtree Greatbow",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69727d35l0i1p3af7vawzb2qx4v.png",
     "description": "Greatbow featuring Erdtree styling. In times of old, when faith and battle went hand in hand, this weapon was created in tandem with the Golden Great Arrow. Scales all arrow damage with faith, revealing its true worth when used with holy-infused arrows.",
     "attack": [
@@ -11836,7 +12065,7 @@
   "Bk": {
     "id": "Bk",
     "name": "Golem Greatbow",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69ba8511l0i1p3aular3j6um6ed.png",
     "description": "Greatbow of black stone crafted by a civilization now gone to ruin. Weapon of the Guardian Golem. Extremely heavy, this greatbow requires enormous strength just to draw, suggesting it was not designed for human use. ",
     "attack": [
@@ -12000,7 +12229,8 @@
       }
     ],
     "category": "Greatbow",
-    "weight": 10
+    "weight": 10,
+    "unique": false
   },
   "Bl": {
     "id": "Bl",
@@ -12089,7 +12319,11 @@
       }
     ],
     "category": "Great Spear",
-    "weight": 10
+    "weight": 10,
+    "uniqueSkill": {
+      "name": "Bloodboon Ritual",
+      "description": "Raise the sacred spear and pierce the body of the Formless Mother. Stab up to three times, creating explosions of blood with each thrust.\nThis skill will coat the armament with bloodflame for a while."
+    }
   },
   "BM": {
     "id": "BM",
@@ -12182,7 +12416,11 @@
       }
     ],
     "category": "Great Spear",
-    "weight": 10
+    "weight": 10,
+    "uniqueSkill": {
+      "name": "Siluria's Woe",
+      "description": "Thrust the treespear in a spiraling motion, surrounding it in a vortex of wind. Charged attacks have the power to blow away enemies and can fire the tornado forwards."
+    }
   },
   "Bm": {
     "id": "Bm",
@@ -12271,7 +12509,11 @@
       }
     ],
     "category": "Great Spear",
-    "weight": 8
+    "weight": 8,
+    "uniqueSkill": {
+      "name": "Frenzyflame Thrust",
+      "description": "Imbue the spear with the flame of frenzy and leap forwards, plunging it into the ground and setting off a maddening explosion. The skill inflicts both the enemy and the user with madness."
+    }
   },
   "BN": {
     "id": "BN",
@@ -12348,7 +12590,11 @@
       }
     ],
     "category": "Great Spear",
-    "weight": 12
+    "weight": 12,
+    "uniqueSkill": {
+      "name": "Great-Serpent Hunt",
+      "description": "Perform a powerful forward lunge and follow up with an upward thrust via additional input. When fightning a great serpent, a long blade of light will appear, revealing the armament's true power."
+    }
   },
   "Bn": {
     "id": "Bn",
@@ -12428,7 +12674,8 @@
       }
     ],
     "category": "Great Spear",
-    "weight": 9
+    "weight": 9,
+    "unique": false
   },
   "BO": {
     "id": "BO",
@@ -12520,7 +12767,8 @@
       }
     ],
     "category": "Great Spear",
-    "weight": 9.5
+    "weight": 9.5,
+    "unique": false
   },
   "Bo": {
     "id": "Bo",
@@ -12600,7 +12848,8 @@
       }
     ],
     "category": "Greatsword",
-    "weight": 9
+    "weight": 9,
+    "unique": false
   },
   "BP": {
     "id": "BP",
@@ -12680,7 +12929,8 @@
       }
     ],
     "category": "Greatsword",
-    "weight": 9
+    "weight": 9,
+    "unique": false
   },
   "Bp": {
     "id": "Bp",
@@ -12760,7 +13010,8 @@
       }
     ],
     "category": "Greatsword",
-    "weight": 12
+    "weight": 12,
+    "unique": false
   },
   "BQ": {
     "id": "BQ",
@@ -12840,7 +13091,8 @@
       }
     ],
     "category": "Greatsword",
-    "weight": 9
+    "weight": 9,
+    "unique": false
   },
   "Bq": {
     "id": "Bq",
@@ -12920,7 +13172,8 @@
       }
     ],
     "category": "Greatsword",
-    "weight": 10
+    "weight": 10,
+    "unique": false
   },
   "BR": {
     "id": "BR",
@@ -13000,7 +13253,8 @@
       }
     ],
     "category": "Greatsword",
-    "weight": 10
+    "weight": 10,
+    "unique": false
   },
   "Br": {
     "id": "Br",
@@ -13089,7 +13343,11 @@
       }
     ],
     "category": "Greatsword",
-    "weight": 12
+    "weight": 12,
+    "uniqueSkill": {
+      "name": "Ordovis's Vortex",
+      "description": "Channel the power of the crucible to spin the entire sword in midair, building momentum before slamming the blade down onto the ground.\nThis skill can be charged to increase its power."
+    }
   },
   "BS": {
     "id": "BS",
@@ -13178,7 +13436,11 @@
       }
     ],
     "category": "Greatsword",
-    "weight": 8
+    "weight": 8,
+    "uniqueSkill": {
+      "name": "Alabaster Lord's Pull",
+      "description": "Thrust the armament into the ground to create a gravity well. In addition to dealing damage, this attack pulls enemies in. Has a greater area of effect than Gravitas."
+    }
   },
   "Bs": {
     "id": "Bs",
@@ -13250,7 +13512,8 @@
       }
     ],
     "category": "Greatsword",
-    "weight": 10
+    "weight": 10,
+    "unique": false
   },
   "BT": {
     "id": "BT",
@@ -13339,7 +13602,11 @@
       }
     ],
     "category": "Greatsword",
-    "weight": 10
+    "weight": 10,
+    "uniqueSkill": {
+      "name": "Moonlight Greatsword",
+      "description": "Raise the sword aloft, bathing it in the light of the dark moon.\nTemporarily increases magic attack power and imbues blade with frost.\nCharged attacks release blasts of moonlight."
+    }
   },
   "Bt": {
     "id": "Bt",
@@ -13431,7 +13698,11 @@
       }
     ],
     "category": "Greatsword",
-    "weight": 11
+    "weight": 11,
+    "uniqueSkill": {
+      "name": "Wave of Gold",
+      "description": "Imbue the sword with bygone golden glory, then fire it at foes.\nA wide, golden wave fans out forwards, sweeping through all enemies caught in its path."
+    }
   },
   "BU": {
     "id": "BU",
@@ -13520,7 +13791,11 @@
       }
     ],
     "category": "Greatsword",
-    "weight": 11.5
+    "weight": 11.5,
+    "uniqueSkill": {
+      "name": "Ruinous Ghostflame",
+      "description": "Swing the sword to bathe its blade in ghostflame. The ghostflame adds magic damage to attacks, and also has a bitterly cold bite."
+    }
   },
   "Bu": {
     "id": "Bu",
@@ -13609,7 +13884,11 @@
     ],
     "category": "Greatsword",
     "weight": 13.5,
-    "unique": true
+    "unique": true,
+    "uniqueSkill": {
+      "name": "Taker's Flames",
+      "description": "Raise the sacred sword aloft to set it ablaze with blasphemous flames, then bring it down to fire off a forward blast.\nThe flames steal HP from those they touch."
+    }
   },
   "BV": {
     "id": "BV",
@@ -13698,7 +13977,11 @@
       }
     ],
     "category": "Greatsword",
-    "weight": 11.5
+    "weight": 11.5,
+    "uniqueSkill": {
+      "name": "Eochaid's Dancing Blade",
+      "description": "Infuse the sword with energy, then fling it forwards in a corkscrew attack. The sword continuously deals damage while violently spinning. Charge the attack to increase reach and duration of the spin."
+    }
   },
   "Bv": {
     "id": "Bv",
@@ -13779,7 +14062,11 @@
       }
     ],
     "category": "Greatsword",
-    "weight": 10
+    "weight": 10,
+    "uniqueSkill": {
+      "name": "Shriek of Milos",
+      "description": "Lets out a horrific cursed scream that reduces all damage negation and status resistances for nearby foes.\nWhile active, strong attacks will change to a combo attack."
+    }
   },
   "BW": {
     "id": "BW",
@@ -13868,7 +14155,11 @@
       }
     ],
     "category": "Greatsword",
-    "weight": 10
+    "weight": 10,
+    "uniqueSkill": {
+      "name": "Establish Order",
+      "description": "Raise the armament in a salute, releasing a golden explosion. Repeated inputs send out waves of golden light."
+    }
   },
   "Bw": {
     "id": "Bw",
@@ -13948,7 +14239,8 @@
       }
     ],
     "category": "Greatsword",
-    "weight": 9
+    "weight": 9,
+    "unique": false
   },
   "BX": {
     "id": "BX",
@@ -14028,7 +14320,8 @@
       }
     ],
     "category": "Greatsword",
-    "weight": 11.5
+    "weight": 11.5,
+    "unique": false
   },
   "Bx": {
     "id": "Bx",
@@ -14117,7 +14410,11 @@
       }
     ],
     "category": "Greatsword",
-    "weight": 8.5
+    "weight": 8.5,
+    "uniqueSkill": {
+      "name": "Ghostflame Ignition",
+      "description": "Thrust out the barbed rod and set its tip alight with ghostflame.\nFollow up with a normal attack to set the ground ablaze with ghostflame, or a strong attack to trigger a massive explosion."
+    }
   },
   "BY": {
     "id": "BY",
@@ -14206,7 +14503,11 @@
       }
     ],
     "category": "Greatsword",
-    "weight": 11.5
+    "weight": 11.5,
+    "uniqueSkill": {
+      "name": "Corpse Wax Cutter",
+      "description": "Lost skill of ancient heroes.\nLift the sword up high to release the power of corpse wax and launch it forwards as a blade-like projectile."
+    }
   },
   "By": {
     "id": "By",
@@ -14286,7 +14587,8 @@
       }
     ],
     "category": "Halberd",
-    "weight": 7
+    "weight": 7,
+    "unique": false
   },
   "BZ": {
     "id": "BZ",
@@ -14366,7 +14668,8 @@
       }
     ],
     "category": "Halberd",
-    "weight": 8
+    "weight": 8,
+    "unique": false
   },
   "Bz": {
     "id": "Bz",
@@ -14446,7 +14749,8 @@
       }
     ],
     "category": "Halberd",
-    "weight": 7
+    "weight": 7,
+    "unique": false
   },
   "B1": {
     "id": "B1",
@@ -14526,7 +14830,8 @@
       }
     ],
     "category": "Halberd",
-    "weight": 8
+    "weight": 8,
+    "unique": false
   },
   "B2": {
     "id": "B2",
@@ -14607,7 +14912,11 @@
       }
     ],
     "category": "Halberd",
-    "weight": 11.5
+    "weight": 11.5,
+    "uniqueSkill": {
+      "name": "Rallying Standard",
+      "description": "Hoist the war banner aloft and give a rallying command. Raises attack power and defense for self and nearby allies."
+    }
   },
   "B3": {
     "id": "B3",
@@ -14679,7 +14988,8 @@
       }
     ],
     "category": "Halberd",
-    "weight": 8.5
+    "weight": 8.5,
+    "unique": false
   },
   "B4": {
     "id": "B4",
@@ -14759,7 +15069,8 @@
       }
     ],
     "category": "Halberd",
-    "weight": 12
+    "weight": 12,
+    "unique": false
   },
   "B5": {
     "id": "B5",
@@ -14831,12 +15142,13 @@
       }
     ],
     "category": "Halberd",
-    "weight": 8
+    "weight": 8,
+    "unique": false
   },
   "B6": {
     "id": "B6",
     "name": "Golden Halberd",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f6973b001l0i1p9v6qffivf6eh3.png",
     "description": "Weighty halberd forged of gold. Wielded by the Order of Tree Sentinels, heavily equipped knights.  Deals holy damage. A masterfully crafted weapon that lives up to its heft, but is difficult for one mere human strength to wield.",
     "attack": [
@@ -15000,12 +15312,13 @@
       }
     ],
     "category": "Halberd",
-    "weight": 10
+    "weight": 10,
+    "unique": false
   },
   "B8": {
     "id": "B8",
     "name": "Loretta's War Sickle",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69869f89l0i1panhih63470rmve.png",
     "description": "Intricately crafted silver war sickle wielded by Loretta, Knight of the Haligtree. Originally given for service as a personal guard to Carian royalty, the weapon's blue glintstone has been replaced with unalloyed gold.",
     "attack": [
@@ -15169,12 +15482,13 @@
       }
     ],
     "category": "Halberd",
-    "weight": 9
+    "weight": 9,
+    "unique": false
   },
   "bA": {
     "id": "bA",
     "name": "Dragon Halberd",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69c95d75l0i1paugymrcjquua4q.png",
     "description": "Halberd shaped like a dragon, enwreathed with both ice and lightning. Alas, the Dragonkin Soldiers never attained immortality, and perished as decrepit, pale imitations of their skyborn kin.",
     "attack": [
@@ -15330,12 +15644,13 @@
       }
     ],
     "category": "Curved Sword",
-    "weight": 8
+    "weight": 8,
+    "unique": false
   },
   "bB": {
     "id": "bB",
     "name": "Gargoyle's Halberd",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69c725a8l0i1pay72k5pcw8pvc6.png",
     "description": "Bronze halberd wielded by Valiant Gargoyle Just like the wielder, the missing parts have been mended with corpse wax; a patchwork of champions.",
     "attack": [
@@ -15491,12 +15806,13 @@
       }
     ],
     "category": "Hammer",
-    "weight": 4.5
+    "weight": 4.5,
+    "unique": false
   },
   "bC": {
     "id": "bC",
     "name": "Gargoyle's Black Halberd",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69a5df3cl0i1pboo1un3fj711tg.png",
     "description": "Bronze halberd wielded by Valiant Gargoyle, mended with blackened corpse wax. Deals holy damage. Such is the mark of those who serve Maliketh, the Black Blade.",
     "attack": [
@@ -15660,7 +15976,8 @@
       }
     ],
     "category": "Hammer",
-    "weight": 5
+    "weight": 5,
+    "unique": false
   },
   "bD": {
     "id": "bD",
@@ -15740,7 +16057,8 @@
       }
     ],
     "category": "Hammer",
-    "weight": 2.5
+    "weight": 2.5,
+    "unique": false
   },
   "bd": {
     "id": "bd",
@@ -15812,7 +16130,8 @@
       }
     ],
     "category": "Hammer",
-    "weight": 3.5
+    "weight": 3.5,
+    "unique": false
   },
   "bE": {
     "id": "bE",
@@ -15892,7 +16211,8 @@
       }
     ],
     "category": "Hammer",
-    "weight": 5
+    "weight": 5,
+    "unique": false
   },
   "be": {
     "id": "be",
@@ -15972,12 +16292,13 @@
       }
     ],
     "category": "Hammer",
-    "weight": 6.5
+    "weight": 6.5,
+    "unique": false
   },
   "bF": {
     "id": "bF",
     "name": "Varré's Bouquet",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69aced5el0i1pcsbypcz3lxclfq.png",
     "description": "A steel mace resembling a charming bouquet of roses. Each petal has a sharpened edge, leaving the roses perpetually colored with blood.  This weapon reflects White Mask Varré's manner of speech rather well, enticing in its splendor, but full of deadly consequence.",
     "attack": [
@@ -16141,7 +16462,8 @@
       }
     ],
     "category": "Hammer",
-    "weight": 5
+    "weight": 5,
+    "unique": false
   },
   "bG": {
     "id": "bG",
@@ -16221,7 +16543,8 @@
       }
     ],
     "category": "Hammer",
-    "weight": 6
+    "weight": 6,
+    "unique": false
   },
   "bg": {
     "id": "bg",
@@ -16294,7 +16617,11 @@
       }
     ],
     "category": "Hammer",
-    "weight": 4
+    "weight": 4,
+    "uniqueSkill": {
+      "name": "Oracular Bubble",
+      "description": "Blow on the horn to release a magic bubble. The bubble floats gently through the air towards its target."
+    }
   },
   "bH": {
     "id": "bH",
@@ -16383,7 +16710,11 @@
       }
     ],
     "category": "Hammer",
-    "weight": 4.5
+    "weight": 4.5,
+    "uniqueSkill": {
+      "name": "Knowledge Above All",
+      "description": "Raise the scepter to manifest the realm of the All-Knowing. Enemy magic and holy damage negation will be reduced for all within the area, including the caster."
+    }
   },
   "bh": {
     "id": "bh",
@@ -16464,7 +16795,11 @@
       }
     ],
     "category": "Hammer",
-    "weight": 6.5
+    "weight": 6.5,
+    "uniqueSkill": {
+      "name": "Flowing Form",
+      "description": "Temporarily transforms armament into its liquid form.\nSwing the armament like a whip to strike surroundings before slamming its teardrop-shaped head down."
+    }
   },
   "bI": {
     "id": "bI",
@@ -16545,7 +16880,11 @@
       }
     ],
     "category": "Hammer",
-    "weight": 4.5
+    "weight": 4.5,
+    "uniqueSkill": {
+      "name": "Claw Flick",
+      "description": "Cause the finger to swell, then flex to build up strength before giving enemies an almighty flick."
+    }
   },
   "bi": {
     "id": "bi",
@@ -16625,7 +16964,8 @@
       }
     ],
     "category": "Hammer",
-    "weight": 7
+    "weight": 7,
+    "unique": false
   },
   "bJ": {
     "id": "bJ",
@@ -16698,7 +17038,11 @@
       }
     ],
     "category": "Hammer",
-    "weight": 6
+    "weight": 6,
+    "uniqueSkill": {
+      "name": "Gold Breaker",
+      "description": "Leap up high and, while suspended in midair, imbue the rune shard with light before smashing it down hard onto the ground.\nThe heroic Radagon's signature attack."
+    }
   },
   "bj": {
     "id": "bj",
@@ -16787,7 +17131,11 @@
       }
     ],
     "category": "Heavy Thrusting Sword",
-    "weight": 8
+    "weight": 8,
+    "uniqueSkill": {
+      "name": "Dynast's Finesse",
+      "description": "Nimbly avoid an attack, securing some distance from foes. Follow up with strong attack to perform a sudden lunge, and press strong attack again to perform a sweeping slice."
+    }
   },
   "bK": {
     "id": "bK",
@@ -16867,7 +17215,8 @@
       }
     ],
     "category": "Heavy Thrusting Sword",
-    "weight": 6.5
+    "weight": 6.5,
+    "unique": false
   },
   "bk": {
     "id": "bk",
@@ -16947,7 +17296,8 @@
       }
     ],
     "category": "Heavy Thrusting Sword",
-    "weight": 7
+    "weight": 7,
+    "unique": false
   },
   "bL": {
     "id": "bL",
@@ -17028,7 +17378,11 @@
       }
     ],
     "category": "Heavy Thrusting Sword",
-    "weight": 8
+    "weight": 8,
+    "uniqueSkill": {
+      "name": "Thundercloud Form",
+      "description": "Temporarily transform into a red thundercloud and fly through the air, then plunge down with a lightning-infused blade. Hold to increase the reach of the thundercloud form."
+    }
   },
   "bl": {
     "id": "bl",
@@ -17108,7 +17462,8 @@
       }
     ],
     "category": "Katana",
-    "weight": 5.5
+    "weight": 5.5,
+    "unique": false
   },
   "bM": {
     "id": "bM",
@@ -17188,7 +17543,8 @@
       }
     ],
     "category": "Katana",
-    "weight": 7
+    "weight": 7,
+    "unique": false
   },
   "bm": {
     "id": "bm",
@@ -17269,12 +17625,16 @@
       }
     ],
     "category": "Katana",
-    "weight": 7
+    "weight": 7,
+    "uniqueSkill": {
+      "name": "Waterfowl Dance",
+      "description": "Perform a series of one-footed leaps in the manner of a waterfowl to unleash a swift yet graceful slashing combo.\nRepeated inputs allow for up to two follow-up attacks."
+    }
   },
   "bN": {
     "id": "bN",
     "name": "Meteoric Ore Blade",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69513a8al0i1pf3ozolljjevfk.png",
     "description": "Katana forged from meteoric ore to dispatch lifeforms born of falling stars. Deals magic damage. The blade is weighty, known to deliver slashes of such ferocity that the impact is said to resemble the crash of a falling meteor. ",
     "attack": [
@@ -17447,7 +17807,11 @@
       }
     ],
     "category": "Katana",
-    "weight": 6.5
+    "weight": 6.5,
+    "uniqueSkill": {
+      "name": "Corpse Piler",
+      "description": "Forms a blade of cursed blood for repeated, interweaving successive attacks. Follow up with an additional input for further successive attacks."
+    }
   },
   "bO": {
     "id": "bO",
@@ -17536,7 +17900,11 @@
       }
     ],
     "category": "Katana",
-    "weight": 6.5
+    "weight": 6.5,
+    "uniqueSkill": {
+      "name": "Transient Moonlight",
+      "description": "Sheathe blade, holding it at the hip in a composed stance.\nFollow up with either a normal or a strong attack to draw the blade at great speed for an instant slash attack. Both attacks fire off a wave of light."
+    }
   },
   "bo": {
     "id": "bo",
@@ -17617,7 +17985,11 @@
       }
     ],
     "category": "Katana",
-    "weight": 5.5
+    "weight": 5.5,
+    "uniqueSkill": {
+      "name": "Ice Lightning Sword",
+      "description": "Call down a bolt of ice lightning into the blade and bring it down upon a foe.\nThe ice lightning effect will persist for a while."
+    }
   },
   "bP": {
     "id": "bP",
@@ -17697,7 +18069,8 @@
       }
     ],
     "category": "Katana",
-    "weight": 6
+    "weight": 6,
+    "unique": false
   },
   "bp": {
     "id": "bp",
@@ -17781,7 +18154,8 @@
       }
     ],
     "category": "Light Bow",
-    "weight": 2.5
+    "weight": 2.5,
+    "unique": false
   },
   "bQ": {
     "id": "bQ",
@@ -17865,7 +18239,8 @@
       }
     ],
     "category": "Light Bow",
-    "weight": 3
+    "weight": 3,
+    "unique": false
   },
   "bq": {
     "id": "bq",
@@ -17949,12 +18324,13 @@
       }
     ],
     "category": "Light Bow",
-    "weight": 2.5
+    "weight": 2.5,
+    "unique": false
   },
   "bR": {
     "id": "bR",
     "name": "Harp Bow",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69491311l0i1pgceffu5ll8sovn.png",
     "description": "Bow fashioned from a minstrel's harp. Sonorous tones still resound when firing arrows. Troubadours sing tales of champions, both in the honorable service of the Erdtree, and the one who spurns honor for blasphemy.",
     "attack": [
@@ -18118,7 +18494,8 @@
       }
     ],
     "category": "Light Bow",
-    "weight": 3
+    "weight": 3,
+    "unique": false
   },
   "bS": {
     "id": "bS",
@@ -18198,7 +18575,8 @@
       }
     ],
     "category": "Reaper",
-    "weight": 7.5
+    "weight": 7.5,
+    "unique": false
   },
   "bs": {
     "id": "bs",
@@ -18270,7 +18648,8 @@
       }
     ],
     "category": "Reaper",
-    "weight": 9.5
+    "weight": 9.5,
+    "unique": false
   },
   "bT": {
     "id": "bT",
@@ -18359,7 +18738,11 @@
       }
     ],
     "category": "Reaper",
-    "weight": 8.5
+    "weight": 8.5,
+    "uniqueSkill": {
+      "name": "Miquella's Ring of Light",
+      "description": "Summon Miquella's shining halo and fire it forwards. Can be fired in rapid succession."
+    }
   },
   "bt": {
     "id": "bt",
@@ -18448,7 +18831,11 @@
       }
     ],
     "category": "Reaper",
-    "weight": 7.5
+    "weight": 7.5,
+    "uniqueSkill": {
+      "name": "Angel's Wings",
+      "description": "Jump and imbue the wing-blade of the armament with light, then deliver a slashing attack on the enemy. \nThe white wings impede recovery actions using a flask of tears."
+    }
   },
   "bU": {
     "id": "bU",
@@ -18532,7 +18919,8 @@
       }
     ],
     "category": "Sacred Seal",
-    "weight": 1.5
+    "weight": 1.5,
+    "unique": false
   },
   "bu": {
     "id": "bu",
@@ -18616,7 +19004,8 @@
       }
     ],
     "category": "Sacred Seal",
-    "weight": 1.5
+    "weight": 1.5,
+    "unique": false
   },
   "bV": {
     "id": "bV",
@@ -18696,7 +19085,8 @@
       }
     ],
     "category": "Sacred Seal",
-    "weight": 1.5
+    "weight": 1.5,
+    "unique": false
   },
   "bv": {
     "id": "bv",
@@ -18780,12 +19170,13 @@
       }
     ],
     "category": "Sacred Seal",
-    "weight": 1.5
+    "weight": 1.5,
+    "unique": false
   },
   "bW": {
     "id": "bW",
     "name": "Golden Order Seal",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69d76aa8l0i1phsgjq5azzb5g1.png",
     "description": "A formless sacred seal depicting the ceremonial observation of Order. Enhances Golden Fundamentalist incantations.  Fundamentalism is scholarship in all but name. Scales incantation using both intelligence and faith.",
     "attack": [
@@ -18949,12 +19340,13 @@
       }
     ],
     "category": "Sacred Seal",
-    "weight": 1.5
+    "weight": 1.5,
+    "unique": false
   },
   "bX": {
     "id": "bX",
     "name": "Erdtree Seal",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f698bacafl0i1phz3om56qt5bqof.png",
     "description": "A formless sacred seal decorated with an Erdtree crest, once the focus of religion in the Lands Between. Even though the Elden Ring is shattered, and the Erdtree has dulled from its former radiance, earnest faith continues to hold the answers. ",
     "attack": [
@@ -19031,7 +19423,7 @@
   "bx": {
     "id": "bx",
     "name": "Dragon Communion Seal",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f697307d1l0i1pi6qvgmp5wuhmk.png",
     "description": "Formless drakeblood seal with a dragon communion crest. Enhances Dragon Communion incantations. The sacrificial devouring of the heart gives power. Indeed, Dragon Communion is too primal in nature for the term \"incantation\" to be appropriate. This seal scales incantations with one's arcane attribute.",
     "attack": [
@@ -19116,7 +19508,7 @@
   "bY": {
     "id": "bY",
     "name": "Frenzied Flame Seal",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69885c93l0i1pihpfc550piu1x.png",
     "description": "Formless sacred seal bestowed by the maiden of the Three Fingers. Enhances incantations of the frenzied flame. This seal is the mark of the Lord of Frenzied Flame. Scales incantations using strength, dexterity, intelligence, and faith all together.",
     "attack": [
@@ -19280,7 +19672,8 @@
       }
     ],
     "category": "Spear",
-    "weight": 4.5
+    "weight": 4.5,
+    "unique": false
   },
   "bZ": {
     "id": "bZ",
@@ -19360,12 +19753,13 @@
       }
     ],
     "category": "Spear",
-    "weight": 4
+    "weight": 4,
+    "unique": false
   },
   "bz": {
     "id": "bz",
     "name": "Crystal Spear",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69a617edl0i1piq3kor6g6xs3ql.png",
     "description": "Spear fashioned from pure crystal; a deed impossible for a human. Enwreathed with powerful magic, its attack scales with intelligence. The inscrutable Crystalians have but one clear purpose; to safeguard their crystals unto the end. One theory posits that they yearn for the return of their creator who will carve for them new brethren.",
     "attack": [
@@ -19537,7 +19931,8 @@
       }
     ],
     "category": "Spear",
-    "weight": 5.5
+    "weight": 5.5,
+    "unique": false
   },
   "b2": {
     "id": "b2",
@@ -19617,7 +20012,8 @@
       }
     ],
     "category": "Spear",
-    "weight": 6.5
+    "weight": 6.5,
+    "unique": false
   },
   "b3": {
     "id": "b3",
@@ -19697,7 +20093,8 @@
       }
     ],
     "category": "Spear",
-    "weight": 5
+    "weight": 5,
+    "unique": false
   },
   "b4": {
     "id": "b4",
@@ -19778,7 +20175,11 @@
       }
     ],
     "category": "Spear",
-    "weight": 5.5
+    "weight": 5.5,
+    "uniqueSkill": {
+      "name": "Sacred Phalanx",
+      "description": "Release the power of a hidden incantation to erect a palisade of golden spears frontwards."
+    }
   },
   "b5": {
     "id": "b5",
@@ -19858,7 +20259,8 @@
       }
     ],
     "category": "Spear",
-    "weight": 7.5
+    "weight": 7.5,
+    "unique": false
   },
   "b6": {
     "id": "b6",
@@ -19942,7 +20344,8 @@
       }
     ],
     "category": "Spear",
-    "weight": 6
+    "weight": 6,
+    "unique": false
   },
   "b7": {
     "id": "b7",
@@ -20023,7 +20426,11 @@
       }
     ],
     "category": "Spear",
-    "weight": 8.5
+    "weight": 8.5,
+    "uniqueSkill": {
+      "name": "Ancient Lightning Spear",
+      "description": "Imbue the armament with the ancient dragons' red lightning, then throw it as a spear. Can be charged to increase its power."
+    }
   },
   "b8": {
     "id": "b8",
@@ -20103,7 +20510,8 @@
       }
     ],
     "category": "Spear",
-    "weight": 8
+    "weight": 8,
+    "unique": false
   },
   "b9": {
     "id": "b9",
@@ -20192,12 +20600,16 @@
       }
     ],
     "category": "Spear",
-    "weight": 6.5
+    "weight": 6.5,
+    "uniqueSkill": {
+      "name": "Spearcall Ritual",
+      "description": "Thrust the spear high, bearing prayers into the sky to summon a downpour of spectral spears."
+    }
   },
   "CA": {
     "id": "CA",
     "name": "Inquisitor's Girandole",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69ac78dcl0i1pke5of594dboffh.png",
     "description": "Instrument of torture used on nobles behind the curtain at the  Volcano Manor of Mt. Gelmir. Its numerous spikes pierce the flesh, then singe the wounds with flame. The smell of burnt blood induces despair in the victim. A candlestick conveived by a thorough mind.",
     "attack": [
@@ -20353,12 +20765,13 @@
       }
     ],
     "category": "Spear",
-    "weight": 6
+    "weight": 6,
+    "unique": false
   },
   "CB": {
     "id": "CB",
     "name": "Rotten Crystal Spear",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69c12977l0i1pkr6s0g1o7v5kz.png",
     "description": "Spear fashioned from pure crystal; a deed impossible for a human. Enwreathed with powerful magic, its attack scales with intelligence. Though festering with scarlet rot, its magic remains potent.",
     "attack": [
@@ -20522,7 +20935,8 @@
       }
     ],
     "category": "Spear",
-    "weight": 4.5
+    "weight": 4.5,
+    "unique": false
   },
   "CC": {
     "id": "CC",
@@ -20602,7 +21016,8 @@
       }
     ],
     "category": "Spear",
-    "weight": 4.5
+    "weight": 4.5,
+    "unique": false
   },
   "Cc": {
     "id": "Cc",
@@ -20682,7 +21097,8 @@
       }
     ],
     "category": "Straight Sword",
-    "weight": 3.5
+    "weight": 3.5,
+    "unique": false
   },
   "CD": {
     "id": "CD",
@@ -20762,7 +21178,8 @@
       }
     ],
     "category": "Straight Sword",
-    "weight": 3
+    "weight": 3,
+    "unique": false
   },
   "Cd": {
     "id": "Cd",
@@ -20842,7 +21259,8 @@
       }
     ],
     "category": "Straight Sword",
-    "weight": 4
+    "weight": 4,
+    "unique": false
   },
   "CE": {
     "id": "CE",
@@ -20922,7 +21340,8 @@
       }
     ],
     "category": "Straight Sword",
-    "weight": 3.5
+    "weight": 3.5,
+    "unique": false
   },
   "Ce": {
     "id": "Ce",
@@ -21002,7 +21421,8 @@
       }
     ],
     "category": "Straight Sword",
-    "weight": 3
+    "weight": 3,
+    "unique": false
   },
   "CF": {
     "id": "CF",
@@ -21091,7 +21511,11 @@
       }
     ],
     "category": "Straight Sword",
-    "weight": 3.5
+    "weight": 3.5,
+    "uniqueSkill": {
+      "name": "Last Rites",
+      "description": "Raise the epitaph to grant the effect of Sacred Order to yourself\nand allies in the vicinity.\nParticularly effective at laying to rest Those Who Live in Death."
+    }
   },
   "Cf": {
     "id": "Cf",
@@ -21172,7 +21596,11 @@
       }
     ],
     "category": "Straight Sword",
-    "weight": 3
+    "weight": 3,
+    "uniqueSkill": {
+      "name": "Golden Tempering",
+      "description": "Cross the two swords to grant their attacks holy essence.\nWhile in effect, strong attack performs a dual-wielding combo attack."
+    }
   },
   "CG": {
     "id": "CG",
@@ -21245,7 +21673,11 @@
       }
     ],
     "category": "Straight Sword",
-    "weight": 2.5
+    "weight": 2.5,
+    "uniqueSkill": {
+      "name": "Unblockable Blade",
+      "description": "Imbue the cipher blade with light, extending its length, then strike with a sudden sweeping attack.\nThis attack cannot be blocked."
+    }
   },
   "Cg": {
     "id": "Cg",
@@ -21349,12 +21781,16 @@
       }
     ],
     "category": "Straight Sword",
-    "weight": 4
+    "weight": 4,
+    "uniqueSkill": {
+      "name": "Night-and-Flame Stance",
+      "description": "Hold the sword level and prepare to cast a sorcery. Follow up with a normal attack to cast the Night Comet sorcery, or a strong attack to sweep forward with a burst of flames."
+    }
   },
   "CH": {
     "id": "CH",
     "name": "Carian Knight's Sword",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69b44345l0i1pmq6va882h9uvf.png",
     "description": "Straight sword embedded with a blue glintstone.  Weapon of knights sworn to Carian royalty. These knights' swords could serve as catalysts, letting them wield sorcerous battle skills. Despite numbering fewer than twenty, this power made them a match for even the champions of gold in battle.",
     "attack": [
@@ -21443,7 +21879,7 @@
   "Ch": {
     "id": "Ch",
     "name": "Crystal Sword",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69b32328l0i1pmuqj0u81mxsett.png",
     "description": "Sword fashioned from pure crystal; a deed impossible for a human. Enwreathed with powerful magic, its attack scales with intelligence. The inscrutable Crystalians have but one clear purpose; to safeguard their crystals unto the end. One theory posits that they yearn for the return of their creator who will carve for them new brethren. ",
     "attack": [
@@ -21623,12 +22059,16 @@
       }
     ],
     "category": "Straight Sword",
-    "weight": 3
+    "weight": 3,
+    "uniqueSkill": {
+      "name": "Mists of Slumber",
+      "description": "Releases a faint purple mist that spreads across a wide frontwards area.\nThis mist inflicts the sleep ailment upon foes."
+    }
   },
   "Ci": {
     "id": "Ci",
     "name": "Miquellan Knight's Sword",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69aa244al0i1pmyf54x5qm8xb1r.png",
     "description": "Sword forged by servants of Miquella of the Haligtree, with a design modeled after those carried by Carian knights. Instead of glintstone however, amber from the Haligtree is embedded in the blade. A sumptuous piece, yet it has never been offered to any knight — an ill-starred sword with no master. Skill: Sacred Blade",
     "attack": [
@@ -21792,7 +22232,8 @@
       }
     ],
     "category": "Straight Sword",
-    "weight": 2.5
+    "weight": 2.5,
+    "unique": false
   },
   "Cj": {
     "id": "Cj",
@@ -21865,7 +22306,11 @@
       }
     ],
     "category": "Straight Sword",
-    "weight": 5.5
+    "weight": 5.5,
+    "uniqueSkill": {
+      "name": "Eochaid's Dancing Blade",
+      "description": "Infuse the sword with energy, then fling it forwards in a corkscrew attack. The sword continuously deals damage while violently spinning. Charge the attack to increase reach and duration of the spin."
+    }
   },
   "CK": {
     "id": "CK",
@@ -21937,7 +22382,8 @@
       }
     ],
     "category": "Straight Sword",
-    "weight": 3.5
+    "weight": 3.5,
+    "unique": false
   },
   "Ck": {
     "id": "Ck",
@@ -22017,12 +22463,13 @@
       }
     ],
     "category": "Straight Sword",
-    "weight": 3
+    "weight": 3,
+    "unique": false
   },
   "CL": {
     "id": "CL",
     "name": "Rotten Crystal Sword",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69d445cel0i1pnsmtteechmemmd.png",
     "description": "Sword fashioned from pure crystal; a deed impossible for a human. Enwreathed with powerful magic, its attack scales with intelligence.",
     "attack": [
@@ -22111,7 +22558,7 @@
   "Cl": {
     "id": "Cl",
     "name": "Lazuli Glintstone Sword",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f697a64ccl0i1pnuagdt1sfmx0pk.png",
     "description": "A sword with a glintstone in its handguards. Wielded by scholars of the Lazuli Conspectus who seek to master Carian sorcery. Deals magic damage. Apparently once used as a staff of sorcery, this sword is made of wood.",
     "attack": [
@@ -22259,7 +22706,8 @@
       }
     ],
     "category": "Thrusting Sword",
-    "weight": 4.5
+    "weight": 4.5,
+    "unique": false
   },
   "Cm": {
     "id": "Cm",
@@ -22339,7 +22787,8 @@
       }
     ],
     "category": "Thrusting Sword",
-    "weight": 2.5
+    "weight": 2.5,
+    "unique": false
   },
   "CN": {
     "id": "CN",
@@ -22419,7 +22868,8 @@
       }
     ],
     "category": "Thrusting Sword",
-    "weight": 4
+    "weight": 4,
+    "unique": false
   },
   "Cn": {
     "id": "Cn",
@@ -22499,7 +22949,8 @@
       }
     ],
     "category": "Thrusting Sword",
-    "weight": 3.5
+    "weight": 3.5,
+    "unique": false
   },
   "CO": {
     "id": "CO",
@@ -22579,12 +23030,13 @@
       }
     ],
     "category": "Thrusting Sword",
-    "weight": 3
+    "weight": 3,
+    "unique": false
   },
   "Co": {
     "id": "Co",
     "name": "Frozen Needle",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69a8a231l0i1potleffsoj8ycfb.png",
     "description": "A razor-thin piercing blade of ice. Forged by Ijii, the carian Royal Blackmith. Can inflict frost upon enemies, and launch its blade with a strong attack.  The blade immediately regenerates. ",
     "attack": [
@@ -22740,7 +23192,8 @@
       }
     ],
     "category": "Torch",
-    "weight": 1.5
+    "weight": 1.5,
+    "unique": false
   },
   "Cp": {
     "id": "Cp",
@@ -22820,7 +23273,8 @@
       }
     ],
     "category": "Thrusting Sword",
-    "weight": 3.5
+    "weight": 3.5,
+    "unique": false
   },
   "CQ": {
     "id": "CQ",
@@ -22900,7 +23354,12 @@
       }
     ],
     "category": "Torch",
-    "weight": 3
+    "weight": 3,
+    "unique": true,
+    "uniqueSkill": {
+      "name": "Firebreather",
+      "description": "Blow into torch flame, spreading flames in a wide frontward arc. The flames on the ground will continue to burn for a short time."
+    }
   },
   "Cq": {
     "id": "Cq",
@@ -22989,7 +23448,11 @@
       }
     ],
     "category": "Torch",
-    "weight": 3
+    "weight": 3,
+    "uniqueSkill": {
+      "name": "Fires of Slumber",
+      "description": "Blow into the candlestick's flame, creating a stream of hazy purple fire to cover the ground ahead.\nThe intoxicating flames inflict the sleep ailment upon foes."
+    }
   },
   "CR": {
     "id": "CR",
@@ -23077,7 +23540,8 @@
       }
     ],
     "category": "Torch",
-    "weight": 2.5
+    "weight": 2.5,
+    "unique": false
   },
   "Cr": {
     "id": "Cr",
@@ -23157,12 +23621,13 @@
       }
     ],
     "category": "Torch",
-    "weight": 2.5
+    "weight": 2.5,
+    "unique": false
   },
   "CS": {
     "id": "CS",
     "name": "Sentry's Torch",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69cf8934l0i1ppuzogdnseu6l7f.png",
     "description": "Torch Given to protectors of the Erdtree. Its flames are bestowed with a special incantation which allows the bearer to see assassins cloaked in veils. Furnished on behalf of the Erdtree and the Grace-Given Lord such that a Night of Black Knives will never come again. ",
     "attack": [
@@ -23326,7 +23791,8 @@
       }
     ],
     "category": "Twinblade",
-    "weight": 8
+    "weight": 8,
+    "unique": false
   },
   "CT": {
     "id": "CT",
@@ -23406,7 +23872,8 @@
       }
     ],
     "category": "Twinblade",
-    "weight": 8
+    "weight": 8,
+    "unique": false
   },
   "Ct": {
     "id": "Ct",
@@ -23495,12 +23962,16 @@
       }
     ],
     "category": "Twinblade",
-    "weight": 6
+    "weight": 6,
+    "uniqueSkill": {
+      "name": "Bloodblade Dance",
+      "description": "Leap at foe to perform a flurry of tornado-like attacks.\nFollow up with an additional input to perform an attack that ends in an evasive maneuver."
+    }
   },
   "CU": {
     "id": "CU",
     "name": "Gargoyle's Twinblade",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f695e037bl0i1pqkyetqd7zbu8l.png",
     "description": "Bronze twinblade wielded by Valiant Gargoyle.  just like the wielder, the missing parts have been mended with corpse wax; a patchwork of champions. ",
     "attack": [
@@ -23581,7 +24052,7 @@
   "Cu": {
     "id": "Cu",
     "name": "Gargoyle's Black Blades",
-    "unique": true,
+    "unique": false,
     "image": "weapons/17f69a3190el0i1pqs4x6j5c6xpye.png",
     "description": "Bronze twinblade wielded by Valiant Gargoyle, mended with blackened corpse wax. Deals holy damage. Such is the mark of those who serve Maliketh, the Black Blade.",
     "attack": [
@@ -23737,7 +24208,8 @@
       }
     ],
     "category": "Warhammer",
-    "weight": 8.5
+    "weight": 8.5,
+    "unique": false
   },
   "Cv": {
     "id": "Cv",
@@ -23817,7 +24289,8 @@
       }
     ],
     "category": "Warhammer",
-    "weight": 10
+    "weight": 10,
+    "unique": false
   },
   "CW": {
     "id": "CW",
@@ -23897,7 +24370,8 @@
       }
     ],
     "category": "Warhammer",
-    "weight": 10
+    "weight": 10,
+    "unique": false
   },
   "Cw": {
     "id": "Cw",
@@ -23969,7 +24443,8 @@
       }
     ],
     "category": "Warhammer",
-    "weight": 11.5
+    "weight": 11.5,
+    "unique": false
   },
   "CX": {
     "id": "CX",
@@ -24049,7 +24524,8 @@
       }
     ],
     "category": "Warhammer",
-    "weight": 10
+    "weight": 10,
+    "unique": false
   },
   "Cx": {
     "id": "Cx",
@@ -24129,7 +24605,8 @@
       }
     ],
     "category": "Warhammer",
-    "weight": 8.5
+    "weight": 8.5,
+    "unique": false
   },
   "CY": {
     "id": "CY",
@@ -24218,7 +24695,11 @@
       }
     ],
     "category": "Warhammer",
-    "weight": 9
+    "weight": 9,
+    "uniqueSkill": {
+      "name": "Regal Beastclaw",
+      "description": "Slam the hammer into the ground, rending the land asunder with the armament's five bestial claws."
+    }
   },
   "Cy": {
     "id": "Cy",
@@ -24298,7 +24779,8 @@
       }
     ],
     "category": "Twinblade",
-    "weight": 7
+    "weight": 7,
+    "unique": false
   },
   "CZ": {
     "id": "CZ",
@@ -24387,7 +24869,11 @@
       }
     ],
     "category": "Warhammer",
-    "weight": 9.5
+    "weight": 9.5,
+    "uniqueSkill": {
+      "name": "Bubble Shower",
+      "description": "Blow on the horn to release a spume of magic bubbles. The bubbles float gently before raining down on the target."
+    }
   },
   "Cz": {
     "id": "Cz",
@@ -24467,7 +24953,8 @@
       }
     ],
     "category": "Warhammer",
-    "weight": 10
+    "weight": 10,
+    "unique": false
   },
   "C1": {
     "id": "C1",
@@ -24556,7 +25043,11 @@
       }
     ],
     "category": "Warhammer",
-    "weight": 12.5
+    "weight": 12.5,
+    "uniqueSkill": {
+      "name": "Surge of Faith",
+      "description": "Set the flames of Birac's faith ablaze in the cranial vessel, then\nraise it aloft to rain down fireballs in all directions.\nRepeated inputs will continue to raise the armament aloft,\ncontinuing the attack."
+    }
   },
   "C2": {
     "id": "C2",
@@ -24636,7 +25127,8 @@
       }
     ],
     "category": "Warhammer",
-    "weight": 10
+    "weight": 10,
+    "unique": false
   },
   "C3": {
     "id": "C3",
@@ -24725,7 +25217,11 @@
       }
     ],
     "category": "Warhammer",
-    "weight": 11.5
+    "weight": 11.5,
+    "uniqueSkill": {
+      "name": "Devourer of Worlds",
+      "description": "Charge the scepter with magic and strike it against the ground to steal the HP of all nearby enemies."
+    }
   },
   "C4": {
     "id": "C4",
@@ -24797,7 +25293,8 @@
       }
     ],
     "category": "Warhammer",
-    "weight": 12.5
+    "weight": 12.5,
+    "unique": false
   },
   "C5": {
     "id": "C5",
@@ -24877,7 +25374,8 @@
       }
     ],
     "category": "Whip",
-    "weight": 2
+    "weight": 2,
+    "unique": false
   },
   "C6": {
     "id": "C6",
@@ -24957,7 +25455,8 @@
       }
     ],
     "category": "Warhammer",
-    "weight": 10
+    "weight": 10,
+    "unique": false
   },
   "C7": {
     "id": "C7",
@@ -25037,7 +25536,8 @@
       }
     ],
     "category": "Whip",
-    "weight": 2.5
+    "weight": 2.5,
+    "unique": false
   },
   "C8": {
     "id": "C8",
@@ -25126,7 +25626,11 @@
       }
     ],
     "category": "Whip",
-    "weight": 2.5
+    "weight": 2.5,
+    "uniqueSkill": {
+      "name": "Sea of Magma",
+      "description": "Swing a molten whip overhead to temporarily cover the surrounding area in a sea of magma. Hold to continue swinging the lava whip."
+    }
   },
   "C9": {
     "id": "C9",
@@ -25206,7 +25710,8 @@
       }
     ],
     "category": "Whip",
-    "weight": 3.5
+    "weight": 3.5,
+    "unique": false
   },
   "cA": {
     "id": "cA",
@@ -25295,7 +25800,11 @@
       }
     ],
     "category": "Whip",
-    "weight": 2.5
+    "weight": 2.5,
+    "uniqueSkill": {
+      "name": "Flame Dance",
+      "description": "Imbue the red braid with the Giants' Flame and lash out in a wide range with a series of agile swings."
+    }
   },
   "ca": {
     "id": "ca",
@@ -25375,6 +25884,7 @@
       }
     ],
     "category": "Whip",
-    "weight": 3
+    "weight": 3,
+    "unique": false
   }
 }
