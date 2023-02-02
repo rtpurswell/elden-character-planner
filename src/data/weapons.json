@@ -482,6 +482,7 @@
   "AD": {
     "id": "AD",
     "name": "Icerind Hatchet",
+    "unique": true,
     "image": "weapons/17f699235c3l0i1ohvv1u6vgzp6gxv.png",
     "description": "A hatchet with a frost-coated blade. One of several gifts given by Castle Sol in the distant north. Known as \"freezing fog,\" the blade is thought to be a dragon's scale. Inflicts a powerful frost effect.",
     "attack": [
@@ -722,6 +723,7 @@
   "Ae": {
     "id": "Ae",
     "name": "Rosus' Axe",
+    "unique": true,
     "image": "weapons/17f6963aeael0i1oiez2moleac31tm.png",
     "description": "Usher of Death, Rosus, who shows the path to the catacombs throughout the Lands Between, is depicted on this ritual axe. The dead easily lose their way, and have always been in sore need i of a guiding hand.",
     "attack": [
@@ -966,6 +968,7 @@
   "AG": {
     "id": "AG",
     "name": "Stormhawk Axe",
+    "unique": true,
     "image": "weapons/17f69b8f9edl0i1oitj4z0mizqfmf7.png",
     "description": "Battle axe designed to resemble a hawk, wioth its wings comprising the blade. Signature weapon of warriors who strive to remain one with the storm, despite being so far from their place of birth. Their hearts are proud, and thereby easily undone.",
     "attack": [
@@ -1046,6 +1049,7 @@
   "Ag": {
     "id": "Ag",
     "name": "Gargoyle's Black Axe",
+    "unique": true,
     "image": "weapons/17f699ef109l0i1oj1cqtn6euxicod.png",
     "description": "Bronze greataxe wielded by Valiant Gargoyle, mended with blackened corpse wax. Deals holy damage. Such is the mark of those who serve Maliketh, the Black Blade.",
     "attack": [
@@ -1213,6 +1217,7 @@
   "Ah": {
     "id": "Ah",
     "name": "Jar Cannon",
+    "unique": true,
     "image": "weapons/17f69dd8093l0i1oj6x6qo6tg76q8.png",
     "description": "Jar cannon which uses explosives to fire greatbolts. Deals great damage but is slow to reload.  Experimental firearm brought to the assault on Volcano Manor, where it was discovered that no one knew how to use it.",
     "attack": [
@@ -1460,6 +1465,7 @@
   "AJ": {
     "id": "AJ",
     "name": "Erdtree Bow",
+    "unique": true,
     "image": "weapons/17f6968148cl0i1ojrunt1o8v6y34f.png",
     "description": "Longbow featuring Erdtree styling. In times of old, when faith and battle went hand in hand, this weapon was created in tandem with the Golden Arrow. Scales all arrow damage with faith, revealing its true worth when used with holy-infused arrows.",
     "attack": [
@@ -1640,6 +1646,7 @@
   "AK": {
     "id": "AK",
     "name": "Serpent Bow",
+    "unique": true,
     "image": "weapons/17f694c87afl0i1ojvhpi9w9ttf21.png",
     "description": "Malformed bow in the shape of a pair of poisonous snakes. Imbues arrows with poison through pagan magic, revealing its true worth when used with poison-infused arrows. Used by assassins known as the Formless Serpents.",
     "attack": [
@@ -1732,6 +1739,7 @@
   "Ak": {
     "id": "Ak",
     "name": "Pulley Bow",
+    "unique": true,
     "image": "weapons/17f694cf960l0i1ojybdeac0ffxf5.png",
     "description": "Longbow which utilizes a series of pulleys and strings. The complex mechanism, which required advanced mathematical and mechanical understanding to craft, was likely made by a certain genius who learned Golden Order Fundamentalism.  Enhances precision while shooting, enabling arrows to fly much further distances. ",
     "attack": [
@@ -1816,6 +1824,7 @@
   "AL": {
     "id": "AL",
     "name": "Black Bow",
+    "unique": true,
     "image": "weapons/17f694bf0a0l0i1okt1ao6xjlqrmq9.png",
     "description": "Longbow carved from black wood to resemble a blade. One of the most difficult bows to master. The blade-like body of the bow is light and cuts through the air. Though a longbow, it can be wielded similarly to a shortbow.",
     "attack": [
@@ -2460,6 +2469,7 @@
   "AP": {
     "id": "AP",
     "name": "Maliketh's Black Blade",
+    "unique": true,
     "image": "weapons/17f6946481al0i1olr8v9h8hxdx439.png",
     "description": "Maliketh's black blade which once harbored the power of the Rune of Death. A sad shadow of its former glory. After a fragment of Death was stolen on that fateful night, Maliketh bound the blade within his own flesh, such that none might ever rob Death again.",
     "attack": [
@@ -2628,6 +2638,7 @@
   "AQ": {
     "id": "AQ",
     "name": "Royal Greatsword",
+    "unique": true,
     "image": "weapons/17f695e24bel0i1omb3kpapbx2zhn.png",
     "description": "Greatsword decorated in royal Carian Style. Favored weapon of Blaidd the Half-Wolf. In defiance of the fate he was born to, Blaidd swore to serve no master but Ranni. As proof. the sword was imbued with a cold magic at the moment oath was sworn.",
     "attack": [
@@ -2716,6 +2727,7 @@
   "Aq": {
     "id": "Aq",
     "name": "Godslayer's Greatsword",
+    "unique": true,
     "image": "weapons/17f69814033l0i1omfg9fbsxwonld.png",
     "description": "Sacred sword of the Dusk-Eyed Queen who controlled the Godskin Apostles before her defeat at the hands of Maliketh. The black flames wielded by the apostles are channeled from this sword.",
     "attack": [
@@ -2804,6 +2816,7 @@
   "AR": {
     "id": "AR",
     "name": "Grafted Blade Greatsword",
+    "unique": true,
     "image": "weapons/17f69ba4b74l0i1omi90yu0wdq7oxu.png",
     "description": "The storied sword of Castle Morne. A revenger's weapon, it is burdened with oceans of anger and regret.  One of the legendary armaments.  A lone surviving champion from a country now vanished was so determined to continue fighting that he claimed the swords of an entire clan of warriors.",
     "attack": [
@@ -2884,6 +2897,7 @@
   "Ar": {
     "id": "Ar",
     "name": "Ruins Greatsword",
+    "unique": true,
     "image": "weapons/17f69695544l0i1omj4kim8sh6j5xh.png",
     "description": "Originally rubble from a ruin which fell from the sky, this surviving fragment was honed into a weapon. One of the legendary armaments. The ruin it came from crumbled when struck by a meteorite, as such this weapon harbords its destructive power.",
     "attack": [
@@ -2964,6 +2978,7 @@
   "AS": {
     "id": "AS",
     "name": "Starscourge Greatsword",
+    "unique": true,
     "image": "weapons/17f69d917e2l0i1omllp8sfqfor6g.png",
     "description": "Curved greatswords of black steel wielded by General Radahn. A pair of weapons decorated with a lion mane motif. Radahn earned considerable renown as the Starscourge in this youth, and it is said that it was during this time he engraved the gravity crest up these blades. ",
     "attack": [
@@ -3052,6 +3067,7 @@
   "As": {
     "id": "As",
     "name": "Troll Knight's Sword",
+    "unique": true,
     "image": "weapons/17f694bf77bl0i1on5kwkodf1d6fkp.png",
     "description": "Greatsword embedded with a blue glintstone. Weapon of the trolls in service to the royal family of Caria. Called into service when the Queen invoked an oath they swore, the trolls are treated as true knights of Caria, and fight arm in arm with their human comrades.",
     "attack": [
@@ -3140,6 +3156,7 @@
   "AT": {
     "id": "AT",
     "name": "Watchdog's Staff",
+    "unique": true,
     "image": "weapons/17f69573764l0i1ondtdlwail0224s.png",
     "description": "Large stone staff embedded with glintstone. Wielded by Erdtree Burial Watchdogs who protect catacombs. The Watchdogs, battered and broken over their lengthy tenure, rule the catacombs and are even said to command the imps. Unique Skill: Sorcery of the Crozier Channel magic into the glintstone to activate an ancient sorcery, producing floating magic projectiles that chase enemies automatically.",
     "attack": [
@@ -3220,6 +3237,7 @@
   "At": {
     "id": "At",
     "name": "Envoy's Greathorn",
+    "unique": true,
     "image": "weapons/17f69b35d86l0i1ongc5nz2ucwimp3.png",
     "description": "Fanned golden horn of the Oracle Envoys. Profoundly weighty, its blows are sure to be felt. Originally an instrument, but one that cannot be sounded by a mere human. Or perhaps it is too early to sound the call.",
     "attack": [
@@ -3524,6 +3542,7 @@
   "Av": {
     "id": "Av",
     "name": "Axe Of Godfrey",
+    "unique": true,
     "image": "weapons/17f698fbfe3l0i1onysor0mpgg5yes.png",
     "description": "Weapon of Godfrey, Elden Lord. It was broken in a battle fought as leader of the Tarnished during the Long March. This weapon is symbolic of Godfrey's vow to conduct himself as a lord, later becoming an emblem of the golden lineage. In the days of the past, a crown was warranted with strength. ",
     "attack": [
@@ -3604,6 +3623,7 @@
   "AW": {
     "id": "AW",
     "name": "Dragon Greatclaw",
+    "unique": true,
     "image": "weapons/17f69469b4bl0i1oo41w96vla79ii.png",
     "description": "Weapon said to have been whittled from the claw of a great, ancient dragon, wielded by grotesque Tree Sentinels who yet serve the Erdtree. The claw is enwreathed with lightning,and tears through the dragons' feeble descendants with ease.",
     "attack": [
@@ -3684,6 +3704,7 @@
   "Aw": {
     "id": "Aw",
     "name": "Fallingstar Beast Jaw",
+    "unique": true,
     "image": "weapons/17f6955e72fl0i1oo4m9kmv2xl4xyk.png",
     "description": "Part of a Falling star Beast's jaw, hard and shining black, fashioned into a weapon.  With its sharp point, this colossal weapon can skewer foes. ",
     "attack": [
@@ -3772,6 +3793,7 @@
   "AX": {
     "id": "AX",
     "name": "Staff Of The Avatar",
+    "unique": true,
     "image": "weapons/17f69dc1749l0i1ooc0npawnyrf3d.png",
     "description": "Ceremonial staff depicting the Erdtree in its historic radiance. Wielded by the avatars who protect the Minor Erdtrees. The avatars, emerging in the wake of the Elden Ring's shattering, were determined to protect the withering Erdtree's offspring.",
     "attack": [
@@ -3844,6 +3866,7 @@
   "Ax": {
     "id": "Ax",
     "name": "Ghiza's Wheel",
+    "unique": true,
     "image": "weapons/17f696bf334l0i1oog74vy08h3bq4g.png",
     "description": "Great iron wheel lined with flesh-flaying blades. Device of torture used by Inquisitor Ghiza. As the wheel spins it causes severe pain and blood loss. The design was adopted for use as the iconic weapon wielded by Iron Virgins. ",
     "attack": [
@@ -4164,6 +4187,7 @@
   "Az": {
     "id": "Az",
     "name": "Rotten Staff",
+    "unique": true,
     "image": "weapons/17f695f2cdal0i1oozpti2yx0wz51.png",
     "description": "Ceremonial staff depicting the Erdtree in its historic radiance. It festers with scarlet rot. Wielded by the avatars who protect the Minor Erdtrees.",
     "attack": [
@@ -4561,6 +4585,7 @@
   "A5": {
     "id": "A5",
     "name": "Pulley Crossbow",
+    "unique": true,
     "image": "weapons/17f69744d27l0i1opnrem0400k2gsd.png",
     "description": "Crossbow made with pulleys and power springs. The complex mechanism, which required advanced mathematical and mechanical understanding to craft, was likely made by a certain genius who learned Golden Order fundamentalism.   One touch fires a volley of bolts. Be warned; large stores of bolts can be quickly spent.",
     "attack": [
@@ -4640,6 +4665,7 @@
   "A6": {
     "id": "A6",
     "name": "Full Moon Crossbow",
+    "unique": true,
     "image": "weapons/17f69ac9f84l0i1opqor2ybht92g9q.png",
     "description": "One-of-a-kind enchanted crossbow of exquisitely detailed craftsmanship. Made to celebrate the matrimonial union, and reconciliation, between the houses of the Erdtree and the Full Moon, Leyndell and Raya Lucaria. The two rings dance when reloading the weapon. Reveals true worth when used with holy- infused bolts.",
     "attack": [
@@ -4723,6 +4749,7 @@
   "A7": {
     "id": "A7",
     "name": "Onyx Lord's Greatsword",
+    "unique": true,
     "image": "weapons/17f69d4ff4fl0i1oq3u3wuk37p9n8y.png",
     "description": "Greatsword forged from golden-hued meteoric ore.  The blade conceals gravity-manipulating magic. A weapon unique to the Onyx Lords, a race of ancients with skin of stone who were said to have risen to life when a meteor struck long ago. ",
     "attack": [
@@ -4811,6 +4838,7 @@
   "A8": {
     "id": "A8",
     "name": "Crepus's Black-key Crossbow",
+    "unique": true,
     "image": "weapons/17f697ea1a4l0i1oq4te6lr8su01zs.png",
     "description": "Black crossbow featuring a long stock. Used for sniping, it has a very long range. Weapon of Crepus, who served the Two Fingers from the shadows of the Roundtable as the head confessor.",
     "attack": [
@@ -4970,6 +4998,7 @@
   "aA": {
     "id": "aA",
     "name": "Bloodhound's Fang",
+    "unique": true,
     "image": "weapons/17f697d9a68l0i1oqeay5e8bb4oc3g.png",
     "description": "Curved greatsword with a gently undulating blade wielded by Bloodhound Knights. A fearsome blade capable of brutal airborne attacks.",
     "attack": [
@@ -5130,6 +5159,7 @@
   "aB": {
     "id": "aB",
     "name": "Magma Wyrm's Scalesword",
+    "unique": true,
     "image": "weapons/17f6959a5afl0i1oqpihevj06l1n6f.png",
     "description": "Curved greatsword wielded by Magma Wyrms. The shape resembles a dragon's jaw and is covered in hard scales. It's said these land-bound dragons were once humans heroes who partook in dragon communication, a grave transgression for which they were cursed to crawl the earth upon their bellies, shadows of their former selves.",
     "attack": [
@@ -5373,7 +5403,8 @@
       }
     ],
     "category": "Curved Greatsword",
-    "weight": 9
+    "weight": 9,
+    "unique": true
   },
   "ac": {
     "id": "ac",
@@ -5538,6 +5569,7 @@
   "ad": {
     "id": "ad",
     "name": "Morgott's Cursed Sword",
+    "unique": true,
     "image": "weapons/17f695e77b1l0i1orcoyco0l9fpi6j.png",
     "description": "Warped blade of shifting hue used by Morgott, the Omen King.  The accused blood that Morgott recanted and sealed away reformed into this blade. ",
     "attack": [
@@ -5946,6 +5978,7 @@
   "aG": {
     "id": "aG",
     "name": "Magma Blade",
+    "unique": true,
     "image": "weapons/17f69908917l0i1os577fp2a0c8n8w.png",
     "description": "Curved sword with a blade fashioned from the lava of Mt. Gelmir. An armament of the man-serpents, impossible for a human to have made. Deals fire damage.",
     "attack": [
@@ -6114,6 +6147,7 @@
   "aH": {
     "id": "aH",
     "name": "Wing Of Astel",
+    "unique": true,
     "image": "weapons/17f695b60e8l0i1osrls9u8la9bek.png",
     "description": "Sword fashioned from a delicate wing, suffused with the magic of the stars. Strong attack unleashes a wave of enchanted light. Crafted from a relic of the Naturalborn of the Void who is said to have assailed the Eternal City.",
     "attack": [
@@ -6202,6 +6236,7 @@
   "ah": {
     "id": "ah",
     "name": "Eclipse Shotel",
+    "unique": true,
     "image": "weapons/17f695e8a95l0i1osvuh2s392bslgf.png",
     "description": "Storied sword and treasure of Castle Sol that depicts an eclipsed sun drained of color. One of the legendary armaments. In Sol, the sight of an eclipse inspires a dreadful awe, preventing an onlooker from averting his gaze.",
     "attack": [
@@ -6610,6 +6645,7 @@
   "aK": {
     "id": "aK",
     "name": "Nox Flowing Sword",
+    "unique": true,
     "image": "weapons/17f69913ab4l0i1otlpefqm0g08exp.png",
     "description": "A grim weapon wielded by swordsmen of the Eternal City, this shotel has a blade as fine as a needle. Forged from the liquid metal of a Silver Tear, it is thoroughly tempered until hardened",
     "attack": [
@@ -6850,6 +6886,7 @@
   "al": {
     "id": "al",
     "name": "Black Knife",
+    "unique": true,
     "image": "weapons/17f69bb7d32l0i1ou85ft99zwecdel.png",
     "description": "Dagger once belonging to one of the assassins who murdered Godwyn the Golden on the Night of the Black Knives.  A ritual performed on the oddly misshapen blade imbued it with the power of the stolen Rune of Death. ",
     "attack": [
@@ -7098,6 +7135,7 @@
   "aN": {
     "id": "aN",
     "name": "Reduvia",
+    "unique": true,
     "image": "weapons/17f69d42419l0i1oujp0m1csaaqdanf.png",
     "description": "Jagged dagger with a distinctive curled blade. Carried by the noble servants of the Lord of Blood. This dagger rips the flesh as it enters, inflicting blood loss with sickening efficacy. A proud testament to the success of its vicious design, this weapon is perpetually coated in blood.",
     "attack": [
@@ -7354,6 +7392,7 @@
   "ao": {
     "id": "ao",
     "name": "Glintstone Kris",
+    "unique": true,
     "image": "weapons/17f69756a35l0i1ov1vi3cb4201sxa.png",
     "description": "Ritual blade once presented to Leyndell by the Academy of Raya Lucaria to celebrate their newfound peace. Though the weapon is embedded with precious glintstones and features Erdtree ornamentation, the undulating blade is symbolic of an ancient ritual.",
     "attack": [
@@ -7442,6 +7481,7 @@
   "aP": {
     "id": "aP",
     "name": "Scorpion's Stinger",
+    "unique": true,
     "image": "weapons/17f69d58e08l0i1ovazqw2hxmxgdc.png",
     "description": "Dagger fashioned from a great scorpion's tail, glistening with scarlet rot. A ceremonial tool used by heretics, crafted from the relic of a sealed outer god.",
     "attack": [
@@ -7682,6 +7722,7 @@
   "aq": {
     "id": "aq",
     "name": "Cinquedea",
+    "unique": true,
     "image": "weapons/17f6986cfc4l0i1ovvz1l7bcfxqjc9.png",
     "description": "Short sword given to high ranking clergymen of Farum Azula. Raises potency of bestial incantations. The design celebrates a beast's five fingers, symbolic of the intelligence once granted upon their kind.",
     "attack": [
@@ -7938,6 +7979,7 @@
   "aS": {
     "id": "aS",
     "name": "Blade Of Calling",
+    "unique": true,
     "image": "weapons/17f69619348l0i1owhkpnh4pq8aju.png",
     "description": "Dagger given to one who set out on a journey to fulfill her duty long ago. The power of its former owner, the kindling maiden, is still apparent. The one who walks alongside flame, Shall one day meet the road of Destined Death.",
     "attack": [
@@ -8266,6 +8308,7 @@
   "aU": {
     "id": "aU",
     "name": "Grafted Dragon",
+    "unique": true,
     "image": "weapons/17f69598b19l0i1ox85gn7f2sgqpad.png",
     "description": "The embodiment of the power that still remained in the dragon's head that was granted to Godrick's left arm. The wielder's arm will take the form of a small dragon, sprouting sharp dragon fangs at the fist. This weapon cannot be two-handed.",
     "attack": [
@@ -8594,6 +8637,7 @@
   "aW": {
     "id": "aW",
     "name": "Clinging Bone",
+    "unique": true,
     "image": "weapons/17f695cc915l0i1oxrft0i2enqepoe.png",
     "description": "Horrific weapon made of a hardened skeletal arm. Wielded by Ensha of the Royal Remains. Fitted by placing one's hands into the fists' grips until they dig in. \"\"O clinging creature. A king relinquishes not the hand.\"\"",
     "attack": [
@@ -8682,6 +8726,7 @@
   "aw": {
     "id": "aw",
     "name": "Cipher Pata",
+    "unique": true,
     "image": "weapons/17f69de7e01l0i1oxypr2s4rzvhwnj.png",
     "description": "One of the weapons originating from the Two Fingers. A formless sequence of ciphers comprise its blade, and as such no shield can repel it. Deals holy damage. The furtive inscription appears to hang in the air; the language of light spoken by the Two Fingers.",
     "attack": [
@@ -8754,6 +8799,7 @@
   "aX": {
     "id": "aX",
     "name": "Veteran's Prosthesis",
+    "unique": true,
     "image": "weapons/17f69912ed2l0i1oxzumweqnzkb2tl.png",
     "description": "Bladed prosthetic leg enwreathed with the power of lightning, instead attached to the fist. Commander Niall, veteran of Castle Sol, offered this prosthesis in exchange for the lives of defeated knights held prisoner. He went on to lead these men as an army of no nation.",
     "attack": [
@@ -8994,6 +9040,7 @@
   "ay": {
     "id": "ay",
     "name": "Family Heads",
+    "unique": true,
     "image": "weapons/17f695341ecl0i1oyf1mscsd2tuuid.png",
     "description": "Three bludgeoning copper heads attached to a handle by chains. Signature weapon of Necromancer Garris, the heretical sage. The heads were made to resemble those of his wife and two children.",
     "attack": [
@@ -9082,6 +9129,7 @@
   "aZ": {
     "id": "aZ",
     "name": "Bastard's Stars",
+    "unique": true,
     "image": "weapons/17f6992e218l0i1oykgr0udpp09p3.png",
     "description": "Flail which deals magic damage, having been imbued with power by the remembrance of Astel. Formed of the same many-colored star debris that comprised the form of the Naturalborn of the Void.",
     "attack": [
@@ -9254,6 +9302,7 @@
   "a1": {
     "id": "a1",
     "name": "Crystal Staff",
+    "unique": true,
     "image": "weapons/17f699946f4l0i1oz2nopkhsi7qz5p.png",
     "description": "Staff fashioned from pure crystal; a deed impossible for a human. Enhances Crystalian sorceris. The Crystalian's faint cognition is know as the \"wisdom of stone.\" This staff can only be weilded by those of intellect high enough to grasp such wisdom. ",
     "attack": [
@@ -9594,6 +9643,7 @@
   "a5": {
     "id": "a5",
     "name": "Carian Regal Scepter",
+    "unique": true,
     "image": "weapons/17f6953c900l0i1ozjupz92p99yzi.png",
     "description": "Magic scepter of Rennala, Queen of the Full Moon. The glintstone is known as a Carian Blue, enhancing full moon sorceries. Only those of the highest intelligence may wield this, the finest of all glintstone staves.",
     "attack": [
@@ -10290,6 +10340,7 @@
   "Bb": {
     "id": "Bb",
     "name": "Azur's Glintstone Staff",
+    "unique": true,
     "image": "weapons/17f695d9e5dl0i1p0otrlfxvt1g9n9.png",
     "description": "Staff of the primeval glintstone sorcerer Azur. Only those who have glimpsed what lies beyond the wisdom of stone may wield it. Reduces casting time of all sorceries, but consumes additional FP.",
     "attack": [
@@ -10374,6 +10425,7 @@
   "BC": {
     "id": "BC",
     "name": "Lusat's Glintstone Staff",
+    "unique": true,
     "image": "weapons/17f695a0063l0i1p0qdogpnbjb7xnf.png",
     "description": "Staff of the primeval glintstone sorcerer Lusat. Only those who have glimpsed what lies beyond the wisdom ofstone may wield it. Enhances power ofall sorceries, but consumes additional FP.",
     "attack": [
@@ -10626,6 +10678,7 @@
   "Bd": {
     "id": "Bd",
     "name": "Rotten Crystal Staff",
+    "unique": true,
     "image": "weapons/17f69594fd1l0i1p1ad5rxu1z3y9xt.png",
     "description": "Staff fashioned from pure crystal; a deed impossible for a human. It festers with scarlet rot. Enhances Crystalian sorceries.",
     "attack": [
@@ -11042,6 +11095,7 @@
   "BG": {
     "id": "BG",
     "name": "Axe Of Godrick",
+    "unique": true,
     "image": "weapons/17f69a0a0del0i1p1ze2uhbxr6enmw.png",
     "description": "Greataxe wielded by Godrick the Grafted. This golden battleaxe is emblazoned with the figure of a beast, representing the strength of Godfrey, First Elden Lord and patriarch of the golden lineage. \"I command thee kneel! For I am the lord of all that is golden!\"",
     "attack": [
@@ -11362,6 +11416,7 @@
   "BI": {
     "id": "BI",
     "name": "Winged Greathorn",
+    "unique": true,
     "image": "weapons/17f699a5bafl0i1p2louzpgjcml2zi.png",
     "description": "A unique horn in which the power of ancestral spirit fiercly dwells, this large, wing-shaped specimen is wielded as weapon of spirit worship.  In the ancestral spirit-woshipping faith, these are considered envoys' wings, made to reap the lives of beings which experience no sprouting. ",
     "attack": [
@@ -11522,6 +11577,7 @@
   "BJ": {
     "id": "BJ",
     "name": "Gargoyle's Great Axe",
+    "unique": true,
     "image": "weapons/17f69aff1efl0i1p2xlel2i8mhvc2o.png",
     "description": "Description  \"Bronze greataxe wielded by Valiant Gargoyle. Just like the wielder, the missing part have been mended with corpse wax; a patchwork of champions.\"  ",
     "attack": [
@@ -11602,6 +11658,7 @@
   "Bj": {
     "id": "Bj",
     "name": "Lion Greatbow",
+    "unique": true,
     "image": "weapons/17f694ec20bl0i1p34h48fycewmkr1.png",
     "description": "Greatbow of black iron wielded by General Radahn. Decorated with a lion mane motif. Imbued with gravitational power of the Starscourge, when used along with .  Radahn's Spear, it becomes a true weapon of a champion. ",
     "attack": [
@@ -11686,6 +11743,7 @@
   "BK": {
     "id": "BK",
     "name": "Erdtree Greatbow",
+    "unique": true,
     "image": "weapons/17f69727d35l0i1p3af7vawzb2qx4v.png",
     "description": "Greatbow featuring Erdtree styling. In times of old, when faith and battle went hand in hand, this weapon was created in tandem with the Golden Great Arrow. Scales all arrow damage with faith, revealing its true worth when used with holy-infused arrows.",
     "attack": [
@@ -11778,6 +11836,7 @@
   "Bk": {
     "id": "Bk",
     "name": "Golem Greatbow",
+    "unique": true,
     "image": "weapons/17f69ba8511l0i1p3aular3j6um6ed.png",
     "description": "Greatbow of black stone crafted by a civilization now gone to ruin. Weapon of the Guardian Golem. Extremely heavy, this greatbow requires enormous strength just to draw, suggesting it was not designed for human use. ",
     "attack": [
@@ -11946,6 +12005,7 @@
   "Bl": {
     "id": "Bl",
     "name": "Mohgwyn's Sacred Spear",
+    "unique": true,
     "image": "weapons/17f696abc5el0i1p3mxdl2nf7g3wsu.png",
     "description": "Trident of Mohg, Lord of Blood. A sacred spear that will come to symbolize his dynasty. As well as serving as a weapon, it is an instrument of communion with an outer god who bestows power upon accursed blood. The mother of truth desires a wound. ",
     "attack": [
@@ -12034,6 +12094,7 @@
   "BM": {
     "id": "BM",
     "name": "Siluria's Tree",
+    "unique": true,
     "image": "weapons/17f6948ce42l0i1p3rnqwtrftgh5gg.png",
     "description": "Siluria's Tree, weapon of one of the two honored as foremost among the Crucible Knights. The primordial form of the Erdtree is close in nature to life itself, and this spear, modeled on its crucible, is imbued with ancient holy essence. ",
     "attack": [
@@ -12126,6 +12187,7 @@
   "Bm": {
     "id": "Bm",
     "name": "Vyke's War Spear",
+    "unique": true,
     "image": "weapons/17f6949e9bbl0i1p3z882yhinlaqxj.png",
     "description": "War spear singed and blistered by fingers, used by Vyke, Knight of the Roundtable Hold. Like Vyke himself, it has been tormented by the yellow flame of frenzy from within.",
     "attack": [
@@ -12214,6 +12276,7 @@
   "BN": {
     "id": "BN",
     "name": "Serpent-hunter",
+    "unique": true,
     "image": "weapons/17f69b0a1dcl0i1p3zvfkgywidwr2.png",
     "description": "Weapon that serves as both greatsword and spear. Thought to have been used to hunt an immortal great serpent in the distant past, it manifests a long blade of light when facing such a creature. When their master's heroic aspirations degenerated into mere greed, his men searched for a weapon with which they might halt their lord.",
     "attack": [
@@ -12942,6 +13005,7 @@
   "Br": {
     "id": "Br",
     "name": "Ordovis's Greatsword",
+    "unique": true,
     "image": "weapons/17f69914456l0i1p5gc8d6bi642ubp.png",
     "description": "Greatsword of Ordovis, one of the two honored as foremost among the Crucible Knights. This sword is imbued with an ancient holy essence. Its red tint exemplifies the nature of primordial gold, said to be close in nature to life itself.",
     "attack": [
@@ -13030,6 +13094,7 @@
   "BS": {
     "id": "BS",
     "name": "Alabaster Lord's Sword",
+    "unique": true,
     "image": "weapons/17f69a3766al0i1p5jn27ea0xazje3.png",
     "description": "Greatsword forged from a blue-white meteoric ore. The blade conceals gravity-manipulating magic. A weapon unique to the Alabaster Lords, a race of ancients with skin of stone who were said to have risen to life when a meteor struck long ago.",
     "attack": [
@@ -13190,6 +13255,7 @@
   "BT": {
     "id": "BT",
     "name": "Dark Moon Greatsword",
+    "unique": true,
     "image": "weapons/17f69aa76b3l0i1p5w4xa7tbhq0qit.png",
     "description": "A Moon Greatsword, bestowed by a Carian queen upon her spouse to honor long-standing tradition. One of the legendary armaments. Ranni's sigil is a full moon, cold and leaden, and this sword is but a beam of its light.",
     "attack": [
@@ -13278,6 +13344,7 @@
   "Bt": {
     "id": "Bt",
     "name": "Sacred Relic Sword",
+    "unique": true,
     "image": "weapons/17f6971ad09l0i1p698i6hg5fqq3ir.png",
     "description": "Sword wrought from the remains of a god who should have lived a life eternal.  Thoughts on what the weapon portends are many and varied. Some consider it the mark of a great sin, or a sign of great devastation. Some think of it as the end of an age, while others; the beginning.",
     "attack": [
@@ -13369,6 +13436,7 @@
   "BU": {
     "id": "BU",
     "name": "Helphen's Steeple",
+    "unique": true,
     "image": "weapons/17f69a34499l0i1p69mtmqzfrxa7b.png",
     "description": "Greatsword patterned after the black steeple of the Helphen, the lampwood which guides the dead of the spirit world. The lamplight is similar to grace in appearance, only it is said that it can only be seen by those who met their death in battle.",
     "attack": [
@@ -13540,11 +13608,13 @@
       }
     ],
     "category": "Greatsword",
-    "weight": 13.5
+    "weight": 13.5,
+    "unique": true
   },
   "BV": {
     "id": "BV",
     "name": "Marais Executioner's Sword",
+    "unique": true,
     "image": "weapons/17f69af1239l0i1p6tbsakd85i69of.png",
     "description": "Storied sword of House Marais, the family of executioners who presided over the Shaded Castle. One of the legendary armaments. Elemer of the Briar, the Bell Bearing Hunter, snatched the sword from the site of his looming execution, and furnished it with battle skills from his home of Eochaid..",
     "attack": [
@@ -13633,6 +13703,7 @@
   "Bv": {
     "id": "Bv",
     "name": "Sword Of Milos",
+    "unique": true,
     "image": "weapons/17f6998ff30l0i1p6uu73zw546f13u.png",
     "description": "Sinister greatsword fashioned from a giant's backbone. The spines along each side of the blade have been tapered to a fine point and mete out wounds like a lopside saw-blade. Milos was indersized for a giant, and was viewed as sullied and terribly gortesque.",
     "attack": [
@@ -13713,6 +13784,7 @@
   "BW": {
     "id": "BW",
     "name": "Golden Order Greatsword",
+    "unique": true,
     "image": "weapons/17f69c19b1al0i1p77ig6czaoxosd.png",
     "description": "Greatsword made of light, modeled after the Elden Ring itself. Forged by King Consort Radagon to proudly symbolize the tenets of the Golden Order. One of the legendary armaments. Telltale signs betray that this was once the greatsword bequeathed to him by his first wife, Rennala.",
     "attack": [
@@ -13961,6 +14033,7 @@
   "Bx": {
     "id": "Bx",
     "name": "Death's Poker",
+    "unique": true,
     "image": "weapons/17f69d8a812l0i1p7s9xmq3zqql69.png",
     "description": "Barbed rod carried by Deathbirds. The birds are graveyard fire keepers; it is said they rake out the ashen remains of the dead from their kilns.",
     "attack": [
@@ -14049,6 +14122,7 @@
   "BY": {
     "id": "BY",
     "name": "Gargoyle's Blackblade",
+    "unique": true,
     "image": "weapons/17f69d4d41el0i1p7vs0vjortsg7oc.png",
     "description": "Broze greatsword wielded by Valiant Gargoyle mended with blackened corpse wax. Deals holy damage.  Such is the mark of those who serve Maliketh, the Black Blade.   ",
     "attack": [
@@ -14457,6 +14531,7 @@
   "B2": {
     "id": "B2",
     "name": "Commander's Standard",
+    "unique": true,
     "image": "weapons/17f6991e5c5l0i1p8vp4fgo45r89ky.png",
     "description": "A beaten red battle standard is furled around this time-worn halberd. Even after his lord was fled, Commander O'Neil continued to brandish this flag in the devastation of the rot-eaten field of battle, the sole veteran who remembers this battle with pride.",
     "attack": [
@@ -14761,6 +14836,7 @@
   "B6": {
     "id": "B6",
     "name": "Golden Halberd",
+    "unique": true,
     "image": "weapons/17f6973b001l0i1p9v6qffivf6eh3.png",
     "description": "Weighty halberd forged of gold. Wielded by the Order of Tree Sentinels, heavily equipped knights.  Deals holy damage. A masterfully crafted weapon that lives up to its heft, but is difficult for one mere human strength to wield.",
     "attack": [
@@ -14929,6 +15005,7 @@
   "B8": {
     "id": "B8",
     "name": "Loretta's War Sickle",
+    "unique": true,
     "image": "weapons/17f69869f89l0i1panhih63470rmve.png",
     "description": "Intricately crafted silver war sickle wielded by Loretta, Knight of the Haligtree. Originally given for service as a personal guard to Carian royalty, the weapon's blue glintstone has been replaced with unalloyed gold.",
     "attack": [
@@ -15097,6 +15174,7 @@
   "bA": {
     "id": "bA",
     "name": "Dragon Halberd",
+    "unique": true,
     "image": "weapons/17f69c95d75l0i1paugymrcjquua4q.png",
     "description": "Halberd shaped like a dragon, enwreathed with both ice and lightning. Alas, the Dragonkin Soldiers never attained immortality, and perished as decrepit, pale imitations of their skyborn kin.",
     "attack": [
@@ -15257,6 +15335,7 @@
   "bB": {
     "id": "bB",
     "name": "Gargoyle's Halberd",
+    "unique": true,
     "image": "weapons/17f69c725a8l0i1pay72k5pcw8pvc6.png",
     "description": "Bronze halberd wielded by Valiant Gargoyle Just like the wielder, the missing parts have been mended with corpse wax; a patchwork of champions.",
     "attack": [
@@ -15417,6 +15496,7 @@
   "bC": {
     "id": "bC",
     "name": "Gargoyle's Black Halberd",
+    "unique": true,
     "image": "weapons/17f69a5df3cl0i1pboo1un3fj711tg.png",
     "description": "Bronze halberd wielded by Valiant Gargoyle, mended with blackened corpse wax. Deals holy damage. Such is the mark of those who serve Maliketh, the Black Blade.",
     "attack": [
@@ -15897,6 +15977,7 @@
   "bF": {
     "id": "bF",
     "name": "Varré's Bouquet",
+    "unique": true,
     "image": "weapons/17f69aced5el0i1pcsbypcz3lxclfq.png",
     "description": "A steel mace resembling a charming bouquet of roses. Each petal has a sharpened edge, leaving the roses perpetually colored with blood.  This weapon reflects White Mask Varré's manner of speech rather well, enticing in its splendor, but full of deadly consequence.",
     "attack": [
@@ -16145,6 +16226,7 @@
   "bg": {
     "id": "bg",
     "name": "Envoy's Horn",
+    "unique": true,
     "image": "weapons/17f695571bbl0i1pdcktfpfya20p2.png",
     "description": "Golden horn of the Oracle Envoys. Profoundly weighty, its blows are sure to be felt. Originally an instrument, but one that cannot be sounded by a mere human. Or perhaps it is too early to sound the call.",
     "attack": [
@@ -16217,6 +16299,7 @@
   "bH": {
     "id": "bH",
     "name": "Scepter Of The All-knowing",
+    "unique": true,
     "image": "weapons/17f6980f9d0l0i1pdddh1p7a12vqnc.png",
     "description": "Scepter in the form of a hand grasping a pearl. Signature weapon of Sir Gideon Ofnir, the All-Knowing. The pearl stands for the world, the heavens, and an eye, representing the many forms of knowledge, never fully attainable. Even knowing that, the All- Knowing's hand grasps for it.",
     "attack": [
@@ -16305,6 +16388,7 @@
   "bh": {
     "id": "bh",
     "name": "Nox Flowing Hammer",
+    "unique": true,
     "image": "weapons/17f69b63034l0i1pdhypowirop759.png",
     "description": "Mace shaped like a suspended metal droplet wielded by monks of the Eternal City. Forged from liquid metal from a Silver Tear, it is thoroughly tempered until hardened.",
     "attack": [
@@ -16385,6 +16469,7 @@
   "bI": {
     "id": "bI",
     "name": "Ringed Finger",
+    "unique": true,
     "image": "weapons/17f69b7f413l0i1pdlfnyqleuyg0fm.png",
     "description": "Bludgeon made of an enormous finger sheathed in several heavy rings. Thought to have been cut from an ancestor of the Fingercreeper. Some life yet remains in this legacy of an ancient act of blasphemy, as evidenced by the barely perceptible warmth it still exudes.",
     "attack": [
@@ -16545,6 +16630,7 @@
   "bJ": {
     "id": "bJ",
     "name": "Marika's Hammer",
+    "unique": true,
     "image": "weapons/17f6976dccbl0i1pdxa3y1gcjkryhw.png",
     "description": "Stone hammer made in the lands of the Numen, outside the Lands Between. The tool with which Queen Marika shattered the Elden Ring and Radagon attempted to repair it. The hammer partially broke upon shattering the Ring, becoming splintered with rune fragments.",
     "attack": [
@@ -16617,6 +16703,7 @@
   "bj": {
     "id": "bj",
     "name": "Bloody Helice",
+    "unique": true,
     "image": "weapons/17f69987c03l0i1pdyutp139wmu1sh.png",
     "description": "Ominous piercing sword with a winding blade. Carried by the noble servants of the Lord of Blood. Designed to bore into flesh, causing severe blood loss at the wound. The extracted blood trickles gracefully down the length of the blade. ",
     "attack": [
@@ -16865,6 +16952,7 @@
   "bL": {
     "id": "bL",
     "name": "Dragon King's Cragblade",
+    "unique": true,
     "image": "weapons/17f699a14b1l0i1pekzisiwkpul53i.png",
     "description": "Piercing Gravel Stone sword containing primeval lightning. A portion of the Dragonlord's power, gained from a remembrance. This weapon commands great power over the paltry, mortal dragons of today.",
     "attack": [
@@ -17105,6 +17193,7 @@
   "bm": {
     "id": "bm",
     "name": "Hand Of Malenia",
+    "unique": true,
     "image": "weapons/17f69667faal0i1pezui5k6y6r0fin.png",
     "description": "Blade built into Malenia's prosthetic arm. Through consecration it is resistant to rot. Malenia's war prosthesis symbolized her victories. Some claim to have seen wings when the weapon was raised aloft; wings of fierce determination that have never known defeat.",
     "attack": [
@@ -17185,6 +17274,7 @@
   "bN": {
     "id": "bN",
     "name": "Meteoric Ore Blade",
+    "unique": true,
     "image": "weapons/17f69513a8al0i1pf3ozolljjevfk.png",
     "description": "Katana forged from meteoric ore to dispatch lifeforms born of falling stars. Deals magic damage. The blade is weighty, known to deliver slashes of such ferocity that the impact is said to resemble the crash of a falling meteor. ",
     "attack": [
@@ -17273,6 +17363,7 @@
   "bn": {
     "id": "bn",
     "name": "Rivers Of Blood",
+    "unique": true,
     "image": "weapons/17f6946d08bl0i1pfb4sevs913hvu.png",
     "description": "Weapon of Okina, swordsman from the Land of Reeds. A cursed weapon that has felled countless men.  When Mohg, the Lord of Blood, first felt Okina's sword, and madness, upon his flesh, he had a proposal, to offer Okina the life of a demon, whose thirst would never go unsated.",
     "attack": [
@@ -17361,6 +17452,7 @@
   "bO": {
     "id": "bO",
     "name": "Moonveil",
+    "unique": true,
     "image": "weapons/17f69a10accl0i1pfj7uwvc9kzei7d.png",
     "description": "Katana forged of glintstone. Masterpiece of a Sellian wordsmith.  Light enwreathes the blade when sheathed, explaining its Moonveil moniker.",
     "attack": [
@@ -17449,6 +17541,7 @@
   "bo": {
     "id": "bo",
     "name": "Dragonscale Blade",
+    "unique": true,
     "image": "weapons/17f69c558e4l0i1pfn93tt9wcpo0di.png",
     "description": "A weapon made by sharpening a Gravel Stone scale, thought to be the source of ancient dragon immortality, into an unclouded blade. Alas, the Dragonkin Soldiers never attained immortality, and perished as decrepit, pale imitations of their skyborn kin. ",
     "attack": [
@@ -17861,6 +17954,7 @@
   "bR": {
     "id": "bR",
     "name": "Harp Bow",
+    "unique": true,
     "image": "weapons/17f69491311l0i1pgceffu5ll8sovn.png",
     "description": "Bow fashioned from a minstrel's harp. Sonorous tones still resound when firing arrows. Troubadours sing tales of champions, both in the honorable service of the Erdtree, and the one who spurns honor for blasphemy.",
     "attack": [
@@ -18181,6 +18275,7 @@
   "bT": {
     "id": "bT",
     "name": "Halo Scythe",
+    "unique": true,
     "image": "weapons/17f697b3423l0i1pgz84q3gg342rvu.png",
     "description": "War scythe of the Cleanrot Knights who fought alongside Malenia, Blade of Miquella. This was the weapon of commanders in Malenia's army, and the half-halo blade deals holy damage.",
     "attack": [
@@ -18269,6 +18364,7 @@
   "bt": {
     "id": "bt",
     "name": "Winged Scythe",
+    "unique": true,
     "image": "weapons/17f69abddefl0i1ph323xr196zcpc.png",
     "description": "Sacred scythe resembling a pair of white wings. Deals holy damage. According to pagan belief, white-winged maidens are said to be Death's gentle envoys. ",
     "attack": [
@@ -18689,6 +18785,7 @@
   "bW": {
     "id": "bW",
     "name": "Golden Order Seal",
+    "unique": true,
     "image": "weapons/17f69d76aa8l0i1phsgjq5azzb5g1.png",
     "description": "A formless sacred seal depicting the ceremonial observation of Order. Enhances Golden Fundamentalist incantations.  Fundamentalism is scholarship in all but name. Scales incantation using both intelligence and faith.",
     "attack": [
@@ -18772,9 +18869,9 @@
   },
   "bw": {
     "id": "bw",
-    "name": "Erdtree Seal",
-    "image": "weapons/17f69746125l0i1phti5gxbjc1nfhx.png",
-    "description": "A formless sacred seal decorated with an Erdtree crest, once the focus of religion in the Lands Between. Even though the Elden Ring is shattered, and the Erdtree has dulled from its former radiance, earnest faith continues to hold the answers. ",
+    "name": "Gravel Stone Seal",
+    "image": "weapons/gravel_stone_seal.png",
+    "description": "Sacred seal made from Gravel Stone thought to be an ancient dragon scale. Enhances Dragon Cult incantations of the Royal Capital.The worship of the ancient dragons does not conflict with belief in the Erdtree. After all, this seal, and lightning itself, are both imbued with gold.",
     "attack": [
       {
         "name": "Phy",
@@ -18794,7 +18891,7 @@
       },
       {
         "name": "Holy",
-        "amount": 15
+        "amount": 0
       },
       {
         "name": "Crit",
@@ -18833,6 +18930,10 @@
     ],
     "scalesWith": [
       {
+        "name": "Str",
+        "scaling": "E"
+      },
+      {
         "name": "Fai",
         "scaling": "C"
       }
@@ -18840,15 +18941,20 @@
     "requiredAttributes": [
       {
         "name": "Fai",
-        "amount": 40
+        "amount": 18
+      },
+      {
+        "name": "Str",
+        "amount": 4
       }
     ],
     "category": "Sacred Seal",
-    "weight": 0
+    "weight": 1.5
   },
   "bX": {
     "id": "bX",
     "name": "Erdtree Seal",
+    "unique": true,
     "image": "weapons/17f698bacafl0i1phz3om56qt5bqof.png",
     "description": "A formless sacred seal decorated with an Erdtree crest, once the focus of religion in the Lands Between. Even though the Elden Ring is shattered, and the Erdtree has dulled from its former radiance, earnest faith continues to hold the answers. ",
     "attack": [
@@ -18925,6 +19031,7 @@
   "bx": {
     "id": "bx",
     "name": "Dragon Communion Seal",
+    "unique": true,
     "image": "weapons/17f697307d1l0i1pi6qvgmp5wuhmk.png",
     "description": "Formless drakeblood seal with a dragon communion crest. Enhances Dragon Communion incantations. The sacrificial devouring of the heart gives power. Indeed, Dragon Communion is too primal in nature for the term \"incantation\" to be appropriate. This seal scales incantations with one's arcane attribute.",
     "attack": [
@@ -19009,6 +19116,7 @@
   "bY": {
     "id": "bY",
     "name": "Frenzied Flame Seal",
+    "unique": true,
     "image": "weapons/17f69885c93l0i1pihpfc550piu1x.png",
     "description": "Formless sacred seal bestowed by the maiden of the Three Fingers. Enhances incantations of the frenzied flame. This seal is the mark of the Lord of Frenzied Flame. Scales incantations using strength, dexterity, intelligence, and faith all together.",
     "attack": [
@@ -19257,6 +19365,7 @@
   "bz": {
     "id": "bz",
     "name": "Crystal Spear",
+    "unique": true,
     "image": "weapons/17f69a617edl0i1piq3kor6g6xs3ql.png",
     "description": "Spear fashioned from pure crystal; a deed impossible for a human. Enwreathed with powerful magic, its attack scales with intelligence. The inscrutable Crystalians have but one clear purpose; to safeguard their crystals unto the end. One theory posits that they yearn for the return of their creator who will carve for them new brethren.",
     "attack": [
@@ -19593,6 +19702,7 @@
   "b4": {
     "id": "b4",
     "name": "Cleanrot Spear",
+    "unique": true,
     "image": "weapons/17f698acb69l0i1pjffhe1kjzha5v.png",
     "description": "Spear of the Cleanrot Knights who fought alongside Melania, Blade of Miquella. The winged golden blade deals holy damage. The diminutive shieldd is blessed with an incnantation that wards off rot.",
     "attack": [
@@ -19837,6 +19947,7 @@
   "b7": {
     "id": "b7",
     "name": "Bolt Of Gransax",
+    "unique": true,
     "image": "weapons/17f6993e936l0i1pjyhfk7vfpgc8ce.png",
     "description": "Spear whittled from the weapon wielded by Gransax. One of the legendary armaments.  A great ancient dragon, Gransax once rained calamity upon the Royal Capital - the only time in historical record that Leyendell's walls have fallen. This marked the dawn of the war against dragons.",
     "attack": [
@@ -19997,6 +20108,7 @@
   "b9": {
     "id": "b9",
     "name": "Death Ritual Spear",
+    "unique": true,
     "image": "weapons/17f6963cc83l0i1pk36gu3e5f8fpxm.png",
     "description": "Ritual spear used by priests of old who were permitted to come among the Deathbirds. The priests became guardians of the birds through the rite of Death, which also serves as an oath sworn to their distant resurrection.",
     "attack": [
@@ -20085,6 +20197,7 @@
   "CA": {
     "id": "CA",
     "name": "Inquisitor's Girandole",
+    "unique": true,
     "image": "weapons/17f69ac78dcl0i1pke5of594dboffh.png",
     "description": "Instrument of torture used on nobles behind the curtain at the  Volcano Manor of Mt. Gelmir. Its numerous spikes pierce the flesh, then singe the wounds with flame. The smell of burnt blood induces despair in the victim. A candlestick conveived by a thorough mind.",
     "attack": [
@@ -20245,6 +20358,7 @@
   "CB": {
     "id": "CB",
     "name": "Rotten Crystal Spear",
+    "unique": true,
     "image": "weapons/17f69c12977l0i1pkr6s0g1o7v5kz.png",
     "description": "Spear fashioned from pure crystal; a deed impossible for a human. Enwreathed with powerful magic, its attack scales with intelligence. Though festering with scarlet rot, its magic remains potent.",
     "attack": [
@@ -20893,6 +21007,7 @@
   "CF": {
     "id": "CF",
     "name": "Golden Epitaph",
+    "unique": true,
     "image": "weapons/17f697020ddl0i1pm0mkycj3pyzli7.png",
     "description": "A sword made to commemorate the death of Godwyn the Golden, first of the demigods to die. Infused with the humble prayer of a young boy; \"O brother, lord brother, please die a true death.\"",
     "attack": [
@@ -20981,6 +21096,7 @@
   "Cf": {
     "id": "Cf",
     "name": "Ornamental Straight Sword",
+    "unique": true,
     "image": "weapons/17f69523142l0i1pm7iurzr5rt7vpb.png",
     "description": "Slender straight sword patterned after an antique ornament. Superior swordsmen prefer to wield one in each hand. After falling from grace, the dregs of the golden lineage sought power and purpose in the past.",
     "attack": [
@@ -21061,6 +21177,7 @@
   "CG": {
     "id": "CG",
     "name": "Coded Sword",
+    "unique": true,
     "image": "weapons/17f69d1c283l0i1pm7km9k4n9hesqp.png",
     "description": "Hidden sword once granted to the Tarnished of the Roundtable by the Two Fingers. A formless cipher comprises its blade, which deals holy damage no shield can repel. Champions would gather at the Roundtable Hold in days long past, when the Two Fingers were masters of oration, their flesh yet full of vigor.",
     "attack": [
@@ -21133,6 +21250,7 @@
   "Cg": {
     "id": "Cg",
     "name": "Sword Of Night And Flame",
+    "unique": true,
     "image": "weapons/17f69dcdeb9l0i1pmay6pw29q0kz9j.png",
     "description": "Storied sword and treasure of Caria Manor. One of the legendary armaments. Astrologers, who preceded the sroveres, established themselves in mountaintops that nearly touched the sky, and considered the Fire Giants their neighbors.",
     "attack": [
@@ -21236,6 +21354,7 @@
   "CH": {
     "id": "CH",
     "name": "Carian Knight's Sword",
+    "unique": true,
     "image": "weapons/17f69b44345l0i1pmq6va882h9uvf.png",
     "description": "Straight sword embedded with a blue glintstone.  Weapon of knights sworn to Carian royalty. These knights' swords could serve as catalysts, letting them wield sorcerous battle skills. Despite numbering fewer than twenty, this power made them a match for even the champions of gold in battle.",
     "attack": [
@@ -21324,6 +21443,7 @@
   "Ch": {
     "id": "Ch",
     "name": "Crystal Sword",
+    "unique": true,
     "image": "weapons/17f69b32328l0i1pmuqj0u81mxsett.png",
     "description": "Sword fashioned from pure crystal; a deed impossible for a human. Enwreathed with powerful magic, its attack scales with intelligence. The inscrutable Crystalians have but one clear purpose; to safeguard their crystals unto the end. One theory posits that they yearn for the return of their creator who will carve for them new brethren. ",
     "attack": [
@@ -21412,6 +21532,7 @@
   "CI": {
     "id": "CI",
     "name": "Sword Of St Trina",
+    "unique": true,
     "image": "weapons/17f698685e3l0i1pmwzhhrnhxcf81.png",
     "description": "Silver sword carried by clerics of St. Trina. Inflicts sleep ailment upon foes. St. Trina is an enigmatic figure. Some say she is a comely young girl, others are sure he is a boy. The only certainty is that their appearance was as sudden as their disappearance.",
     "attack": [
@@ -21507,6 +21628,7 @@
   "Ci": {
     "id": "Ci",
     "name": "Miquellan Knight's Sword",
+    "unique": true,
     "image": "weapons/17f69aa244al0i1pmyf54x5qm8xb1r.png",
     "description": "Sword forged by servants of Miquella of the Haligtree, with a design modeled after those carried by Carian knights. Instead of glintstone however, amber from the Haligtree is embedded in the blade. A sumptuous piece, yet it has never been offered to any knight — an ill-starred sword with no master. Skill: Sacred Blade",
     "attack": [
@@ -21675,6 +21797,7 @@
   "Cj": {
     "id": "Cj",
     "name": "Regalia Of Eochaid",
+    "unique": true,
     "image": "weapons/17f69d2e16cl0i1pndl0cqdeg1df40a.png",
     "description": "Treasured sword of Eochaid, a lesser, long-vanished domain. The copper coloration is not to be confused for rust, but is a conduit for its wielder to move it by their will alone.  Swords of Eochaid dance through the skies",
     "attack": [
@@ -21899,6 +22022,7 @@
   "CL": {
     "id": "CL",
     "name": "Rotten Crystal Sword",
+    "unique": true,
     "image": "weapons/17f69d445cel0i1pnsmtteechmemmd.png",
     "description": "Sword fashioned from pure crystal; a deed impossible for a human. Enwreathed with powerful magic, its attack scales with intelligence.",
     "attack": [
@@ -21987,6 +22111,7 @@
   "Cl": {
     "id": "Cl",
     "name": "Lazuli Glintstone Sword",
+    "unique": true,
     "image": "weapons/17f697a64ccl0i1pnuagdt1sfmx0pk.png",
     "description": "A sword with a glintstone in its handguards. Wielded by scholars of the Lazuli Conspectus who seek to master Carian sorcery. Deals magic damage. Apparently once used as a staff of sorcery, this sword is made of wood.",
     "attack": [
@@ -22459,6 +22584,7 @@
   "Co": {
     "id": "Co",
     "name": "Frozen Needle",
+    "unique": true,
     "image": "weapons/17f69a8a231l0i1potleffsoj8ycfb.png",
     "description": "A razor-thin piercing blade of ice. Forged by Ijii, the carian Royal Blackmith. Can inflict frost upon enemies, and launch its blade with a strong attack.  The blade immediately regenerates. ",
     "attack": [
@@ -22779,6 +22905,7 @@
   "Cq": {
     "id": "Cq",
     "name": "St. Trina's Torch",
+    "unique": true,
     "image": "weapons/17f69762fd7l0i1ppfr1nudb4uz853.png",
     "description": "Candlestand torch that burns with a light-purple flame. The carvings depict St. Trina, but in adult form, somewhat unnervingly.  The light-purple flame induces sleep.",
     "attack": [
@@ -23035,6 +23162,7 @@
   "CS": {
     "id": "CS",
     "name": "Sentry's Torch",
+    "unique": true,
     "image": "weapons/17f69cf8934l0i1ppuzogdnseu6l7f.png",
     "description": "Torch Given to protectors of the Erdtree. Its flames are bestowed with a special incantation which allows the bearer to see assassins cloaked in veils. Furnished on behalf of the Erdtree and the Grace-Given Lord such that a Night of Black Knives will never come again. ",
     "attack": [
@@ -23283,6 +23411,7 @@
   "Ct": {
     "id": "Ct",
     "name": "Eleonora's Poleblade",
+    "unique": true,
     "image": "weapons/17f69d7ad55l0i1pqhdj20wzeg63ts.png",
     "description": "Twinned naginata forged in the Land of Reeds. Chosen weapon of Eleonora, Violet Bloody Finger. Her mastery of the sword was such that her onslaught was likened to a whirlwind, but now her legacy is stained by accursed blood.",
     "attack": [
@@ -23371,6 +23500,7 @@
   "CU": {
     "id": "CU",
     "name": "Gargoyle's Twinblade",
+    "unique": true,
     "image": "weapons/17f695e037bl0i1pqkyetqd7zbu8l.png",
     "description": "Bronze twinblade wielded by Valiant Gargoyle.  just like the wielder, the missing parts have been mended with corpse wax; a patchwork of champions. ",
     "attack": [
@@ -23451,6 +23581,7 @@
   "Cu": {
     "id": "Cu",
     "name": "Gargoyle's Black Blades",
+    "unique": true,
     "image": "weapons/17f69a3190el0i1pqs4x6j5c6xpye.png",
     "description": "Bronze twinblade wielded by Valiant Gargoyle, mended with blackened corpse wax. Deals holy damage. Such is the mark of those who serve Maliketh, the Black Blade.",
     "attack": [
@@ -24003,6 +24134,7 @@
   "CY": {
     "id": "CY",
     "name": "Beastclaw Greathammer",
+    "unique": true,
     "image": "weapons/17f69aff56dl0i1przmnvkw34pmvm.png",
     "description": "Greathammer with a striking end modelled to resemble five beastly claws. The black nails protruding from golden fur are said to represent Serosh, Lord of Beasts, who went to become King Godfrey's Regent.",
     "attack": [
@@ -24171,6 +24303,7 @@
   "CZ": {
     "id": "CZ",
     "name": "Envoy's Long Horn",
+    "unique": true,
     "image": "weapons/17f69c5e336l0i1ps8m2w27as1vumo.png",
     "description": "Long golden horn of the Oracle Envoys. Profoundly weighty, its blows are sure to be felt. Originally an instrument, but one that cannot be sounded by a mere human. Or perhaps it is too early to sound the call.",
     "attack": [
@@ -24339,6 +24472,7 @@
   "C1": {
     "id": "C1",
     "name": "Cranial Vessel Candlestand",
+    "unique": true,
     "image": "weapons/17f69657dc0l0i1psc1sw2ehitb9m.png",
     "description": "Candlestand used in worship of Birac, the most hallowed Monk Prelate of the Giants' Flame. Concerned over the lazy arrogance with which the monks treated the Flame, Birac severed his own head as a lesson to the others, intending it be used as a  candlestand. His faith yet smolders from within the cranial vessel.",
     "attack": [
@@ -24507,6 +24641,7 @@
   "C3": {
     "id": "C3",
     "name": "Devourer's Scepter",
+    "unique": true,
     "image": "weapons/17f69b4d221l0i1psy7bxk9acqs5xv.png",
     "description": "Scepter in the shape of a serpent devouring the world. This weapon will one day become the very symbol of the Lord of  Blasphemy. One of the legendary armaments. A vision of the future briefly seen by Rykard in his final moments before being devoured by the great serpent.",
     "attack": [
@@ -24907,6 +25042,7 @@
   "C8": {
     "id": "C8",
     "name": "Magma Whip Candlestick",
+    "unique": true,
     "image": "weapons/17f69c5c0bfl0i1ptlhsrovoc8dx07.png",
     "description": "This ritual implement is a three pronged candlestick with solid flames formed of the magma of Mt. Gelmir. When wielded as a weapon, the flames become supple whips of lava.",
     "attack": [
@@ -25075,6 +25211,7 @@
   "cA": {
     "id": "cA",
     "name": "Giant's Red Braid",
+    "unique": true,
     "image": "weapons/17f696af19bl0i1ptpv0fdawl72o4yq.png",
     "description": "Hefty whip woven from the flame-red hair of a Fire Giant. Every giant is red of hair, and Radagon was said to have despised his own red locks. Perhaps that was a curse of their kind.",
     "attack": [
