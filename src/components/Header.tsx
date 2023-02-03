@@ -6,7 +6,7 @@ function Header() {
   return (
     <div className="flex justify-between bg-slate-800 p-3 rounded">
       <H1>Elden Ring Character Planner</H1>
-      <div className="md:hidden">
+      <div className="md:hidden z-20">
         <MobileMenu />
       </div>
       <div className="hidden md:flex md:w-1/2 justify-end">

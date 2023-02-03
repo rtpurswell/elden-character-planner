@@ -32,6 +32,51 @@ function SearchAndSelect({
     setSearch(e.target.value)
   }
 
+  const mappedItems = data.map((d) => {
+    return (
+      <div className=" grid grid-cols-1 md:grid-cols-5 gap-3" key={d.label}>
+        <div className="md:col-span-5 flex justify-between">
+          <h3 className="md:col-span-5">{d.label}</h3>
+          {handleClear ? (
+            <button className="bg-red-600 p-3 rounded" onClick={handleClear}>
+              Clear
+            </button>
+          ) : null}
+        </div>
+
+        {d.value
+          .filter((item) => {
+            if (search === '') {
+              return true
+            }
+            if (item.name.toLowerCase().includes(search.toLowerCase())) {
+              return true
+            }
+            return false
+          })
+          .map((item) => {
+            return (
+              <button
+                className="flex flex-col border-gray-500 border-2 rounded p-2 items-center aspect-square"
+                key={item.id}
+                onClick={() => onSelect(item.id)}
+              >
+                <h4>{item.name}</h4>
+                <div className="w-full">
+                  <LazyImage
+                    placeholder={d.placeholder}
+                    src={item.image ? `/images/${item.image}` : d.placeholder}
+                    className=""
+                    scrollPosition={scrollPosition}
+                  />
+                </div>
+              </button>
+            )
+          })}
+      </div>
+    )
+  })
+  console.log(mappedItems)
   return (
     <div className="grid grid-cols-1 gap-2">
       <div>
@@ -43,66 +88,7 @@ function SearchAndSelect({
           placeholder="Search"
         />
       </div>
-      {data.map((d) => {
-        return (
-          <div className=" grid grid-cols-1 md:grid-cols-5 gap-3" key={d.label}>
-            <div className="md:col-span-5 flex justify-between">
-              <h3 className="md:col-span-5">{d.label}</h3>
-              {handleClear ? (
-                <button
-                  className="bg-red-600 p-3 rounded"
-                  onClick={handleClear}
-                >
-                  Clear
-                </button>
-              ) : null}
-            </div>
-
-            {d.value
-              .filter((item) => {
-                if (search === '') {
-                  return true
-                }
-                if (item.name.toLowerCase().includes(search.toLowerCase())) {
-                  return true
-                }
-                return false
-              })
-              .map(
-                (
-                  item:
-                    | IArmor
-                    | IItem
-                    | IShield
-                    | IWeapon
-                    | ITalisman
-                    | IAsh
-                    | ITear,
-                ) => {
-                  return (
-                    <button
-                      className="flex flex-col border-gray-500 border-2 rounded p-2 items-center aspect-square"
-                      key={item.id}
-                      onClick={() => onSelect(item.id)}
-                    >
-                      <h4>{item.name}</h4>
-                      <div className="w-full">
-                        <LazyImage
-                          placeholder={d.placeholder}
-                          src={
-                            item.image ? `/images/${item.image}` : d.placeholder
-                          }
-                          className=""
-                          scrollPosition={scrollPosition}
-                        />
-                      </div>
-                    </button>
-                  )
-                },
-              )}
-          </div>
-        )
-      })}
+      {mappedItems}
     </div>
   )
 }

@@ -25,7 +25,7 @@ function ClassImage() {
     dispatch(classUpdated(ClassKeys[newIndex]))
   }
   return (
-    <div className="border-4 border-slate-800 flex items-center justify-center rounded-2xl relative">
+    <div className="border-4 border-slate-800 flex items-center justify-center rounded-2xl relative z-0">
       <button
         className="absolute top-0 left-0 h-full md:hover:bg-opacity-30 rounded md:hover:bg-slate-400 md:opacity-0 md:hover:opacity-100"
         onClick={handleClassChange('backward')}

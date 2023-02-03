@@ -110,7 +110,7 @@ function Attributes() {
         {selectedAttribute !== '' ? (
           error ? (
             <span className="text-sm text-red-500">
-              {error}{' '}
+              {error}
               <span className="text-sm text-slate-500 flex gap-5">
                 Press enter or
                 <button
